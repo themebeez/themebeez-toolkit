@@ -62,6 +62,14 @@ class TT_Admin_Demo_Config {
                 'theme_name' => 'Royale News Pro',
                 'demo_class' => 'TT_Theme_Demo_Royale_News_Pro',
             ),
+            'cream_magazine' => array(
+                'theme_name' => 'Cream Magazine',
+                'demo_class' => 'TT_Theme_Demo_Cream_Magazine',
+            ),
+            'cream_magazine_pro' => array(
+                'theme_name' => 'Cream Magazine Pro',
+                'demo_class' => 'TT_Theme_Demo_Cream_Magazine_Pro',
+            ),
         );
     }
 

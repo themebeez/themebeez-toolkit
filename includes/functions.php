@@ -103,6 +103,24 @@ if( ! function_exists( 'themebeez_toolkit_theme_info_demo_loader' ) ) {
 
             add_action( 'admin_init', 'themebeez_toolkit_notice_ignore' );           
         }
+
+        if( $theme_text_domain == 'cream-magazine' ) {
+            
+            require_once plugin_dir_path( __FILE__ ) . 'theme-info/configs/cream-magazine-config.php'; 
+
+            add_action( 'admin_notices', 'themebeez_toolkit_admin_notice' );
+
+            add_action( 'admin_init', 'themebeez_toolkit_notice_ignore' );           
+        }
+
+        if( $theme_text_domain == 'cream-magazine-pro' ) {
+            
+            require_once plugin_dir_path( __FILE__ ) . 'theme-info/configs/cream-magazine-pro-config.php'; 
+
+            add_action( 'admin_notices', 'themebeez_toolkit_admin_notice' );
+
+            add_action( 'admin_init', 'themebeez_toolkit_notice_ignore' );           
+        }
     }
 }
 
