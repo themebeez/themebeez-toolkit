@@ -49,7 +49,7 @@ class TT_Theme_Demo_Cream_Blog extends TT_Theme_Demo {
 	     	'nav_menu_locations', 
 	     	array( 
 	     		'menu-1' => $primary_menu->term_id, 
-	     		'menu-2' => $social_menu->term_id,
+	     		'menu-2' => $header_menu->term_id,
 	     	)
 	    );
 

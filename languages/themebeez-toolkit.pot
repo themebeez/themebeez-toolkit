@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Themebeez Toolkit 1.0.8\n"
+"Project-Id-Version: Themebeez Toolkit 1.0.9\n"
 "Report-Msgid-Bugs-To: https://themebeez.com/support\n"
-"POT-Creation-Date: 2019-02-25 16:54:03+00:00\n"
+"POT-Creation-Date: 2019-03-07 15:48:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -146,6 +146,8 @@ msgstr ""
 #: includes/demo-importer/class-tt-main.php:56
 #: includes/theme-info/configs/cream-blog-config.php:59
 #: includes/theme-info/configs/cream-blog-pro-config.php:53
+#: includes/theme-info/configs/cream-magazine-config.php:59
+#: includes/theme-info/configs/cream-magazine-pro-config.php:54
 #: includes/theme-info/configs/one-hive-config.php:61
 #: includes/theme-info/configs/royale-news-config.php:58
 #: includes/theme-info/configs/royale-news-pro-config.php:53
@@ -209,6 +211,10 @@ msgstr ""
 #: includes/theme-info/configs/cream-blog-config.php:61
 #: includes/theme-info/configs/cream-blog-pro-config.php:27
 #: includes/theme-info/configs/cream-blog-pro-config.php:55
+#: includes/theme-info/configs/cream-magazine-config.php:27
+#: includes/theme-info/configs/cream-magazine-config.php:61
+#: includes/theme-info/configs/cream-magazine-pro-config.php:27
+#: includes/theme-info/configs/cream-magazine-pro-config.php:56
 #: includes/theme-info/configs/one-hive-config.php:27
 #: includes/theme-info/configs/one-hive-config.php:63
 #: includes/theme-info/configs/royale-news-config.php:27
@@ -500,6 +506,8 @@ msgid "Could not update comment #%d with mapped data"
 msgstr ""
 
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog.php:15
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:15
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine.php:15
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-royale-news-pro.php:15
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-royale-news.php:15
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-styleblog-plus.php:15
@@ -507,14 +515,25 @@ msgid "Demo One"
 msgstr ""
 
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog.php:23
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:23
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine.php:23
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-royale-news-pro.php:23
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-styleblog-plus.php:23
 msgid "Demo Two"
 msgstr ""
 
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog.php:31
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:31
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-styleblog-plus.php:31
 msgid "Demo Three"
+msgstr ""
+
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:39
+msgid "Demo Four"
+msgstr ""
+
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:47
+msgid "Demo Five"
 msgstr ""
 
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-style-blog-fame.php:15
@@ -525,12 +544,12 @@ msgstr ""
 msgid "Style Blog Demo"
 msgstr ""
 
-#: includes/functions.php:136
+#: includes/functions.php:154
 #. translators: %1$s: theme name, %2$s theme version
 msgid "Welcome to %1$s - Version %2$s"
 msgstr ""
 
-#: includes/functions.php:143
+#: includes/functions.php:161
 #. translators: %1$s: theme name, %2$s link
 msgid ""
 "Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
@@ -538,7 +557,7 @@ msgid ""
 "page</a>"
 msgstr ""
 
-#: includes/functions.php:151 includes/theme-info/class-theme-info.php:174
+#: includes/functions.php:169 includes/theme-info/class-theme-info.php:174
 #. translators: %s theme name
 msgid "Get started with %s"
 msgstr ""
@@ -572,6 +591,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:17
 #: includes/theme-info/configs/cream-blog-pro-config.php:17
+#: includes/theme-info/configs/cream-magazine-config.php:17
+#: includes/theme-info/configs/cream-magazine-pro-config.php:17
 #: includes/theme-info/configs/one-hive-config.php:17
 #: includes/theme-info/configs/royale-news-config.php:17
 #: includes/theme-info/configs/royale-news-pro-config.php:17
@@ -584,6 +605,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:22
 #: includes/theme-info/configs/cream-blog-pro-config.php:22
+#: includes/theme-info/configs/cream-magazine-config.php:22
+#: includes/theme-info/configs/cream-magazine-pro-config.php:22
 #: includes/theme-info/configs/one-hive-config.php:22
 #: includes/theme-info/configs/royale-news-config.php:22
 #: includes/theme-info/configs/royale-news-pro-config.php:22
@@ -598,6 +621,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:32
 #: includes/theme-info/configs/cream-blog-pro-config.php:32
+#: includes/theme-info/configs/cream-magazine-config.php:32
+#: includes/theme-info/configs/cream-magazine-pro-config.php:32
 #: includes/theme-info/configs/one-hive-config.php:32
 #: includes/theme-info/configs/royale-news-config.php:32
 #: includes/theme-info/configs/royale-news-pro-config.php:32
@@ -609,6 +634,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:36
 #: includes/theme-info/configs/cream-blog-pro-config.php:36
+#: includes/theme-info/configs/cream-magazine-config.php:36
+#: includes/theme-info/configs/cream-magazine-pro-config.php:36
 #: includes/theme-info/configs/one-hive-config.php:36
 #: includes/theme-info/configs/royale-news-config.php:36
 #: includes/theme-info/configs/royale-news-pro-config.php:36
@@ -620,6 +647,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:40
 #: includes/theme-info/configs/cream-blog-pro-config.php:40
+#: includes/theme-info/configs/cream-magazine-config.php:40
+#: includes/theme-info/configs/cream-magazine-pro-config.php:40
 #: includes/theme-info/configs/one-hive-config.php:40
 #: includes/theme-info/configs/one-hive-config.php:167
 #: includes/theme-info/configs/royale-news-config.php:40
@@ -631,6 +660,7 @@ msgid "View Documentation"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:44
+#: includes/theme-info/configs/cream-magazine-config.php:44
 #: includes/theme-info/configs/one-hive-config.php:44
 #: includes/theme-info/configs/royale-news-config.php:44
 #: includes/theme-info/configs/styleblog-config.php:44
@@ -639,6 +669,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:52
 #: includes/theme-info/configs/cream-blog-pro-config.php:47
+#: includes/theme-info/configs/cream-magazine-config.php:52
+#: includes/theme-info/configs/cream-magazine-pro-config.php:47
 #: includes/theme-info/configs/one-hive-config.php:52
 #: includes/theme-info/configs/royale-news-config.php:52
 #: includes/theme-info/configs/royale-news-pro-config.php:47
@@ -650,6 +682,10 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:53
 #: includes/theme-info/configs/cream-blog-config.php:77
+#: includes/theme-info/configs/cream-magazine-config.php:53
+#: includes/theme-info/configs/cream-magazine-config.php:77
+#: includes/theme-info/configs/cream-magazine-pro-config.php:48
+#: includes/theme-info/configs/cream-magazine-pro-config.php:72
 #: includes/theme-info/configs/one-hive-config.php:53
 #: includes/theme-info/configs/one-hive-config.php:79
 #: includes/theme-info/configs/royale-news-config.php:76
@@ -659,6 +695,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:60
 #: includes/theme-info/configs/cream-blog-pro-config.php:54
+#: includes/theme-info/configs/cream-magazine-config.php:60
+#: includes/theme-info/configs/cream-magazine-pro-config.php:55
 #: includes/theme-info/configs/one-hive-config.php:62
 #: includes/theme-info/configs/royale-news-config.php:59
 #: includes/theme-info/configs/royale-news-pro-config.php:54
@@ -670,6 +708,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:68
 #: includes/theme-info/configs/cream-blog-pro-config.php:62
+#: includes/theme-info/configs/cream-magazine-config.php:68
+#: includes/theme-info/configs/cream-magazine-pro-config.php:63
 #: includes/theme-info/configs/one-hive-config.php:70
 #: includes/theme-info/configs/one-hive-config.php:164
 #: includes/theme-info/configs/royale-news-config.php:67
@@ -682,6 +722,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:69
 #: includes/theme-info/configs/cream-blog-pro-config.php:63
+#: includes/theme-info/configs/cream-magazine-config.php:69
+#: includes/theme-info/configs/cream-magazine-pro-config.php:64
 #: includes/theme-info/configs/one-hive-config.php:71
 #: includes/theme-info/configs/royale-news-config.php:68
 #: includes/theme-info/configs/royale-news-pro-config.php:63
@@ -695,6 +737,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:70
 #: includes/theme-info/configs/cream-blog-pro-config.php:64
+#: includes/theme-info/configs/cream-magazine-config.php:70
+#: includes/theme-info/configs/cream-magazine-pro-config.php:65
 #: includes/theme-info/configs/one-hive-config.php:72
 #: includes/theme-info/configs/royale-news-config.php:69
 #: includes/theme-info/configs/royale-news-pro-config.php:64
@@ -705,6 +749,8 @@ msgid "View documentation"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:78
+#: includes/theme-info/configs/cream-magazine-config.php:78
+#: includes/theme-info/configs/cream-magazine-pro-config.php:73
 #: includes/theme-info/configs/one-hive-config.php:80
 #: includes/theme-info/configs/royale-news-config.php:77
 #: includes/theme-info/configs/styleblog-config.php:77
@@ -714,6 +760,8 @@ msgid ""
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:79
+#: includes/theme-info/configs/cream-magazine-config.php:79
+#: includes/theme-info/configs/cream-magazine-pro-config.php:74
 #: includes/theme-info/configs/one-hive-config.php:81
 #: includes/theme-info/configs/royale-news-config.php:78
 #: includes/theme-info/configs/styleblog-config.php:78
@@ -722,6 +770,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:86
 #: includes/theme-info/configs/cream-blog-pro-config.php:71
+#: includes/theme-info/configs/cream-magazine-config.php:86
+#: includes/theme-info/configs/cream-magazine-pro-config.php:81
 #: includes/theme-info/configs/one-hive-config.php:88
 #: includes/theme-info/configs/royale-news-config.php:85
 #: includes/theme-info/configs/royale-news-pro-config.php:71
@@ -733,6 +783,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:87
 #: includes/theme-info/configs/cream-blog-pro-config.php:72
+#: includes/theme-info/configs/cream-magazine-config.php:87
+#: includes/theme-info/configs/cream-magazine-pro-config.php:82
 #: includes/theme-info/configs/one-hive-config.php:89
 #: includes/theme-info/configs/royale-news-config.php:86
 #: includes/theme-info/configs/royale-news-pro-config.php:72
@@ -744,6 +796,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:88
 #: includes/theme-info/configs/cream-blog-pro-config.php:73
+#: includes/theme-info/configs/cream-magazine-config.php:88
+#: includes/theme-info/configs/cream-magazine-pro-config.php:83
 #: includes/theme-info/configs/one-hive-config.php:90
 #: includes/theme-info/configs/royale-news-config.php:87
 #: includes/theme-info/configs/royale-news-pro-config.php:73
@@ -755,6 +809,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:96
 #: includes/theme-info/configs/cream-blog-pro-config.php:81
+#: includes/theme-info/configs/cream-magazine-config.php:96
+#: includes/theme-info/configs/cream-magazine-pro-config.php:90
 #: includes/theme-info/configs/one-hive-config.php:98
 #: includes/theme-info/configs/one-hive-config.php:183
 #: includes/theme-info/configs/royale-news-config.php:95
@@ -767,6 +823,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:97
 #: includes/theme-info/configs/cream-blog-pro-config.php:82
+#: includes/theme-info/configs/cream-magazine-config.php:97
+#: includes/theme-info/configs/cream-magazine-pro-config.php:91
 #: includes/theme-info/configs/one-hive-config.php:99
 #: includes/theme-info/configs/one-hive-config.php:185
 #: includes/theme-info/configs/royale-news-config.php:96
@@ -781,6 +839,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:98
 #: includes/theme-info/configs/cream-blog-pro-config.php:83
+#: includes/theme-info/configs/cream-magazine-config.php:98
+#: includes/theme-info/configs/cream-magazine-pro-config.php:92
 #: includes/theme-info/configs/one-hive-config.php:100
 #: includes/theme-info/configs/one-hive-config.php:186
 #: includes/theme-info/configs/royale-news-config.php:97
@@ -792,6 +852,7 @@ msgid "Video Tutorials"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:106
+#: includes/theme-info/configs/cream-magazine-config.php:106
 #: includes/theme-info/configs/one-hive-config.php:108
 #: includes/theme-info/configs/one-hive-config.php:173
 #: includes/theme-info/configs/royale-news-config.php:105
@@ -800,6 +861,7 @@ msgid "Pro Version"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:107
+#: includes/theme-info/configs/cream-magazine-config.php:107
 #: includes/theme-info/configs/one-hive-config.php:109
 #: includes/theme-info/configs/one-hive-config.php:176
 #: includes/theme-info/configs/royale-news-config.php:106
@@ -808,6 +870,7 @@ msgid "Upgrade to pro version for additional features and options."
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:108
+#: includes/theme-info/configs/cream-magazine-config.php:108
 #: includes/theme-info/configs/one-hive-config.php:110
 #: includes/theme-info/configs/one-hive-config.php:177
 #: includes/theme-info/configs/royale-news-config.php:107
@@ -819,6 +882,10 @@ msgstr ""
 #: includes/theme-info/configs/cream-blog-config.php:117
 #: includes/theme-info/configs/cream-blog-pro-config.php:90
 #: includes/theme-info/configs/cream-blog-pro-config.php:92
+#: includes/theme-info/configs/cream-magazine-config.php:115
+#: includes/theme-info/configs/cream-magazine-config.php:117
+#: includes/theme-info/configs/cream-magazine-pro-config.php:99
+#: includes/theme-info/configs/cream-magazine-pro-config.php:101
 #: includes/theme-info/configs/one-hive-config.php:117
 #: includes/theme-info/configs/one-hive-config.php:119
 #: includes/theme-info/configs/one-hive-config.php:155
@@ -838,6 +905,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:116
 #: includes/theme-info/configs/cream-blog-pro-config.php:91
+#: includes/theme-info/configs/cream-magazine-config.php:116
+#: includes/theme-info/configs/cream-magazine-pro-config.php:100
 #: includes/theme-info/configs/one-hive-config.php:118
 #: includes/theme-info/configs/one-hive-config.php:157
 #: includes/theme-info/configs/royale-news-config.php:115
@@ -851,11 +920,15 @@ msgid ""
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:129
+#: includes/theme-info/configs/cream-magazine-config.php:129
+#: includes/theme-info/configs/cream-magazine-pro-config.php:113
 #: includes/theme-info/configs/one-hive-config.php:131
 msgid "WooCommerce"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:130
+#: includes/theme-info/configs/cream-magazine-config.php:130
+#: includes/theme-info/configs/cream-magazine-pro-config.php:114
 msgid "Installing Woocommerce plugin help you set your online shop or store."
 msgstr ""
 
@@ -870,16 +943,30 @@ msgid ""
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:143
+#: includes/theme-info/configs/cream-magazine-config.php:136
+#: includes/theme-info/configs/cream-magazine-pro-config.php:120
 msgid "Contact Form 7"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:144
+#: includes/theme-info/configs/cream-magazine-config.php:137
+#: includes/theme-info/configs/cream-magazine-pro-config.php:121
 msgid "Installing Contact Form 7 plugin lets you create contact forms."
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-pro-config.php:13
 #: includes/theme-info/configs/cream-blog-pro-config.php:14
 msgid "Cream Blog Pro Info"
+msgstr ""
+
+#: includes/theme-info/configs/cream-magazine-config.php:13
+#: includes/theme-info/configs/cream-magazine-config.php:14
+msgid "Cream Magazine Info"
+msgstr ""
+
+#: includes/theme-info/configs/cream-magazine-pro-config.php:13
+#: includes/theme-info/configs/cream-magazine-pro-config.php:14
+msgid "Cream Magazine Pro Info"
 msgstr ""
 
 #: includes/theme-info/configs/one-hive-config.php:13

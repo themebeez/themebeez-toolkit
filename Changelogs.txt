@@ -1,6 +1,11 @@
 
 == Changelog ==
 
+= 1.0.9 - March 07, 2019 ==
+
+- Added support for Cream Magazine theme
+- Other fixes
+
 = 1.0.8 - February 25, 2019 ==
 
 - Minor Issues Fixed
