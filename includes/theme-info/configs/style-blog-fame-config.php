@@ -40,6 +40,11 @@ if( ! function_exists( 'themebeez_toolkit_style_blog_fame_config'  ) ) {
 					'text'   => esc_html__( 'View Documentation','themebeez-toolkit' ),
 					'url'    => 'https://themebeez.com/docs/style-blog-documentation/',
 				),
+				'pro_url' => array(
+					'text' => esc_html__( 'Upgrade To Pro Theme','themebeez-toolkit' ),
+					'url'  => 'https://themebeez.com/themes/style-blog-pro/',
+					'button' => 'primary',
+				),
 			),
 
 			// Tabs.

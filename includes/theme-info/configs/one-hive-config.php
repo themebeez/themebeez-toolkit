@@ -42,7 +42,7 @@ if( ! function_exists( 'themebeez_toolkit_one_hive_config'  ) ) {
 					),
 				'pro_url' => array(
 					'text' => esc_html__( 'Upgrade To Pro Theme','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/one-hive/',
+					'url'  => 'https://themebeez.com/themes/one-hive-pro/',
 					'button' => 'primary',
 					),
 				),
@@ -108,7 +108,7 @@ if( ! function_exists( 'themebeez_toolkit_one_hive_config'  ) ) {
 					'title'        			=> esc_html__( 'Pro Version', 'themebeez-toolkit' ),
 					'text'         			=> esc_html__( 'Upgrade to pro version for additional features and options.', 'themebeez-toolkit' ),
 					'button_label' 			=> esc_html__( 'View Pro Version', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/themes/one-hive/',
+					'button_link'  			=> 'https://themebeez.com/themes/one-hive-pro/',
 					'is_button'    			=> true,
 					'recommended_actions' 	=> false,
 					'is_new_tab'   			=> true,

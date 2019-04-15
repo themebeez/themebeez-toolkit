@@ -37,7 +37,7 @@ if( ! function_exists( 'themebeez_toolkit_theme_array' ) ) :
 
     function themebeez_toolkit_theme_array() {
 
-        return array( 'royale-news', 'cream-blog', 'styleblog', 'style-blog-fame', 'one-hive', 'royale-news-pro', 'cream-blog-pro', 'styleblog-plus', 'one-hive-pro', 'cream-magazine', 'cream-magazine-pro' );
+        return array( 'royale-news', 'cream-blog', 'styleblog', 'style-blog-fame', 'one-hive', 'royale-news-pro', 'cream-blog-pro', 'styleblog-plus', 'one-hive-pro', 'cream-magazine', 'cream-magazine-pro', 'royale-news-lite' );
     }
 endif;
 
@@ -116,6 +116,15 @@ if( ! function_exists( 'themebeez_toolkit_theme_info_demo_loader' ) ) {
         if( $theme_text_domain == 'cream-magazine-pro' ) {
             
             require_once plugin_dir_path( __FILE__ ) . 'theme-info/configs/cream-magazine-pro-config.php'; 
+
+            add_action( 'admin_notices', 'themebeez_toolkit_admin_notice' );
+
+            add_action( 'admin_init', 'themebeez_toolkit_notice_ignore' );           
+        }
+
+        if( $theme_text_domain == 'royale-news-lite' ) {
+            
+            require_once plugin_dir_path( __FILE__ ) . 'theme-info/configs/royale-news-lite-config.php'; 
 
             add_action( 'admin_notices', 'themebeez_toolkit_admin_notice' );
 
