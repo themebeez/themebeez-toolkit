@@ -1,20 +1,20 @@
 <?php
 /**
- * Cream Magazine Theme Info Configurations
+ * Royale News Lite Theme Info Configurations
  *
  * @package Themebeez_Toolkit
  */
 
-if( ! function_exists( 'themebeez_toolkit_cream_magazine_config'  ) ) {
+if( ! function_exists( 'themebeez_toolkit_royale_news_lite_config'  ) ) {
 
-	function themebeez_toolkit_cream_magazine_config() {
+	function themebeez_toolkit_royale_news_lite_config() {
 
 		$config = array(
-			'menu_name' => esc_html__( 'Cream Magazine Info', 'themebeez-toolkit' ),
-			'page_name' => esc_html__( 'Cream Magazine Info', 'themebeez-toolkit' ),
+			'menu_name' => esc_html__( 'Royale News Lite Info', 'themebeez-toolkit' ),
+			'page_name' => esc_html__( 'Royale News Lite Info', 'themebeez-toolkit' ),
 
 			/* translators: theme version */
-			'welcome_title' => sprintf( esc_html__( 'Welcome to %s - ', 'themebeez-toolkit' ), 'Cream Magazine' ),
+			'welcome_title' => sprintf( esc_html__( 'Welcome to %s - ', 'themebeez-toolkit' ), 'Royale News' ),
 
 			'notification' => '',
 
@@ -30,19 +30,19 @@ if( ! function_exists( 'themebeez_toolkit_cream_magazine_config'  ) ) {
 					),
 				'theme_url' => array(
 					'text' => esc_html__( 'Theme Details','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/cream-magazine/',
+					'url'  => 'https://themebeez.com/themes/royale-news-lite/',
 					),
 				'demo_url' => array(
 					'text' => esc_html__( 'View Demo','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/demos/?theme=cream-magazine',
+					'url'  => 'https://themebeez.com/demos/?theme=royale-news-lite',
 					),
 				'documentation_url' => array(
 					'text'   => esc_html__( 'View Documentation','themebeez-toolkit' ),
-					'url'    => 'https://themebeez.com/docs/cream-magazine-theme-documentation/',
+					'url'    => 'https://themebeez.com/docs/royale-news-documentation/',
 					),
 				'pro_url' => array(
 					'text' => esc_html__( 'Upgrade To Pro Theme','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/cream-magazine-pro/',
+					'url'  => 'https://themebeez.com/themes/royale-news-pro/',
 					'button' => 'primary',
 					),
 				),
@@ -50,7 +50,6 @@ if( ! function_exists( 'themebeez_toolkit_cream_magazine_config'  ) ) {
 			// Tabs.
 			'tabs' => array(
 				'getting_started'     => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
-				'recommended_actions' => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
 			),
 
 			// Getting started.
@@ -68,19 +67,10 @@ if( ! function_exists( 'themebeez_toolkit_cream_magazine_config'  ) ) {
 					'title'               => esc_html__( 'Theme Documentation', 'themebeez-toolkit' ),
 					'text'                => esc_html__( 'Find step by step instructions with video documentation to setup theme easily.', 'themebeez-toolkit' ),
 					'button_label'        => esc_html__( 'View documentation', 'themebeez-toolkit' ),
-					'button_link'         => 'https://themebeez.com/docs/cream-magazine-theme-documentation/',
+					'button_link'         => 'https://themebeez.com/docs/royale-news-documentation/',
 					'is_button'           => true,
 					'recommended_actions' => false,
 					'is_new_tab'          => true,
-				),				
-				array(
-					'title'               => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
-					'text'                => esc_html__( 'We recommend few steps to take so that you can get complete site like shown in demo.', 'themebeez-toolkit' ),
-					'button_label'        => esc_html__( 'Check recommended actions', 'themebeez-toolkit' ),
-					'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-toolkit-about&tab=recommended_actions' ) ),
-					'is_button'           => true,
-					'recommended_actions' => false,
-					'is_new_tab'          => false,
 				),
 				array(
 					'title'               => esc_html__( 'Customize Everything', 'themebeez-toolkit' ),
@@ -106,7 +96,7 @@ if( ! function_exists( 'themebeez_toolkit_cream_magazine_config'  ) ) {
 					'title'        			=> esc_html__( 'Pro Version', 'themebeez-toolkit' ),
 					'text'         			=> esc_html__( 'Upgrade to pro version for additional features and options.', 'themebeez-toolkit' ),
 					'button_label' 			=> esc_html__( 'View Pro Version', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/themes/cream-magazine-pro/',
+					'button_link'  			=> 'https://themebeez.com/themes/royale-news-pro/',
 					'is_button'    			=> true,
 					'recommended_actions' 	=> false,
 					'is_new_tab'   			=> true,
@@ -121,31 +111,11 @@ if( ! function_exists( 'themebeez_toolkit_cream_magazine_config'  ) ) {
 					'is_new_tab'   			=> true,
 				),
 			),
-
-			// Recommended actions.
-			'recommended_actions' => array(
-				'content' => array(
-					'woocommerce' => array(
-						'title'       => esc_html__( 'WooCommerce', 'themebeez-toolkit' ),
-						'description' => esc_html__( 'Installing Woocommerce plugin help you set your online shop or store.', 'themebeez-toolkit' ),
-						'check'       => class_exists( 'WooCommerce' ),
-						'plugin_slug' => 'woocommerce',
-						'id'          => 'woocommerce',
-					),
-					'contact-from-7' => array(
-						'title'       => esc_html__( 'Contact Form 7', 'themebeez-toolkit' ),
-						'description' => esc_html__( 'Installing Contact Form 7 plugin lets you create contact forms.', 'themebeez-toolkit' ),
-						'check'       => class_exists( 'WPCF7' ),
-						'plugin_slug' => 'contact-form-7',
-						'id'          => 'contact-form-7',
-					),
-				),
-			),
 		);
 
 		Themebeez_Toolkit_Theme_Info::init( $config );
 	}
 }
 
-add_action( 'after_setup_theme', 'themebeez_toolkit_cream_magazine_config' );
+add_action( 'after_setup_theme', 'themebeez_toolkit_royale_news_lite_config' );
 

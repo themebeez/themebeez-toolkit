@@ -1,6 +1,11 @@
 
 == Changelog ==
 
+= 1.1.0 - April 15, 2019 ==
+
+- Added support for Royale News Lite theme
+- Pro themes links updated
+
 = 1.0.9 - March 07, 2019 ==
 
 - Added support for Cream Magazine theme

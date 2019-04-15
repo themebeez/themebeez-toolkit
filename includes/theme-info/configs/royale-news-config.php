@@ -42,7 +42,7 @@ if( ! function_exists( 'themebeez_toolkit_royale_news_config'  ) ) {
 					),
 				'pro_url' => array(
 					'text' => esc_html__( 'Upgrade To Pro Theme','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/royale-news/',
+					'url'  => 'https://themebeez.com/themes/royale-news-pro/',
 					'button' => 'primary',
 					),
 				),
@@ -73,15 +73,6 @@ if( ! function_exists( 'themebeez_toolkit_royale_news_config'  ) ) {
 					'is_new_tab'          => true,
 				),
 				array(
-					'title'               => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
-					'text'                => esc_html__( 'We recommend few steps to take so that you can get complete site like shown in demo.', 'themebeez-toolkit' ),
-					'button_label'        => esc_html__( 'Check recommended actions', 'themebeez-toolkit' ),
-					'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-toolkit-about&tab=recommended_actions' ) ),
-					'is_button'           => true,
-					'recommended_actions' => false,
-					'is_new_tab'          => false,
-				),
-				array(
 					'title'               => esc_html__( 'Customize Everything', 'themebeez-toolkit' ),
 					'text'                => esc_html__( 'Start customizing every aspect of the website with customizer.', 'themebeez-toolkit' ),
 					'button_label'        => esc_html__( 'Go to Customizer', 'themebeez-toolkit' ),
@@ -105,7 +96,7 @@ if( ! function_exists( 'themebeez_toolkit_royale_news_config'  ) ) {
 					'title'        			=> esc_html__( 'Pro Version', 'themebeez-toolkit' ),
 					'text'         			=> esc_html__( 'Upgrade to pro version for additional features and options.', 'themebeez-toolkit' ),
 					'button_label' 			=> esc_html__( 'View Pro Version', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/themes/royale-news/',
+					'button_link'  			=> 'https://themebeez.com/themes/royale-news-pro/',
 					'is_button'    			=> true,
 					'recommended_actions' 	=> false,
 					'is_new_tab'   			=> true,

@@ -42,7 +42,7 @@ if( ! function_exists( 'themebeez_toolkit_cream_blog_config'  ) ) {
 					),
 				'pro_url' => array(
 					'text' => esc_html__( 'Upgrade To Pro Theme','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/cream-blog/',
+					'url'  => 'https://themebeez.com/themes/cream-blog-pro/',
 					'button' => 'primary',
 					),
 				),
@@ -106,7 +106,7 @@ if( ! function_exists( 'themebeez_toolkit_cream_blog_config'  ) ) {
 					'title'        			=> esc_html__( 'Pro Version', 'themebeez-toolkit' ),
 					'text'         			=> esc_html__( 'Upgrade to pro version for additional features and options.', 'themebeez-toolkit' ),
 					'button_label' 			=> esc_html__( 'View Pro Version', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/themes/cream-blog/',
+					'button_link'  			=> 'https://themebeez.com/themes/cream-blog-pro/',
 					'is_button'    			=> true,
 					'recommended_actions' 	=> false,
 					'is_new_tab'   			=> true,
