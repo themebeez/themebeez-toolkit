@@ -1,6 +1,10 @@
 
 == Changelog ==
 
+= 1.1.1 - April 16, 2019 ==
+
+- Added one more demo import support for Royale News Pro
+
 = 1.1.0 - April 15, 2019 ==
 
 - Added support for Royale News Lite theme
