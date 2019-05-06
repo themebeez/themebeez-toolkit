@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Themebeez Toolkit 1.1.1\n"
+"Project-Id-Version: Themebeez Toolkit 1.1.2\n"
 "Report-Msgid-Bugs-To: https://themebeez.com/support\n"
-"POT-Creation-Date: 2019-04-16 11:45:04+00:00\n"
+"POT-Creation-Date: 2019-05-06 08:35:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -145,6 +145,7 @@ msgstr ""
 
 #: includes/demo-importer/class-tt-main.php:56
 #: includes/theme-info/configs/cream-blog-config.php:59
+#: includes/theme-info/configs/cream-blog-lite-config.php:59
 #: includes/theme-info/configs/cream-blog-pro-config.php:53
 #: includes/theme-info/configs/cream-magazine-config.php:59
 #: includes/theme-info/configs/cream-magazine-pro-config.php:54
@@ -210,6 +211,8 @@ msgstr ""
 #: includes/demo-importer/class-tt-main.php:159
 #: includes/theme-info/configs/cream-blog-config.php:27
 #: includes/theme-info/configs/cream-blog-config.php:61
+#: includes/theme-info/configs/cream-blog-lite-config.php:27
+#: includes/theme-info/configs/cream-blog-lite-config.php:61
 #: includes/theme-info/configs/cream-blog-pro-config.php:27
 #: includes/theme-info/configs/cream-blog-pro-config.php:55
 #: includes/theme-info/configs/cream-magazine-config.php:27
@@ -508,6 +511,8 @@ msgstr ""
 msgid "Could not update comment #%d with mapped data"
 msgstr ""
 
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-lite.php:15
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-pro.php:15
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog.php:15
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:15
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine.php:15
@@ -518,6 +523,7 @@ msgstr ""
 msgid "Demo One"
 msgstr ""
 
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-pro.php:23
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog.php:23
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:23
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine.php:23
@@ -526,6 +532,7 @@ msgstr ""
 msgid "Demo Two"
 msgstr ""
 
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-pro.php:31
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog.php:31
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:31
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-royale-news-pro.php:31
@@ -533,12 +540,26 @@ msgstr ""
 msgid "Demo Three"
 msgstr ""
 
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-pro.php:39
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:39
 msgid "Demo Four"
 msgstr ""
 
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-pro.php:47
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-magazine-pro.php:47
 msgid "Demo Five"
+msgstr ""
+
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-pro.php:55
+msgid "Demo Six"
+msgstr ""
+
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-pro.php:63
+msgid "Demo Seven"
+msgstr ""
+
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-cream-blog-pro.php:71
+msgid "Demo Eight"
 msgstr ""
 
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-style-blog-fame.php:15
@@ -549,12 +570,12 @@ msgstr ""
 msgid "Style Blog Demo"
 msgstr ""
 
-#: includes/functions.php:163
+#: includes/functions.php:181
 #. translators: %1$s: theme name, %2$s theme version
 msgid "Welcome to %1$s - Version %2$s"
 msgstr ""
 
-#: includes/functions.php:170
+#: includes/functions.php:188
 #. translators: %1$s: theme name, %2$s link
 msgid ""
 "Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
@@ -562,7 +583,7 @@ msgid ""
 "page</a>"
 msgstr ""
 
-#: includes/functions.php:178 includes/theme-info/class-theme-info.php:174
+#: includes/functions.php:196 includes/theme-info/class-theme-info.php:174
 #. translators: %s theme name
 msgid "Get started with %s"
 msgstr ""
@@ -595,6 +616,7 @@ msgid "Cream Blog Info"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:17
+#: includes/theme-info/configs/cream-blog-lite-config.php:17
 #: includes/theme-info/configs/cream-blog-pro-config.php:17
 #: includes/theme-info/configs/cream-magazine-config.php:17
 #: includes/theme-info/configs/cream-magazine-pro-config.php:17
@@ -610,6 +632,7 @@ msgid "Welcome to %s - "
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:22
+#: includes/theme-info/configs/cream-blog-lite-config.php:22
 #: includes/theme-info/configs/cream-blog-pro-config.php:22
 #: includes/theme-info/configs/cream-magazine-config.php:22
 #: includes/theme-info/configs/cream-magazine-pro-config.php:22
@@ -627,6 +650,7 @@ msgid ""
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:32
+#: includes/theme-info/configs/cream-blog-lite-config.php:32
 #: includes/theme-info/configs/cream-blog-pro-config.php:32
 #: includes/theme-info/configs/cream-magazine-config.php:32
 #: includes/theme-info/configs/cream-magazine-pro-config.php:32
@@ -641,6 +665,7 @@ msgid "Theme Details"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:36
+#: includes/theme-info/configs/cream-blog-lite-config.php:36
 #: includes/theme-info/configs/cream-blog-pro-config.php:36
 #: includes/theme-info/configs/cream-magazine-config.php:36
 #: includes/theme-info/configs/cream-magazine-pro-config.php:36
@@ -655,6 +680,7 @@ msgid "View Demo"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:40
+#: includes/theme-info/configs/cream-blog-lite-config.php:40
 #: includes/theme-info/configs/cream-blog-pro-config.php:40
 #: includes/theme-info/configs/cream-magazine-config.php:40
 #: includes/theme-info/configs/cream-magazine-pro-config.php:40
@@ -670,6 +696,7 @@ msgid "View Documentation"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:44
+#: includes/theme-info/configs/cream-blog-lite-config.php:44
 #: includes/theme-info/configs/cream-magazine-config.php:44
 #: includes/theme-info/configs/one-hive-config.php:44
 #: includes/theme-info/configs/royale-news-config.php:44
@@ -680,6 +707,7 @@ msgid "Upgrade To Pro Theme"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:52
+#: includes/theme-info/configs/cream-blog-lite-config.php:52
 #: includes/theme-info/configs/cream-blog-pro-config.php:47
 #: includes/theme-info/configs/cream-magazine-config.php:52
 #: includes/theme-info/configs/cream-magazine-pro-config.php:47
@@ -695,6 +723,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:53
 #: includes/theme-info/configs/cream-blog-config.php:77
+#: includes/theme-info/configs/cream-blog-lite-config.php:53
+#: includes/theme-info/configs/cream-blog-lite-config.php:77
 #: includes/theme-info/configs/cream-magazine-config.php:53
 #: includes/theme-info/configs/cream-magazine-config.php:77
 #: includes/theme-info/configs/cream-magazine-pro-config.php:48
@@ -706,6 +736,7 @@ msgid "Recommended Actions"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:60
+#: includes/theme-info/configs/cream-blog-lite-config.php:60
 #: includes/theme-info/configs/cream-blog-pro-config.php:54
 #: includes/theme-info/configs/cream-magazine-config.php:60
 #: includes/theme-info/configs/cream-magazine-pro-config.php:55
@@ -720,6 +751,7 @@ msgid "Setup theme easily by importing demo contents."
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:68
+#: includes/theme-info/configs/cream-blog-lite-config.php:68
 #: includes/theme-info/configs/cream-blog-pro-config.php:62
 #: includes/theme-info/configs/cream-magazine-config.php:68
 #: includes/theme-info/configs/cream-magazine-pro-config.php:63
@@ -735,6 +767,7 @@ msgid "Theme Documentation"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:69
+#: includes/theme-info/configs/cream-blog-lite-config.php:69
 #: includes/theme-info/configs/cream-blog-pro-config.php:63
 #: includes/theme-info/configs/cream-magazine-config.php:69
 #: includes/theme-info/configs/cream-magazine-pro-config.php:64
@@ -751,6 +784,7 @@ msgid ""
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:70
+#: includes/theme-info/configs/cream-blog-lite-config.php:70
 #: includes/theme-info/configs/cream-blog-pro-config.php:64
 #: includes/theme-info/configs/cream-magazine-config.php:70
 #: includes/theme-info/configs/cream-magazine-pro-config.php:65
@@ -765,6 +799,7 @@ msgid "View documentation"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:78
+#: includes/theme-info/configs/cream-blog-lite-config.php:78
 #: includes/theme-info/configs/cream-magazine-config.php:78
 #: includes/theme-info/configs/cream-magazine-pro-config.php:73
 #: includes/theme-info/configs/one-hive-config.php:80
@@ -775,6 +810,7 @@ msgid ""
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:79
+#: includes/theme-info/configs/cream-blog-lite-config.php:79
 #: includes/theme-info/configs/cream-magazine-config.php:79
 #: includes/theme-info/configs/cream-magazine-pro-config.php:74
 #: includes/theme-info/configs/one-hive-config.php:81
@@ -783,6 +819,7 @@ msgid "Check recommended actions"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:86
+#: includes/theme-info/configs/cream-blog-lite-config.php:86
 #: includes/theme-info/configs/cream-blog-pro-config.php:71
 #: includes/theme-info/configs/cream-magazine-config.php:86
 #: includes/theme-info/configs/cream-magazine-pro-config.php:81
@@ -797,6 +834,7 @@ msgid "Customize Everything"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:87
+#: includes/theme-info/configs/cream-blog-lite-config.php:87
 #: includes/theme-info/configs/cream-blog-pro-config.php:72
 #: includes/theme-info/configs/cream-magazine-config.php:87
 #: includes/theme-info/configs/cream-magazine-pro-config.php:82
@@ -811,6 +849,7 @@ msgid "Start customizing every aspect of the website with customizer."
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:88
+#: includes/theme-info/configs/cream-blog-lite-config.php:88
 #: includes/theme-info/configs/cream-blog-pro-config.php:73
 #: includes/theme-info/configs/cream-magazine-config.php:88
 #: includes/theme-info/configs/cream-magazine-pro-config.php:83
@@ -825,6 +864,7 @@ msgid "Go to Customizer"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:96
+#: includes/theme-info/configs/cream-blog-lite-config.php:96
 #: includes/theme-info/configs/cream-blog-pro-config.php:81
 #: includes/theme-info/configs/cream-magazine-config.php:96
 #: includes/theme-info/configs/cream-magazine-pro-config.php:90
@@ -840,6 +880,7 @@ msgid "Youtube Video Tutorials"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:97
+#: includes/theme-info/configs/cream-blog-lite-config.php:97
 #: includes/theme-info/configs/cream-blog-pro-config.php:82
 #: includes/theme-info/configs/cream-magazine-config.php:97
 #: includes/theme-info/configs/cream-magazine-pro-config.php:91
@@ -857,6 +898,7 @@ msgid ""
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:98
+#: includes/theme-info/configs/cream-blog-lite-config.php:98
 #: includes/theme-info/configs/cream-blog-pro-config.php:83
 #: includes/theme-info/configs/cream-magazine-config.php:98
 #: includes/theme-info/configs/cream-magazine-pro-config.php:92
@@ -872,6 +914,7 @@ msgid "Video Tutorials"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:106
+#: includes/theme-info/configs/cream-blog-lite-config.php:106
 #: includes/theme-info/configs/cream-magazine-config.php:106
 #: includes/theme-info/configs/one-hive-config.php:108
 #: includes/theme-info/configs/one-hive-config.php:173
@@ -882,6 +925,7 @@ msgid "Pro Version"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:107
+#: includes/theme-info/configs/cream-blog-lite-config.php:107
 #: includes/theme-info/configs/cream-magazine-config.php:107
 #: includes/theme-info/configs/one-hive-config.php:109
 #: includes/theme-info/configs/one-hive-config.php:176
@@ -892,6 +936,7 @@ msgid "Upgrade to pro version for additional features and options."
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:108
+#: includes/theme-info/configs/cream-blog-lite-config.php:108
 #: includes/theme-info/configs/cream-magazine-config.php:108
 #: includes/theme-info/configs/one-hive-config.php:110
 #: includes/theme-info/configs/one-hive-config.php:177
@@ -903,6 +948,8 @@ msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:115
 #: includes/theme-info/configs/cream-blog-config.php:117
+#: includes/theme-info/configs/cream-blog-lite-config.php:115
+#: includes/theme-info/configs/cream-blog-lite-config.php:117
 #: includes/theme-info/configs/cream-blog-pro-config.php:90
 #: includes/theme-info/configs/cream-blog-pro-config.php:92
 #: includes/theme-info/configs/cream-magazine-config.php:115
@@ -929,6 +976,7 @@ msgid "Contact Support"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:116
+#: includes/theme-info/configs/cream-blog-lite-config.php:116
 #: includes/theme-info/configs/cream-blog-pro-config.php:91
 #: includes/theme-info/configs/cream-magazine-config.php:116
 #: includes/theme-info/configs/cream-magazine-pro-config.php:100
@@ -946,6 +994,7 @@ msgid ""
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:129
+#: includes/theme-info/configs/cream-blog-lite-config.php:129
 #: includes/theme-info/configs/cream-magazine-config.php:129
 #: includes/theme-info/configs/cream-magazine-pro-config.php:113
 #: includes/theme-info/configs/one-hive-config.php:131
@@ -953,31 +1002,41 @@ msgid "WooCommerce"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:130
+#: includes/theme-info/configs/cream-blog-lite-config.php:130
 #: includes/theme-info/configs/cream-magazine-config.php:130
 #: includes/theme-info/configs/cream-magazine-pro-config.php:114
 msgid "Installing Woocommerce plugin help you set your online shop or store."
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:136
+#: includes/theme-info/configs/cream-blog-lite-config.php:136
 msgid "MailChimp for WordPress"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:137
+#: includes/theme-info/configs/cream-blog-lite-config.php:137
 msgid ""
 "Installing MailChimp for WordPress plugin help you create newsletter "
 "subscription."
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:143
+#: includes/theme-info/configs/cream-blog-lite-config.php:143
 #: includes/theme-info/configs/cream-magazine-config.php:136
 #: includes/theme-info/configs/cream-magazine-pro-config.php:120
 msgid "Contact Form 7"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-config.php:144
+#: includes/theme-info/configs/cream-blog-lite-config.php:144
 #: includes/theme-info/configs/cream-magazine-config.php:137
 #: includes/theme-info/configs/cream-magazine-pro-config.php:121
 msgid "Installing Contact Form 7 plugin lets you create contact forms."
+msgstr ""
+
+#: includes/theme-info/configs/cream-blog-lite-config.php:13
+#: includes/theme-info/configs/cream-blog-lite-config.php:14
+msgid "Cream Blog Lite Info"
 msgstr ""
 
 #: includes/theme-info/configs/cream-blog-pro-config.php:13

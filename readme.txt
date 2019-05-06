@@ -5,7 +5,7 @@ Tags: themebeez, demo, content, widgets, menus, import, content, demo, data, wid
 Requires at least: 4.8.0
 Requires PHP: 5.6
 Tested up to: 5.1.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,7 @@ Licensed under the GNU General Public License v2.0,
 http://www.gnu.org/licenses/gpl-2.0.html
 
 themebeez.png Self created GPLv2 
+
 
 == Copyright ==
 
