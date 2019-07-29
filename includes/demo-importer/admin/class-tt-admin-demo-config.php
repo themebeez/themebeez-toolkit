@@ -82,6 +82,14 @@ class TT_Admin_Demo_Config {
                 'theme_name' => 'Cream Blog Pro',
                 'demo_class' => 'TT_Theme_Demo_Cream_Blog_Pro',
             ),
+            'fascinate' => array(
+                'theme_name' => 'Fascinate',
+                'demo_class' => 'TT_Theme_Demo_Fascinate',
+            ),
+            'fascinate_pro' => array(
+                'theme_name' => 'Fascinate Pro',
+                'demo_class' => 'TT_Theme_Demo_Fascinate_Pro',
+            ),
         );
     }
 
