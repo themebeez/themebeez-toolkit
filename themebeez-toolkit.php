@@ -3,7 +3,7 @@
  * Plugin Name:       Themebeez Toolkit
  * Plugin URI:        https://wordpress.org/plugins/themebeez-toolkit/
  * Description:       A small toolkit for themes made by www.themebeez.com. This plugin extends themes made by themebeez & adds functionality to import demo data in just a click.
- * Version:           1.1.2
+ * Version:           1.1.3
  * Author:            themebeez
  * Author URI:        https://themebeez.com
  * License:           GPL-2.0+
@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'THEMEBEEZTOOLKIT_VERSION', '1.1.2' );
+define( 'THEMEBEEZTOOLKIT_VERSION', '1.1.3' );
 
 // Define THEMEBEEZTOOLKIT_PLUGIN_FILE.
 if ( ! defined( 'THEMEBEEZTOOLKIT_PLUGIN_FILE' ) ) {
