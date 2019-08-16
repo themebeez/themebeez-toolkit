@@ -1,0 +1,191 @@
+<?php
+/**
+ * Sample menu item metadata
+ *
+ * This class demonstrate the usage of Menu Item Custom Fields in plugins/themes.
+ *
+ * @since 0.1.0
+ */
+if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
+
+	class Simple_Mega_Menu_Fields {
+
+		/**
+		 * Holds our custom fields
+		 *
+		 * @var    array
+		 * @access protected
+		 * @since  Menu_Item_Custom_Fields_Example 0.2.0
+		 */
+		protected static $fields = array();
+
+
+		/**
+		 * Initialize plugin
+		 */
+		public static function init() {
+
+			add_action( 'wp_nav_menu_item_custom_fields', array( __CLASS__, 'create_menu_fields' ), 10, 4 );
+			add_action( 'wp_update_nav_menu_item', array( __CLASS__, 'save_menu_fields' ), 10, 3 );
+			add_filter( 'manage_nav-menus_columns', array( __CLASS__, '_columns' ), 99 );
+
+
+
+			add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_scripts' ), 10 );
+
+			self::$fields = array(
+				'icon-field' => __( 'Menu Icon', 'themebeez-toolkit' ),
+				'mega-menu-group-field' => '',
+				'mega-sub-menu-group-field' => '',
+			);
+
+			self::load_dependencies();
+		}
+
+
+		public function load_dependencies() {
+
+			require_once plugin_dir_path( __FILE__ ) . 'icon-fonts.php';
+		}
+
+		public function enqueue_scripts() {
+
+			wp_enqueue_style( 'fontawesome', plugin_dir_url( __FILE__ ) . 'assets/css/fontawesome.css' );
+
+			wp_enqueue_style( 'orchid-store-menu', plugin_dir_url( __FILE__ ) . 'assets/css/orchid-store-menu.css' );
+
+			wp_enqueue_script( 'orchid-store-menu', plugin_dir_url( __FILE__ ) . 'assets/js/orchid-store-menu.js', array( 'jquery' ), 'THEMEBEEZTOOLKIT_VERSION', true );
+		}
+
+
+		/**
+		 * Save custom field value
+		 *
+		 * @wp_hook action wp_update_nav_menu_item
+		 *
+		 * @param int   $menu_id         Nav menu ID
+		 * @param int   $menu_item_db_id Menu item ID
+		 * @param array $menu_item_args  Menu item data
+		 */
+		public static function save_menu_fields( $menu_id, $menu_item_db_id, $menu_item_args ) {
+
+			if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
+				return;
+			}
+
+			check_admin_referer( 'update-nav_menu', 'update-nav-menu-nonce' );
+
+			foreach ( self::$fields as $_key => $label ) {
+				$key = sprintf( 'menu-item-%s', $_key );
+
+				// Sanitize
+				if ( ! empty( $_POST[ $key ][ $menu_item_db_id ] ) ) {
+					// Do some checks here...
+					$value = $_POST[ $key ][ $menu_item_db_id ];
+				} else {
+					$value = null;
+				}
+
+				// Update
+				if ( ! is_null( $value ) ) {
+					update_post_meta( $menu_item_db_id, $key, $value );
+				} else {
+					delete_post_meta( $menu_item_db_id, $key );
+				}
+			}
+		}
+
+
+		/**
+		 * Print field
+		 *
+		 * @param object $item  Menu item data object.
+		 * @param int    $depth  Depth of menu item. Used for padding.
+		 * @param array  $args  Menu item args.
+		 * @param int    $id    Nav menu ID.
+		 *
+		 * @return string Form fields
+		 */
+		public static function create_menu_fields( $id, $item, $depth, $args ) {
+
+			foreach ( self::$fields as $_key => $label ) :
+
+				$key   = sprintf( 'menu-item-%s', $_key );
+
+				$id    = sprintf( 'edit-%s-%s', $key, $item->ID );
+
+				$name  = sprintf( '%s[%s]', $key, $item->ID );
+
+				$value = get_post_meta( $item->ID, $key, true );
+
+				$class = sprintf( '%s', $_key );
+
+				if( $_key == 'icon-field' ) {
+					?>
+					<div class="menu-icon-field <?php echo esc_attr( $class ) ?>">
+						<div class="menu-icon-input-fields-holder">
+							<label for="<?php echo esc_attr( $id ); ?>"><?php echo esc_html( $label ); ?></label>
+							<br/>
+							<span class="menu-icon-holder"><i <?php if( ! empty( $value ) ) { ?>class="fa <?php echo esc_attr( $value ); ?>"<?php } ?>></i></span>
+							<button class="menu-select-icon"><?php esc_html_e( 'Select Icon', 'themebeez-toolkit' ); ?></button>
+							<button class="menu-remove-icon"><?php esc_html_e( 'Remove Icon', 'themebeez-toolkit' ); ?></button>
+							<input type="text" id="<?php echo esc_attr( $id ); ?>" class="menu-icon-input widefat <?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( $name ); ?>" value="<?php echo esc_attr( $value ); ?>">
+						</div>
+						
+						<?php
+						$icons = simple_mega_menu_fontawesome_icons();
+
+						if( ! empty( $icons ) ) {
+							?>
+							<div class="menu-icons-picker-wrapper">
+								<div class="menu-icons-picker-inner-wrapper">
+									<?php
+									foreach( $icons as $icon ) {
+										?>
+										<button class="menu-icon-picker-btn" value="<?php echo esc_attr( $icon ); ?>"><i class="fa <?php echo esc_attr( $icon ); ?>"></i></button>
+										<?php
+									}
+									?>
+								</div>
+							</div>
+							<?php
+						}
+						?>
+					</div>
+					<?php
+				}
+
+				if( $_key == 'mega-menu-group-field' && $depth == 0 ) {
+					?>
+					<p class="mega-menu-item-field">
+						<label for="<?php echo esc_attr( $id ); ?>"><input type="checkbox" value="1" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( $name ); ?>" <?php checked( 1, absint( $value ) ); ?>><?php _e( 'Set it as mega menu group', 'themebeez-toolkit' ); ?></label>
+					</p>
+					<?php
+				}
+
+				if( $_key == 'mega-sub-menu-group-field' && $depth == 1 ) {
+					?>
+					<p class="mega-sub-menu-group-field">
+						<label for="<?php echo esc_attr( $id ); ?>"><input type="checkbox" value="1" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( $name ); ?>" <?php checked( 1, absint( $value ) ); ?>><?php _e( 'Set it as mega sub menu group', 'themebeez-toolkit' ); ?></label>
+					</p>
+					<?php
+				}
+			endforeach;
+		}
+
+
+		/**
+		 * Add our fields to the screen options toggle
+		 *
+		 * @param array $columns Menu item columns
+		 * @return array
+		 */
+		public static function _columns( $columns ) {
+
+			$columns = array_merge( $columns, self::$fields );
+
+			return $columns;
+		}
+	}
+}
+Simple_Mega_Menu_Fields::init();

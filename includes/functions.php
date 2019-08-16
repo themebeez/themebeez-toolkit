@@ -166,6 +166,15 @@ if( ! function_exists( 'themebeez_toolkit_theme_info_demo_loader' ) ) {
 
             add_action( 'admin_init', 'themebeez_toolkit_notice_ignore' );           
         }
+
+        if( $theme_text_domain == 'orchid-store' ) {
+
+            require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-walker-filter.php'; 
+
+            require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-nav-walker.php'; 
+
+            require_once plugin_dir_path( __FILE__ ) . 'themes/orchid-store/orchid-store-functions.php'; 
+        }
     }
 }
 
