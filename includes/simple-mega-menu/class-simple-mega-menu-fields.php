@@ -17,29 +17,24 @@ if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
 		 * @access protected
 		 * @since  Menu_Item_Custom_Fields_Example 0.2.0
 		 */
-		protected static $fields = array();
+		protected $fields = array();
 
 
 		/**
 		 * Initialize plugin
 		 */
-		public static function init() {
+		public function __construct() {
 
-			add_action( 'wp_nav_menu_item_custom_fields', array( __CLASS__, 'create_menu_fields' ), 10, 4 );
-			add_action( 'wp_update_nav_menu_item', array( __CLASS__, 'save_menu_fields' ), 10, 3 );
-			add_filter( 'manage_nav-menus_columns', array( __CLASS__, '_columns' ), 99 );
+			add_action( 'wp_nav_menu_item_custom_fields', array( $this, 'create_menu_fields' ), 10, 4 );
+			add_action( 'wp_update_nav_menu_item', array( $this, 'save_menu_fields' ), 10, 3 );
+			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ), 10 );
 
-
-
-			add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_scripts' ), 10 );
-
-			self::$fields = array(
+			$this->fields = array(
 				'icon-field' => __( 'Menu Icon', 'themebeez-toolkit' ),
 				'mega-menu-group-field' => '',
-				'mega-sub-menu-group-field' => '',
 			);
 
-			self::load_dependencies();
+			$this->load_dependencies();
 		}
 
 
@@ -55,6 +50,11 @@ if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
 			wp_enqueue_style( 'orchid-store-menu', plugin_dir_url( __FILE__ ) . 'assets/css/orchid-store-menu.css' );
 
 			wp_enqueue_script( 'orchid-store-menu', plugin_dir_url( __FILE__ ) . 'assets/js/orchid-store-menu.js', array( 'jquery' ), 'THEMEBEEZTOOLKIT_VERSION', true );
+
+			wp_localize_script( 'orchid-store-menu', 'orchid_store_ajax_script', array(
+		       'ajax_url' => admin_url( 'admin-ajax.php' ),
+		       'nonce' => wp_create_nonce( 'orchid-store-menu-nonce' ),
+		    ) );
 		}
 
 
@@ -75,7 +75,7 @@ if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
 
 			check_admin_referer( 'update-nav_menu', 'update-nav-menu-nonce' );
 
-			foreach ( self::$fields as $_key => $label ) {
+			foreach ( $this->fields as $_key => $label ) {
 				$key = sprintf( 'menu-item-%s', $_key );
 
 				// Sanitize
@@ -108,7 +108,7 @@ if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
 		 */
 		public static function create_menu_fields( $id, $item, $depth, $args ) {
 
-			foreach ( self::$fields as $_key => $label ) :
+			foreach ( $this->fields as $_key => $label ) :
 
 				$key   = sprintf( 'menu-item-%s', $_key );
 
@@ -132,60 +132,21 @@ if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
 							<input type="text" id="<?php echo esc_attr( $id ); ?>" class="menu-icon-input widefat <?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( $name ); ?>" value="<?php echo esc_attr( $value ); ?>">
 						</div>
 						
-						<?php
-						$icons = simple_mega_menu_fontawesome_icons();
-
-						if( ! empty( $icons ) ) {
-							?>
-							<div class="menu-icons-picker-wrapper">
-								<div class="menu-icons-picker-inner-wrapper">
-									<?php
-									foreach( $icons as $icon ) {
-										?>
-										<button class="menu-icon-picker-btn" value="<?php echo esc_attr( $icon ); ?>"><i class="fa <?php echo esc_attr( $icon ); ?>"></i></button>
-										<?php
-									}
-									?>
-								</div>
-							</div>
-							<?php
-						}
-						?>
+						<div class="menu-icons-picker-wrapper">
+						</div>
 					</div>
 					<?php
 				}
 
-				if( $_key == 'mega-menu-group-field' && $depth == 0 ) {
+				if( $_key == 'mega-menu-group-field' && ( $depth == 0 || $depth == 1 ) ) {
 					?>
 					<p class="mega-menu-item-field">
-						<label for="<?php echo esc_attr( $id ); ?>"><input type="checkbox" value="1" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( $name ); ?>" <?php checked( 1, absint( $value ) ); ?>><?php _e( 'Set it as mega menu group', 'themebeez-toolkit' ); ?></label>
-					</p>
-					<?php
-				}
-
-				if( $_key == 'mega-sub-menu-group-field' && $depth == 1 ) {
-					?>
-					<p class="mega-sub-menu-group-field">
-						<label for="<?php echo esc_attr( $id ); ?>"><input type="checkbox" value="1" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( $name ); ?>" <?php checked( 1, absint( $value ) ); ?>><?php _e( 'Set it as mega sub menu group', 'themebeez-toolkit' ); ?></label>
+						<label for="<?php echo esc_attr( $id ); ?>"><input type="checkbox" value="1" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( $name ); ?>" <?php checked( 1, absint( $value ) ); ?>><span class="mega-menu-group-title"><?php _e( 'Set it as mega menu group', 'themebeez-toolkit' ); ?></span><span class="mega-menu-sub-group-title"><?php _e( 'Set it as mega menu sub group', 'themebeez-toolkit' ); ?></span></label>
 					</p>
 					<?php
 				}
 			endforeach;
 		}
-
-
-		/**
-		 * Add our fields to the screen options toggle
-		 *
-		 * @param array $columns Menu item columns
-		 * @return array
-		 */
-		public static function _columns( $columns ) {
-
-			$columns = array_merge( $columns, self::$fields );
-
-			return $columns;
-		}
 	}
 }
-Simple_Mega_Menu_Fields::init();
+$smmf = new Simple_Mega_Menu_Fields();

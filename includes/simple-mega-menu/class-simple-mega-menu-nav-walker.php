@@ -49,7 +49,6 @@ class Simple_Mega_Menu_Nav_Walker extends Walker_Nav_Menu {
         global $wp_query;
 
         $mega_menu_group = get_post_meta( $item->ID, 'menu-item-mega-menu-group-field', true );
-        $mega_sub_menu_group = get_post_meta( $item->ID, 'menu-item-mega-sub-menu-group-field', true );
         $icon = get_post_meta( $item->ID, 'menu-item-icon-field', true );
 
         $indent = ( $depth > 0 ? str_repeat( "\t", $depth ) : '' ); // code indent
@@ -70,12 +69,12 @@ class Simple_Mega_Menu_Nav_Walker extends Walker_Nav_Menu {
         $class_names = esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
 
         $mega_menu_class = '';
-        if( $mega_menu_group == true ) {
+        if( $mega_menu_group == true && $depth == 0 ) {
 
         	$mega_menu_class = ' menu-item-has-mega-children';
         }
 
-        if( $mega_sub_menu_group == true ) {
+        if( $mega_menu_group == true && $depth == 0 ) {
 
             $mega_menu_class .= ' mega-sub-menu-group';
         }
