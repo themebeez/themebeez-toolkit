@@ -2,7 +2,7 @@
 
 	$( document ).ready( function() {		
 
-		$( '.menu-icon-picker-btn' ).on( 'click', function( e ) {
+		$( 'body' ).on( 'click', '.menu-icon-picker-btn', function( e ) {
 
 			e.preventDefault();
 
@@ -18,7 +18,7 @@
 			$( this ).parents( '.menu-icon-field' ).find( '.menu-icon-input' ).val( iconPickerVal );
 		} );
 
-		$( '.menu-remove-icon' ).on( 'click', function( e ) {
+		$( 'body' ).on( 'click', '.menu-remove-icon', function( e ) {
 
 			e.preventDefault();
 
@@ -28,11 +28,33 @@
 
 		} );
 
-		$( '.menu-select-icon' ).on( 'click', function( e ) {
+		$( 'body' ).on( 'click', '.menu-select-icon', function( e ) {
 
 			e.preventDefault();
 
-			$( this ).parents( '.menu-icon-field' ).find( '.menu-icons-picker-wrapper' ).toggle();
+			var iconsWrapper = $( this ).parents( '.menu-icon-field' ).find( '.menu-icons-picker-wrapper' );
+
+			$.ajax({
+
+                url : orchid_store_ajax_script.ajax_url,
+
+                type : 'POST',
+                
+                data : {
+                    action : 'simple_mega_menu_fontawesome_icons_list_action',
+                    nonce : orchid_store_ajax_script.nonce
+                },
+
+                success : function( response ) {
+
+                	if( response ) {
+
+                		iconsWrapper.append( response );
+
+                		iconsWrapper.toggle();
+                	}
+                }
+            });
 
 		} );
 

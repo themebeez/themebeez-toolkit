@@ -21,3 +21,34 @@
     background: #ffffff;
     border: 1px solid #eeeeee;
 }
+
+.mega-menu-item-field {
+
+    display: none;
+}
+
+li.menu-item-depth-0 span.mega-menu-group-title {
+
+    display: inherit;
+}
+
+li.menu-item-depth-0 span.mega-menu-sub-group-title {
+
+    display: none;
+}
+
+li.menu-item-depth-1 span.mega-menu-group-title {
+
+    display: none;
+}
+
+li.menu-item-depth-1 span.mega-menu-sub-group-title {
+
+     display: inherit;
+}
+
+li.menu-item-depth-0 .mega-menu-item-field,
+li.menu-item-depth-1 .mega-menu-item-field {
+
+    display: block;
+}

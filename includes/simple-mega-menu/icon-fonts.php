@@ -11,3 +11,35 @@ if( ! function_exists( 'simple_mega_menu_fontawesome_icons' ) ) {
 		return $icons_array;
 	} 
 }
+
+
+if( ! function_exists( 'simple_mega_menu_fontawesome_icons_list' ) ) {
+
+	function simple_mega_menu_fontawesome_icons_list() {
+
+		if( ! check_ajax_referer( 'orchid-store-menu-nonce', 'nonce' ) ) {
+
+            die();
+        }
+
+		$icons = simple_mega_menu_fontawesome_icons();
+
+		if( ! empty( $icons ) ) {
+			?>			
+			<div class="menu-icons-picker-inner-wrapper">
+				<?php
+				foreach( $icons as $icon ) {
+					?>
+					<button class="menu-icon-picker-btn" value="<?php echo esc_attr( $icon ); ?>"><i class="fa <?php echo esc_attr( $icon ); ?>"></i></button>
+					<?php
+				}
+				?>
+			</div>
+			<?php
+		}
+
+		wp_die();
+	}
+}
+add_action( 'wp_ajax_simple_mega_menu_fontawesome_icons_list_action', 'simple_mega_menu_fontawesome_icons_list' );
+add_action( 'wp_ajax_nopriv_simple_mega_menu_fontawesome_icons_list_action', 'simple_mega_menu_fontawesome_icons_list' );

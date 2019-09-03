@@ -1,7 +1,33 @@
 <?php
 if( ! class_exists( 'Simple_Mega_Menu_Nav_Walker_Edit' ) ) {
 
-	class Simple_Mega_Menu_Nav_Walker_Edit extends Walker_Nav_Menu_Edit {
+	class Simple_Mega_Menu_Nav_Walker_Edit extends Simple_Mega_Menu_Walker_Nav_Menu_Edit {
+
+		/**
+		 * Starts the list before the elements are added.
+		 *
+		 * @see Walker_Nav_Menu::start_lvl()
+		 *
+		 * @since 3.0.0
+		 *
+		 * @param string $output Passed by reference.
+		 * @param int    $depth  Depth of menu item. Used for padding.
+		 * @param array  $args   Not used.
+		 */
+		public function start_lvl( &$output, $depth = 0, $args = array() ) {}
+
+		/**
+		 * Ends the list of after the elements are added.
+		 *
+		 * @see Walker_Nav_Menu::end_lvl()
+		 *
+		 * @since 3.0.0
+		 *
+		 * @param string $output Passed by reference.
+		 * @param int    $depth  Depth of menu item. Used for padding.
+		 * @param array  $args   Not used.
+		 */
+		public function end_lvl( &$output, $depth = 0, $args = array() ) {}
 
 		/**
 		 * Start the element output.
