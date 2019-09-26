@@ -90,6 +90,10 @@ class TT_Admin_Demo_Config {
                 'theme_name' => 'Fascinate Pro',
                 'demo_class' => 'TT_Theme_Demo_Fascinate_Pro',
             ),
+            'orchid_store' => array(
+                'theme_name' => 'Orchid Store',
+                'demo_class' => 'TT_Theme_Demo_Orchid_Store',
+            ),
         );
     }
 
