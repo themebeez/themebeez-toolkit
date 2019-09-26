@@ -126,7 +126,15 @@ if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
 						<div class="menu-icon-input-fields-holder">
 							<label for="<?php echo esc_attr( $id ); ?>"><?php echo esc_html( $label ); ?></label>
 							<br/>
-							<span class="menu-icon-holder"><i <?php if( ! empty( $value ) ) { ?>class="fa <?php echo esc_attr( $value ); ?>"<?php } ?>></i></span>
+							<span class="menu-icon-holder-wrapper">
+								<?php
+								if( !empty( $value ) ) {
+									?>
+									<span class="menu-icon-holder"><i class="fa <?php echo esc_attr( $value ); ?>"></i></span>
+									<?php
+								}
+								?>
+							</span>
 							<button class="menu-select-icon"><?php esc_html_e( 'Select Icon', 'themebeez-toolkit' ); ?></button>
 							<button class="menu-remove-icon"><?php esc_html_e( 'Remove Icon', 'themebeez-toolkit' ); ?></button>
 							<input type="text" id="<?php echo esc_attr( $id ); ?>" class="menu-icon-input widefat <?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( $name ); ?>" value="<?php echo esc_attr( $value ); ?>">
