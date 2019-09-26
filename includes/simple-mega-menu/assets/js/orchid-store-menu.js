@@ -11,8 +11,8 @@
 			if( iconPickerVal == '' ) {
 				$( this ).parents( '.menu-icon-field' ).find( '.menu-icon-holder' ).html( '' );
 			} else {
-				var icon = "<i class='fa "+iconPickerVal+"'></i>";
-				$( this ).parents( '.menu-icon-field' ).find( '.menu-icon-holder' ).html( icon );
+				var icon = '<span class="menu-icon-holder"><i class="fa '+iconPickerVal+'"></i></span>';
+				$( this ).parents( '.menu-icon-field' ).find( '.menu-icon-holder-wrapper' ).html( icon );
 			}
 
 			$( this ).parents( '.menu-icon-field' ).find( '.menu-icon-input' ).val( iconPickerVal );
@@ -24,7 +24,7 @@
 
 			$( this ).parents( '.menu-icon-field' ).find( '.menu-icon-input' ).val( '' );
 
-			$( this ).parents( '.menu-icon-field' ).find( '.menu-icon-holder' ).html( '' );
+			$( this ).parents( '.menu-icon-field' ).find( '.menu-icon-holder-wrapper' ).html( '' );
 
 		} );
 
@@ -57,7 +57,6 @@
             });
 
 		} );
-
 
 	} );
 

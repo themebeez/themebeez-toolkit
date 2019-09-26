@@ -169,6 +169,11 @@ if( ! function_exists( 'themebeez_toolkit_theme_info_demo_loader' ) ) {
 
         if( $theme_text_domain == 'orchid-store' ) {
 
+            // require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-fields.php';
+
+
+            // require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-nav-walker-edit.php';
+
             require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-walker-filter.php'; 
 
             require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-nav-walker.php'; 
