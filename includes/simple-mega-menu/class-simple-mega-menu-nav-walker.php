@@ -74,7 +74,7 @@ class Simple_Mega_Menu_Nav_Walker extends Walker_Nav_Menu {
         	$mega_menu_class = ' menu-item-has-mega-children';
         }
 
-        if( $mega_menu_group == true && $depth == 0 ) {
+        if( $mega_menu_group == true && $depth == 1 ) {
 
             $mega_menu_class .= ' mega-sub-menu-group';
         }
