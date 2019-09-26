@@ -1,6 +1,10 @@
 
 == Changelog ==
 
+= 1.1.4 - September 26, 2019 ==
+
+- Added support for Orchid Store theme.
+
 = 1.1.3 - July 29, 2019 ==
 
 - Added support for Fascinate theme.

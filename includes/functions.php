@@ -37,7 +37,7 @@ if( ! function_exists( 'themebeez_toolkit_theme_array' ) ) :
 
     function themebeez_toolkit_theme_array() {
 
-        return array( 'royale-news', 'cream-blog', 'styleblog', 'style-blog-fame', 'one-hive', 'royale-news-pro', 'cream-blog-pro', 'styleblog-plus', 'one-hive-pro', 'cream-magazine', 'cream-magazine-pro', 'royale-news-lite', 'cream-blog-lite', 'fascinate', 'fascinate-pro' );
+        return array( 'royale-news', 'cream-blog', 'styleblog', 'style-blog-fame', 'one-hive', 'royale-news-pro', 'cream-blog-pro', 'styleblog-plus', 'one-hive-pro', 'cream-magazine', 'cream-magazine-pro', 'royale-news-lite', 'cream-blog-lite', 'fascinate', 'fascinate-pro', 'orchid-store' );
     }
 endif;
 
@@ -169,10 +169,7 @@ if( ! function_exists( 'themebeez_toolkit_theme_info_demo_loader' ) ) {
 
         if( $theme_text_domain == 'orchid-store' ) {
 
-            // require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-fields.php';
-
-
-            // require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-nav-walker-edit.php';
+            require_once plugin_dir_path( __FILE__ ) . 'theme-info/configs/orchid-store-config.php'; 
 
             require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-walker-filter.php'; 
 
