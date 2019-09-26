@@ -106,7 +106,7 @@ msgstr ""
 msgid "Themebeez Demo Importer"
 msgstr ""
 
-#: includes/demo-importer/class-tt-main.php:56, includes/theme-info/configs/cream-blog-config.php:59, includes/theme-info/configs/cream-blog-lite-config.php:59, includes/theme-info/configs/cream-blog-pro-config.php:53, includes/theme-info/configs/cream-magazine-config.php:59, includes/theme-info/configs/cream-magazine-pro-config.php:54, includes/theme-info/configs/fascinate-config.php:59, includes/theme-info/configs/fascinate-pro-config.php:53, includes/theme-info/configs/one-hive-config.php:61, includes/theme-info/configs/royale-news-config.php:58, includes/theme-info/configs/royale-news-lite-config.php:58, includes/theme-info/configs/royale-news-pro-config.php:53, includes/theme-info/configs/style-blog-fame-config.php:58, includes/theme-info/configs/style-blog-plus-config.php:53, includes/theme-info/configs/styleblog-config.php:58
+#: includes/demo-importer/class-tt-main.php:56, includes/theme-info/configs/cream-blog-config.php:59, includes/theme-info/configs/cream-blog-lite-config.php:59, includes/theme-info/configs/cream-blog-pro-config.php:53, includes/theme-info/configs/cream-magazine-config.php:59, includes/theme-info/configs/cream-magazine-pro-config.php:54, includes/theme-info/configs/fascinate-config.php:59, includes/theme-info/configs/fascinate-pro-config.php:53, includes/theme-info/configs/one-hive-config.php:61, includes/theme-info/configs/orchid-store-config.php:59, includes/theme-info/configs/royale-news-config.php:58, includes/theme-info/configs/royale-news-lite-config.php:58, includes/theme-info/configs/royale-news-pro-config.php:53, includes/theme-info/configs/style-blog-fame-config.php:58, includes/theme-info/configs/style-blog-plus-config.php:53, includes/theme-info/configs/styleblog-config.php:58
 msgid "Import Demo Content"
 msgstr ""
 
@@ -150,7 +150,7 @@ msgstr ""
 msgid "By Themebeez"
 msgstr ""
 
-#: includes/demo-importer/class-tt-main.php:159, includes/theme-info/configs/cream-blog-config.php:27, includes/theme-info/configs/cream-blog-config.php:61, includes/theme-info/configs/cream-blog-lite-config.php:27, includes/theme-info/configs/cream-blog-lite-config.php:61, includes/theme-info/configs/cream-blog-pro-config.php:27, includes/theme-info/configs/cream-blog-pro-config.php:55, includes/theme-info/configs/cream-magazine-config.php:27, includes/theme-info/configs/cream-magazine-config.php:61, includes/theme-info/configs/cream-magazine-pro-config.php:27, includes/theme-info/configs/cream-magazine-pro-config.php:56, includes/theme-info/configs/fascinate-config.php:27, includes/theme-info/configs/fascinate-config.php:61, includes/theme-info/configs/fascinate-pro-config.php:27, includes/theme-info/configs/fascinate-pro-config.php:55, includes/theme-info/configs/one-hive-config.php:27, includes/theme-info/configs/one-hive-config.php:63, includes/theme-info/configs/royale-news-config.php:27, includes/theme-info/configs/royale-news-config.php:60, includes/theme-info/configs/royale-news-lite-config.php:27, includes/theme-info/configs/royale-news-lite-config.php:60, includes/theme-info/configs/royale-news-pro-config.php:27, includes/theme-info/configs/royale-news-pro-config.php:55, includes/theme-info/configs/style-blog-fame-config.php:27, includes/theme-info/configs/style-blog-fame-config.php:60, includes/theme-info/configs/style-blog-plus-config.php:27, includes/theme-info/configs/style-blog-plus-config.php:55, includes/theme-info/configs/styleblog-config.php:27, includes/theme-info/configs/styleblog-config.php:60
+#: includes/demo-importer/class-tt-main.php:159, includes/theme-info/configs/cream-blog-config.php:27, includes/theme-info/configs/cream-blog-config.php:61, includes/theme-info/configs/cream-blog-lite-config.php:27, includes/theme-info/configs/cream-blog-lite-config.php:61, includes/theme-info/configs/cream-blog-pro-config.php:27, includes/theme-info/configs/cream-blog-pro-config.php:55, includes/theme-info/configs/cream-magazine-config.php:27, includes/theme-info/configs/cream-magazine-config.php:61, includes/theme-info/configs/cream-magazine-pro-config.php:27, includes/theme-info/configs/cream-magazine-pro-config.php:56, includes/theme-info/configs/fascinate-config.php:27, includes/theme-info/configs/fascinate-config.php:61, includes/theme-info/configs/fascinate-pro-config.php:27, includes/theme-info/configs/fascinate-pro-config.php:55, includes/theme-info/configs/one-hive-config.php:27, includes/theme-info/configs/one-hive-config.php:63, includes/theme-info/configs/orchid-store-config.php:27, includes/theme-info/configs/orchid-store-config.php:61, includes/theme-info/configs/royale-news-config.php:27, includes/theme-info/configs/royale-news-config.php:60, includes/theme-info/configs/royale-news-lite-config.php:27, includes/theme-info/configs/royale-news-lite-config.php:60, includes/theme-info/configs/royale-news-pro-config.php:27, includes/theme-info/configs/royale-news-pro-config.php:55, includes/theme-info/configs/style-blog-fame-config.php:27, includes/theme-info/configs/style-blog-fame-config.php:60, includes/theme-info/configs/style-blog-plus-config.php:27, includes/theme-info/configs/style-blog-plus-config.php:55, includes/theme-info/configs/styleblog-config.php:27, includes/theme-info/configs/styleblog-config.php:60
 msgid "Import Demo"
 msgstr ""
 
@@ -438,6 +438,18 @@ msgstr ""
 msgid "Demo Eight"
 msgstr ""
 
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:15
+msgid "Default Demo"
+msgstr ""
+
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:23
+msgid "Elementor Demo"
+msgstr ""
+
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:31
+msgid "RTL Demo"
+msgstr ""
+
 #: includes/demo-importer/theme-demo/class-tt-theme-demo-style-blog-fame.php:15
 msgid "Style Blog Fame Demo"
 msgstr ""
@@ -447,18 +459,129 @@ msgid "Style Blog Demo"
 msgstr ""
 
 #. translators: %1$s: theme name, %2$s theme version
-#: includes/functions.php:199
+#: includes/functions.php:210
 msgid "Welcome to %1$s - Version %2$s"
 msgstr ""
 
 #. translators: %1$s: theme name, %2$s link
-#: includes/functions.php:206
+#: includes/functions.php:217
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
 #. translators: %s theme name
-#: includes/functions.php:214, includes/theme-info/class-theme-info.php:174
+#: includes/functions.php:225, includes/theme-info/class-theme-info.php:174
 msgid "Get started with %s"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-fields.php:33
+msgid "Menu Icon"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-fields.php:138
+msgid "Select Icon"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-fields.php:139
+msgid "Remove Icon"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-fields.php:152
+msgid "Set it as mega menu group"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-fields.php:152
+msgid "Set it as mega menu sub group"
+msgstr ""
+
+#. translators: %s: title of menu item which is invalid
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:56
+msgid "%s (Invalid)"
+msgstr ""
+
+#. translators: %s: title of menu item in draft status
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:60
+msgid "%s (Pending)"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:74
+msgid "sub item"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:89
+msgid "Move up"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:102
+msgid "Move down"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:108
+msgid "Edit menu item"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:108
+msgid "Edit"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:117
+msgid "URL"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:124
+msgid "Navigation Label"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:130
+msgid "Title Attribute"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:137
+msgid "Open link in a new tab"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:142
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:148
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:154
+msgid "Description"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:156
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:161
+msgid "Move"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:162
+msgid "Up one"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:163
+msgid "Down one"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:166
+msgid "To the top"
+msgstr ""
+
+#. translators: %s: original title
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:174
+msgid "Original: %s"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:191
+msgid "Remove"
+msgstr ""
+
+#: includes/simple-mega-menu/class-simple-mega-menu-walker-nav-menu-edit.php:203
+msgid "Cancel"
 msgstr ""
 
 #: includes/theme-info/class-theme-info.php:174
@@ -499,7 +622,8 @@ msgstr ""
 #. translators: theme version
 #. translators: theme version
 #. translators: theme version
-#: includes/theme-info/configs/cream-blog-config.php:17, includes/theme-info/configs/cream-blog-lite-config.php:17, includes/theme-info/configs/cream-blog-pro-config.php:17, includes/theme-info/configs/cream-magazine-config.php:17, includes/theme-info/configs/cream-magazine-pro-config.php:17, includes/theme-info/configs/fascinate-config.php:17, includes/theme-info/configs/fascinate-pro-config.php:17, includes/theme-info/configs/one-hive-config.php:17, includes/theme-info/configs/royale-news-config.php:17, includes/theme-info/configs/royale-news-lite-config.php:17, includes/theme-info/configs/royale-news-pro-config.php:17, includes/theme-info/configs/style-blog-fame-config.php:17, includes/theme-info/configs/style-blog-plus-config.php:17, includes/theme-info/configs/styleblog-config.php:17
+#. translators: theme version
+#: includes/theme-info/configs/cream-blog-config.php:17, includes/theme-info/configs/cream-blog-lite-config.php:17, includes/theme-info/configs/cream-blog-pro-config.php:17, includes/theme-info/configs/cream-magazine-config.php:17, includes/theme-info/configs/cream-magazine-pro-config.php:17, includes/theme-info/configs/fascinate-config.php:17, includes/theme-info/configs/fascinate-pro-config.php:17, includes/theme-info/configs/one-hive-config.php:17, includes/theme-info/configs/orchid-store-config.php:17, includes/theme-info/configs/royale-news-config.php:17, includes/theme-info/configs/royale-news-lite-config.php:17, includes/theme-info/configs/royale-news-pro-config.php:17, includes/theme-info/configs/style-blog-fame-config.php:17, includes/theme-info/configs/style-blog-plus-config.php:17, includes/theme-info/configs/styleblog-config.php:17
 msgid "Welcome to %s - "
 msgstr ""
 
@@ -517,107 +641,108 @@ msgstr ""
 #. translators: 1: theme name
 #. translators: 1: theme name
 #. translators: 1: theme name
-#: includes/theme-info/configs/cream-blog-config.php:22, includes/theme-info/configs/cream-blog-lite-config.php:22, includes/theme-info/configs/cream-blog-pro-config.php:22, includes/theme-info/configs/cream-magazine-config.php:22, includes/theme-info/configs/cream-magazine-pro-config.php:22, includes/theme-info/configs/fascinate-config.php:22, includes/theme-info/configs/fascinate-pro-config.php:22, includes/theme-info/configs/one-hive-config.php:22, includes/theme-info/configs/royale-news-config.php:22, includes/theme-info/configs/royale-news-lite-config.php:22, includes/theme-info/configs/royale-news-pro-config.php:22, includes/theme-info/configs/style-blog-fame-config.php:22, includes/theme-info/configs/style-blog-plus-config.php:22, includes/theme-info/configs/styleblog-config.php:22
+#. translators: 1: theme name
+#: includes/theme-info/configs/cream-blog-config.php:22, includes/theme-info/configs/cream-blog-lite-config.php:22, includes/theme-info/configs/cream-blog-pro-config.php:22, includes/theme-info/configs/cream-magazine-config.php:22, includes/theme-info/configs/cream-magazine-pro-config.php:22, includes/theme-info/configs/fascinate-config.php:22, includes/theme-info/configs/fascinate-pro-config.php:22, includes/theme-info/configs/one-hive-config.php:22, includes/theme-info/configs/orchid-store-config.php:22, includes/theme-info/configs/royale-news-config.php:22, includes/theme-info/configs/royale-news-lite-config.php:22, includes/theme-info/configs/royale-news-pro-config.php:22, includes/theme-info/configs/style-blog-fame-config.php:22, includes/theme-info/configs/style-blog-plus-config.php:22, includes/theme-info/configs/styleblog-config.php:22
 msgid "We hope this page will help you to setup %1$s with few clicks. We believe you will find it easy to use and perfect for your website development."
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:32, includes/theme-info/configs/cream-blog-lite-config.php:32, includes/theme-info/configs/cream-blog-pro-config.php:32, includes/theme-info/configs/cream-magazine-config.php:32, includes/theme-info/configs/cream-magazine-pro-config.php:32, includes/theme-info/configs/fascinate-config.php:32, includes/theme-info/configs/fascinate-pro-config.php:32, includes/theme-info/configs/one-hive-config.php:32, includes/theme-info/configs/royale-news-config.php:32, includes/theme-info/configs/royale-news-lite-config.php:32, includes/theme-info/configs/royale-news-pro-config.php:32, includes/theme-info/configs/style-blog-fame-config.php:32, includes/theme-info/configs/style-blog-plus-config.php:32, includes/theme-info/configs/styleblog-config.php:32
+#: includes/theme-info/configs/cream-blog-config.php:32, includes/theme-info/configs/cream-blog-lite-config.php:32, includes/theme-info/configs/cream-blog-pro-config.php:32, includes/theme-info/configs/cream-magazine-config.php:32, includes/theme-info/configs/cream-magazine-pro-config.php:32, includes/theme-info/configs/fascinate-config.php:32, includes/theme-info/configs/fascinate-pro-config.php:32, includes/theme-info/configs/one-hive-config.php:32, includes/theme-info/configs/orchid-store-config.php:32, includes/theme-info/configs/royale-news-config.php:32, includes/theme-info/configs/royale-news-lite-config.php:32, includes/theme-info/configs/royale-news-pro-config.php:32, includes/theme-info/configs/style-blog-fame-config.php:32, includes/theme-info/configs/style-blog-plus-config.php:32, includes/theme-info/configs/styleblog-config.php:32
 msgid "Theme Details"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:36, includes/theme-info/configs/cream-blog-lite-config.php:36, includes/theme-info/configs/cream-blog-pro-config.php:36, includes/theme-info/configs/cream-magazine-config.php:36, includes/theme-info/configs/cream-magazine-pro-config.php:36, includes/theme-info/configs/fascinate-config.php:36, includes/theme-info/configs/fascinate-pro-config.php:36, includes/theme-info/configs/one-hive-config.php:36, includes/theme-info/configs/royale-news-config.php:36, includes/theme-info/configs/royale-news-lite-config.php:36, includes/theme-info/configs/royale-news-pro-config.php:36, includes/theme-info/configs/style-blog-fame-config.php:36, includes/theme-info/configs/style-blog-plus-config.php:36, includes/theme-info/configs/styleblog-config.php:36
+#: includes/theme-info/configs/cream-blog-config.php:36, includes/theme-info/configs/cream-blog-lite-config.php:36, includes/theme-info/configs/cream-blog-pro-config.php:36, includes/theme-info/configs/cream-magazine-config.php:36, includes/theme-info/configs/cream-magazine-pro-config.php:36, includes/theme-info/configs/fascinate-config.php:36, includes/theme-info/configs/fascinate-pro-config.php:36, includes/theme-info/configs/one-hive-config.php:36, includes/theme-info/configs/orchid-store-config.php:36, includes/theme-info/configs/royale-news-config.php:36, includes/theme-info/configs/royale-news-lite-config.php:36, includes/theme-info/configs/royale-news-pro-config.php:36, includes/theme-info/configs/style-blog-fame-config.php:36, includes/theme-info/configs/style-blog-plus-config.php:36, includes/theme-info/configs/styleblog-config.php:36
 msgid "View Demo"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:40, includes/theme-info/configs/cream-blog-lite-config.php:40, includes/theme-info/configs/cream-blog-pro-config.php:40, includes/theme-info/configs/cream-magazine-config.php:40, includes/theme-info/configs/cream-magazine-pro-config.php:40, includes/theme-info/configs/fascinate-config.php:40, includes/theme-info/configs/fascinate-pro-config.php:40, includes/theme-info/configs/one-hive-config.php:40, includes/theme-info/configs/one-hive-config.php:167, includes/theme-info/configs/royale-news-config.php:40, includes/theme-info/configs/royale-news-lite-config.php:40, includes/theme-info/configs/royale-news-pro-config.php:40, includes/theme-info/configs/style-blog-fame-config.php:40, includes/theme-info/configs/style-blog-plus-config.php:40, includes/theme-info/configs/styleblog-config.php:40
+#: includes/theme-info/configs/cream-blog-config.php:40, includes/theme-info/configs/cream-blog-lite-config.php:40, includes/theme-info/configs/cream-blog-pro-config.php:40, includes/theme-info/configs/cream-magazine-config.php:40, includes/theme-info/configs/cream-magazine-pro-config.php:40, includes/theme-info/configs/fascinate-config.php:40, includes/theme-info/configs/fascinate-pro-config.php:40, includes/theme-info/configs/one-hive-config.php:40, includes/theme-info/configs/one-hive-config.php:167, includes/theme-info/configs/orchid-store-config.php:40, includes/theme-info/configs/royale-news-config.php:40, includes/theme-info/configs/royale-news-lite-config.php:40, includes/theme-info/configs/royale-news-pro-config.php:40, includes/theme-info/configs/style-blog-fame-config.php:40, includes/theme-info/configs/style-blog-plus-config.php:40, includes/theme-info/configs/styleblog-config.php:40
 msgid "View Documentation"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:44, includes/theme-info/configs/cream-blog-lite-config.php:44, includes/theme-info/configs/cream-magazine-config.php:44, includes/theme-info/configs/fascinate-config.php:44, includes/theme-info/configs/one-hive-config.php:44, includes/theme-info/configs/royale-news-config.php:44, includes/theme-info/configs/royale-news-lite-config.php:44, includes/theme-info/configs/style-blog-fame-config.php:44, includes/theme-info/configs/styleblog-config.php:44
+#: includes/theme-info/configs/cream-blog-config.php:44, includes/theme-info/configs/cream-blog-lite-config.php:44, includes/theme-info/configs/cream-magazine-config.php:44, includes/theme-info/configs/fascinate-config.php:44, includes/theme-info/configs/one-hive-config.php:44, includes/theme-info/configs/orchid-store-config.php:44, includes/theme-info/configs/royale-news-config.php:44, includes/theme-info/configs/royale-news-lite-config.php:44, includes/theme-info/configs/style-blog-fame-config.php:44, includes/theme-info/configs/styleblog-config.php:44
 msgid "Upgrade To Pro Theme"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:52, includes/theme-info/configs/cream-blog-lite-config.php:52, includes/theme-info/configs/cream-blog-pro-config.php:47, includes/theme-info/configs/cream-magazine-config.php:52, includes/theme-info/configs/cream-magazine-pro-config.php:47, includes/theme-info/configs/fascinate-config.php:52, includes/theme-info/configs/fascinate-pro-config.php:47, includes/theme-info/configs/one-hive-config.php:52, includes/theme-info/configs/royale-news-config.php:52, includes/theme-info/configs/royale-news-lite-config.php:52, includes/theme-info/configs/royale-news-pro-config.php:47, includes/theme-info/configs/style-blog-fame-config.php:52, includes/theme-info/configs/style-blog-plus-config.php:47, includes/theme-info/configs/styleblog-config.php:52
+#: includes/theme-info/configs/cream-blog-config.php:52, includes/theme-info/configs/cream-blog-lite-config.php:52, includes/theme-info/configs/cream-blog-pro-config.php:47, includes/theme-info/configs/cream-magazine-config.php:52, includes/theme-info/configs/cream-magazine-pro-config.php:47, includes/theme-info/configs/fascinate-config.php:52, includes/theme-info/configs/fascinate-pro-config.php:47, includes/theme-info/configs/one-hive-config.php:52, includes/theme-info/configs/orchid-store-config.php:52, includes/theme-info/configs/royale-news-config.php:52, includes/theme-info/configs/royale-news-lite-config.php:52, includes/theme-info/configs/royale-news-pro-config.php:47, includes/theme-info/configs/style-blog-fame-config.php:52, includes/theme-info/configs/style-blog-plus-config.php:47, includes/theme-info/configs/styleblog-config.php:52
 msgid "Getting Started"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:53, includes/theme-info/configs/cream-blog-config.php:77, includes/theme-info/configs/cream-blog-lite-config.php:53, includes/theme-info/configs/cream-blog-lite-config.php:77, includes/theme-info/configs/cream-magazine-config.php:53, includes/theme-info/configs/cream-magazine-config.php:77, includes/theme-info/configs/cream-magazine-pro-config.php:48, includes/theme-info/configs/cream-magazine-pro-config.php:72, includes/theme-info/configs/fascinate-config.php:53, includes/theme-info/configs/fascinate-config.php:77, includes/theme-info/configs/fascinate-pro-config.php:71, includes/theme-info/configs/one-hive-config.php:53, includes/theme-info/configs/one-hive-config.php:79, includes/theme-info/configs/styleblog-config.php:76
+#: includes/theme-info/configs/cream-blog-config.php:53, includes/theme-info/configs/cream-blog-config.php:77, includes/theme-info/configs/cream-blog-lite-config.php:53, includes/theme-info/configs/cream-blog-lite-config.php:77, includes/theme-info/configs/cream-magazine-config.php:53, includes/theme-info/configs/cream-magazine-config.php:77, includes/theme-info/configs/cream-magazine-pro-config.php:48, includes/theme-info/configs/cream-magazine-pro-config.php:72, includes/theme-info/configs/fascinate-config.php:53, includes/theme-info/configs/fascinate-config.php:77, includes/theme-info/configs/fascinate-pro-config.php:71, includes/theme-info/configs/one-hive-config.php:53, includes/theme-info/configs/one-hive-config.php:79, includes/theme-info/configs/orchid-store-config.php:53, includes/theme-info/configs/orchid-store-config.php:77, includes/theme-info/configs/styleblog-config.php:76
 msgid "Recommended Actions"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:60, includes/theme-info/configs/cream-blog-lite-config.php:60, includes/theme-info/configs/cream-blog-pro-config.php:54, includes/theme-info/configs/cream-magazine-config.php:60, includes/theme-info/configs/cream-magazine-pro-config.php:55, includes/theme-info/configs/fascinate-config.php:60, includes/theme-info/configs/fascinate-pro-config.php:54, includes/theme-info/configs/one-hive-config.php:62, includes/theme-info/configs/royale-news-config.php:59, includes/theme-info/configs/royale-news-lite-config.php:59, includes/theme-info/configs/royale-news-pro-config.php:54, includes/theme-info/configs/style-blog-fame-config.php:59, includes/theme-info/configs/style-blog-plus-config.php:54, includes/theme-info/configs/styleblog-config.php:59
+#: includes/theme-info/configs/cream-blog-config.php:60, includes/theme-info/configs/cream-blog-lite-config.php:60, includes/theme-info/configs/cream-blog-pro-config.php:54, includes/theme-info/configs/cream-magazine-config.php:60, includes/theme-info/configs/cream-magazine-pro-config.php:55, includes/theme-info/configs/fascinate-config.php:60, includes/theme-info/configs/fascinate-pro-config.php:54, includes/theme-info/configs/one-hive-config.php:62, includes/theme-info/configs/orchid-store-config.php:60, includes/theme-info/configs/royale-news-config.php:59, includes/theme-info/configs/royale-news-lite-config.php:59, includes/theme-info/configs/royale-news-pro-config.php:54, includes/theme-info/configs/style-blog-fame-config.php:59, includes/theme-info/configs/style-blog-plus-config.php:54, includes/theme-info/configs/styleblog-config.php:59
 msgid "Setup theme easily by importing demo contents."
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:68, includes/theme-info/configs/cream-blog-lite-config.php:68, includes/theme-info/configs/cream-blog-pro-config.php:62, includes/theme-info/configs/cream-magazine-config.php:68, includes/theme-info/configs/cream-magazine-pro-config.php:63, includes/theme-info/configs/fascinate-config.php:68, includes/theme-info/configs/fascinate-pro-config.php:62, includes/theme-info/configs/one-hive-config.php:70, includes/theme-info/configs/one-hive-config.php:164, includes/theme-info/configs/royale-news-config.php:67, includes/theme-info/configs/royale-news-lite-config.php:67, includes/theme-info/configs/royale-news-pro-config.php:62, includes/theme-info/configs/style-blog-fame-config.php:67, includes/theme-info/configs/style-blog-plus-config.php:62, includes/theme-info/configs/styleblog-config.php:67
+#: includes/theme-info/configs/cream-blog-config.php:68, includes/theme-info/configs/cream-blog-lite-config.php:68, includes/theme-info/configs/cream-blog-pro-config.php:62, includes/theme-info/configs/cream-magazine-config.php:68, includes/theme-info/configs/cream-magazine-pro-config.php:63, includes/theme-info/configs/fascinate-config.php:68, includes/theme-info/configs/fascinate-pro-config.php:62, includes/theme-info/configs/one-hive-config.php:70, includes/theme-info/configs/one-hive-config.php:164, includes/theme-info/configs/orchid-store-config.php:68, includes/theme-info/configs/royale-news-config.php:67, includes/theme-info/configs/royale-news-lite-config.php:67, includes/theme-info/configs/royale-news-pro-config.php:62, includes/theme-info/configs/style-blog-fame-config.php:67, includes/theme-info/configs/style-blog-plus-config.php:62, includes/theme-info/configs/styleblog-config.php:67
 msgid "Theme Documentation"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:69, includes/theme-info/configs/cream-blog-lite-config.php:69, includes/theme-info/configs/cream-blog-pro-config.php:63, includes/theme-info/configs/cream-magazine-config.php:69, includes/theme-info/configs/cream-magazine-pro-config.php:64, includes/theme-info/configs/fascinate-config.php:69, includes/theme-info/configs/fascinate-pro-config.php:63, includes/theme-info/configs/one-hive-config.php:71, includes/theme-info/configs/royale-news-config.php:68, includes/theme-info/configs/royale-news-lite-config.php:68, includes/theme-info/configs/royale-news-pro-config.php:63, includes/theme-info/configs/style-blog-fame-config.php:68, includes/theme-info/configs/style-blog-plus-config.php:63, includes/theme-info/configs/styleblog-config.php:68
+#: includes/theme-info/configs/cream-blog-config.php:69, includes/theme-info/configs/cream-blog-lite-config.php:69, includes/theme-info/configs/cream-blog-pro-config.php:63, includes/theme-info/configs/cream-magazine-config.php:69, includes/theme-info/configs/cream-magazine-pro-config.php:64, includes/theme-info/configs/fascinate-config.php:69, includes/theme-info/configs/fascinate-pro-config.php:63, includes/theme-info/configs/one-hive-config.php:71, includes/theme-info/configs/orchid-store-config.php:69, includes/theme-info/configs/royale-news-config.php:68, includes/theme-info/configs/royale-news-lite-config.php:68, includes/theme-info/configs/royale-news-pro-config.php:63, includes/theme-info/configs/style-blog-fame-config.php:68, includes/theme-info/configs/style-blog-plus-config.php:63, includes/theme-info/configs/styleblog-config.php:68
 msgid "Find step by step instructions with video documentation to setup theme easily."
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:70, includes/theme-info/configs/cream-blog-lite-config.php:70, includes/theme-info/configs/cream-blog-pro-config.php:64, includes/theme-info/configs/cream-magazine-config.php:70, includes/theme-info/configs/cream-magazine-pro-config.php:65, includes/theme-info/configs/fascinate-config.php:70, includes/theme-info/configs/fascinate-pro-config.php:64, includes/theme-info/configs/one-hive-config.php:72, includes/theme-info/configs/royale-news-config.php:69, includes/theme-info/configs/royale-news-lite-config.php:69, includes/theme-info/configs/royale-news-pro-config.php:64, includes/theme-info/configs/style-blog-fame-config.php:69, includes/theme-info/configs/style-blog-plus-config.php:64, includes/theme-info/configs/styleblog-config.php:69
+#: includes/theme-info/configs/cream-blog-config.php:70, includes/theme-info/configs/cream-blog-lite-config.php:70, includes/theme-info/configs/cream-blog-pro-config.php:64, includes/theme-info/configs/cream-magazine-config.php:70, includes/theme-info/configs/cream-magazine-pro-config.php:65, includes/theme-info/configs/fascinate-config.php:70, includes/theme-info/configs/fascinate-pro-config.php:64, includes/theme-info/configs/one-hive-config.php:72, includes/theme-info/configs/orchid-store-config.php:70, includes/theme-info/configs/royale-news-config.php:69, includes/theme-info/configs/royale-news-lite-config.php:69, includes/theme-info/configs/royale-news-pro-config.php:64, includes/theme-info/configs/style-blog-fame-config.php:69, includes/theme-info/configs/style-blog-plus-config.php:64, includes/theme-info/configs/styleblog-config.php:69
 msgid "View documentation"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:78, includes/theme-info/configs/cream-blog-lite-config.php:78, includes/theme-info/configs/cream-magazine-config.php:78, includes/theme-info/configs/cream-magazine-pro-config.php:73, includes/theme-info/configs/fascinate-config.php:78, includes/theme-info/configs/fascinate-pro-config.php:72, includes/theme-info/configs/one-hive-config.php:80, includes/theme-info/configs/styleblog-config.php:77
+#: includes/theme-info/configs/cream-blog-config.php:78, includes/theme-info/configs/cream-blog-lite-config.php:78, includes/theme-info/configs/cream-magazine-config.php:78, includes/theme-info/configs/cream-magazine-pro-config.php:73, includes/theme-info/configs/fascinate-config.php:78, includes/theme-info/configs/fascinate-pro-config.php:72, includes/theme-info/configs/one-hive-config.php:80, includes/theme-info/configs/orchid-store-config.php:78, includes/theme-info/configs/styleblog-config.php:77
 msgid "We recommend few steps to take so that you can get complete site like shown in demo."
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:79, includes/theme-info/configs/cream-blog-lite-config.php:79, includes/theme-info/configs/cream-magazine-config.php:79, includes/theme-info/configs/cream-magazine-pro-config.php:74, includes/theme-info/configs/fascinate-config.php:79, includes/theme-info/configs/fascinate-pro-config.php:73, includes/theme-info/configs/one-hive-config.php:81, includes/theme-info/configs/styleblog-config.php:78
+#: includes/theme-info/configs/cream-blog-config.php:79, includes/theme-info/configs/cream-blog-lite-config.php:79, includes/theme-info/configs/cream-magazine-config.php:79, includes/theme-info/configs/cream-magazine-pro-config.php:74, includes/theme-info/configs/fascinate-config.php:79, includes/theme-info/configs/fascinate-pro-config.php:73, includes/theme-info/configs/one-hive-config.php:81, includes/theme-info/configs/orchid-store-config.php:79, includes/theme-info/configs/styleblog-config.php:78
 msgid "Check recommended actions"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:86, includes/theme-info/configs/cream-blog-lite-config.php:86, includes/theme-info/configs/cream-blog-pro-config.php:71, includes/theme-info/configs/cream-magazine-config.php:86, includes/theme-info/configs/cream-magazine-pro-config.php:81, includes/theme-info/configs/fascinate-config.php:86, includes/theme-info/configs/fascinate-pro-config.php:80, includes/theme-info/configs/one-hive-config.php:88, includes/theme-info/configs/royale-news-config.php:76, includes/theme-info/configs/royale-news-lite-config.php:76, includes/theme-info/configs/royale-news-pro-config.php:71, includes/theme-info/configs/style-blog-fame-config.php:76, includes/theme-info/configs/style-blog-plus-config.php:71, includes/theme-info/configs/styleblog-config.php:85
+#: includes/theme-info/configs/cream-blog-config.php:86, includes/theme-info/configs/cream-blog-lite-config.php:86, includes/theme-info/configs/cream-blog-pro-config.php:71, includes/theme-info/configs/cream-magazine-config.php:86, includes/theme-info/configs/cream-magazine-pro-config.php:81, includes/theme-info/configs/fascinate-config.php:86, includes/theme-info/configs/fascinate-pro-config.php:80, includes/theme-info/configs/one-hive-config.php:88, includes/theme-info/configs/orchid-store-config.php:86, includes/theme-info/configs/royale-news-config.php:76, includes/theme-info/configs/royale-news-lite-config.php:76, includes/theme-info/configs/royale-news-pro-config.php:71, includes/theme-info/configs/style-blog-fame-config.php:76, includes/theme-info/configs/style-blog-plus-config.php:71, includes/theme-info/configs/styleblog-config.php:85
 msgid "Customize Everything"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:87, includes/theme-info/configs/cream-blog-lite-config.php:87, includes/theme-info/configs/cream-blog-pro-config.php:72, includes/theme-info/configs/cream-magazine-config.php:87, includes/theme-info/configs/cream-magazine-pro-config.php:82, includes/theme-info/configs/fascinate-config.php:87, includes/theme-info/configs/fascinate-pro-config.php:81, includes/theme-info/configs/one-hive-config.php:89, includes/theme-info/configs/royale-news-config.php:77, includes/theme-info/configs/royale-news-lite-config.php:77, includes/theme-info/configs/royale-news-pro-config.php:72, includes/theme-info/configs/style-blog-fame-config.php:77, includes/theme-info/configs/style-blog-plus-config.php:72, includes/theme-info/configs/styleblog-config.php:86
+#: includes/theme-info/configs/cream-blog-config.php:87, includes/theme-info/configs/cream-blog-lite-config.php:87, includes/theme-info/configs/cream-blog-pro-config.php:72, includes/theme-info/configs/cream-magazine-config.php:87, includes/theme-info/configs/cream-magazine-pro-config.php:82, includes/theme-info/configs/fascinate-config.php:87, includes/theme-info/configs/fascinate-pro-config.php:81, includes/theme-info/configs/one-hive-config.php:89, includes/theme-info/configs/orchid-store-config.php:87, includes/theme-info/configs/royale-news-config.php:77, includes/theme-info/configs/royale-news-lite-config.php:77, includes/theme-info/configs/royale-news-pro-config.php:72, includes/theme-info/configs/style-blog-fame-config.php:77, includes/theme-info/configs/style-blog-plus-config.php:72, includes/theme-info/configs/styleblog-config.php:86
 msgid "Start customizing every aspect of the website with customizer."
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:88, includes/theme-info/configs/cream-blog-lite-config.php:88, includes/theme-info/configs/cream-blog-pro-config.php:73, includes/theme-info/configs/cream-magazine-config.php:88, includes/theme-info/configs/cream-magazine-pro-config.php:83, includes/theme-info/configs/fascinate-config.php:88, includes/theme-info/configs/fascinate-pro-config.php:82, includes/theme-info/configs/one-hive-config.php:90, includes/theme-info/configs/royale-news-config.php:78, includes/theme-info/configs/royale-news-lite-config.php:78, includes/theme-info/configs/royale-news-pro-config.php:73, includes/theme-info/configs/style-blog-fame-config.php:78, includes/theme-info/configs/style-blog-plus-config.php:73, includes/theme-info/configs/styleblog-config.php:87
+#: includes/theme-info/configs/cream-blog-config.php:88, includes/theme-info/configs/cream-blog-lite-config.php:88, includes/theme-info/configs/cream-blog-pro-config.php:73, includes/theme-info/configs/cream-magazine-config.php:88, includes/theme-info/configs/cream-magazine-pro-config.php:83, includes/theme-info/configs/fascinate-config.php:88, includes/theme-info/configs/fascinate-pro-config.php:82, includes/theme-info/configs/one-hive-config.php:90, includes/theme-info/configs/orchid-store-config.php:88, includes/theme-info/configs/royale-news-config.php:78, includes/theme-info/configs/royale-news-lite-config.php:78, includes/theme-info/configs/royale-news-pro-config.php:73, includes/theme-info/configs/style-blog-fame-config.php:78, includes/theme-info/configs/style-blog-plus-config.php:73, includes/theme-info/configs/styleblog-config.php:87
 msgid "Go to Customizer"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:96, includes/theme-info/configs/cream-blog-lite-config.php:96, includes/theme-info/configs/cream-blog-pro-config.php:81, includes/theme-info/configs/cream-magazine-config.php:96, includes/theme-info/configs/cream-magazine-pro-config.php:90, includes/theme-info/configs/fascinate-config.php:96, includes/theme-info/configs/fascinate-pro-config.php:90, includes/theme-info/configs/one-hive-config.php:98, includes/theme-info/configs/one-hive-config.php:183, includes/theme-info/configs/royale-news-config.php:86, includes/theme-info/configs/royale-news-lite-config.php:86, includes/theme-info/configs/royale-news-pro-config.php:81, includes/theme-info/configs/style-blog-fame-config.php:86, includes/theme-info/configs/style-blog-plus-config.php:80, includes/theme-info/configs/styleblog-config.php:95
+#: includes/theme-info/configs/cream-blog-config.php:96, includes/theme-info/configs/cream-blog-lite-config.php:96, includes/theme-info/configs/cream-blog-pro-config.php:81, includes/theme-info/configs/cream-magazine-config.php:96, includes/theme-info/configs/cream-magazine-pro-config.php:90, includes/theme-info/configs/fascinate-config.php:96, includes/theme-info/configs/fascinate-pro-config.php:90, includes/theme-info/configs/one-hive-config.php:98, includes/theme-info/configs/one-hive-config.php:183, includes/theme-info/configs/orchid-store-config.php:96, includes/theme-info/configs/royale-news-config.php:86, includes/theme-info/configs/royale-news-lite-config.php:86, includes/theme-info/configs/royale-news-pro-config.php:81, includes/theme-info/configs/style-blog-fame-config.php:86, includes/theme-info/configs/style-blog-plus-config.php:80, includes/theme-info/configs/styleblog-config.php:95
 msgid "Youtube Video Tutorials"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:97, includes/theme-info/configs/cream-blog-lite-config.php:97, includes/theme-info/configs/cream-blog-pro-config.php:82, includes/theme-info/configs/cream-magazine-config.php:97, includes/theme-info/configs/cream-magazine-pro-config.php:91, includes/theme-info/configs/fascinate-config.php:97, includes/theme-info/configs/fascinate-pro-config.php:91, includes/theme-info/configs/one-hive-config.php:99, includes/theme-info/configs/one-hive-config.php:185, includes/theme-info/configs/royale-news-config.php:87, includes/theme-info/configs/royale-news-lite-config.php:87, includes/theme-info/configs/royale-news-pro-config.php:82, includes/theme-info/configs/style-blog-fame-config.php:87, includes/theme-info/configs/style-blog-plus-config.php:81, includes/theme-info/configs/styleblog-config.php:96
+#: includes/theme-info/configs/cream-blog-config.php:97, includes/theme-info/configs/cream-blog-lite-config.php:97, includes/theme-info/configs/cream-blog-pro-config.php:82, includes/theme-info/configs/cream-magazine-config.php:97, includes/theme-info/configs/cream-magazine-pro-config.php:91, includes/theme-info/configs/fascinate-config.php:97, includes/theme-info/configs/fascinate-pro-config.php:91, includes/theme-info/configs/one-hive-config.php:99, includes/theme-info/configs/one-hive-config.php:185, includes/theme-info/configs/orchid-store-config.php:97, includes/theme-info/configs/royale-news-config.php:87, includes/theme-info/configs/royale-news-lite-config.php:87, includes/theme-info/configs/royale-news-pro-config.php:82, includes/theme-info/configs/style-blog-fame-config.php:87, includes/theme-info/configs/style-blog-plus-config.php:81, includes/theme-info/configs/styleblog-config.php:96
 msgid "Please check our youtube channel for video instructions of themebeez-toolkit setup and customization."
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:98, includes/theme-info/configs/cream-blog-lite-config.php:98, includes/theme-info/configs/cream-blog-pro-config.php:83, includes/theme-info/configs/cream-magazine-config.php:98, includes/theme-info/configs/cream-magazine-pro-config.php:92, includes/theme-info/configs/fascinate-config.php:98, includes/theme-info/configs/fascinate-pro-config.php:92, includes/theme-info/configs/one-hive-config.php:100, includes/theme-info/configs/one-hive-config.php:186, includes/theme-info/configs/royale-news-config.php:88, includes/theme-info/configs/royale-news-lite-config.php:88, includes/theme-info/configs/royale-news-pro-config.php:83, includes/theme-info/configs/style-blog-fame-config.php:88, includes/theme-info/configs/style-blog-plus-config.php:82, includes/theme-info/configs/styleblog-config.php:97
+#: includes/theme-info/configs/cream-blog-config.php:98, includes/theme-info/configs/cream-blog-lite-config.php:98, includes/theme-info/configs/cream-blog-pro-config.php:83, includes/theme-info/configs/cream-magazine-config.php:98, includes/theme-info/configs/cream-magazine-pro-config.php:92, includes/theme-info/configs/fascinate-config.php:98, includes/theme-info/configs/fascinate-pro-config.php:92, includes/theme-info/configs/one-hive-config.php:100, includes/theme-info/configs/one-hive-config.php:186, includes/theme-info/configs/orchid-store-config.php:98, includes/theme-info/configs/royale-news-config.php:88, includes/theme-info/configs/royale-news-lite-config.php:88, includes/theme-info/configs/royale-news-pro-config.php:83, includes/theme-info/configs/style-blog-fame-config.php:88, includes/theme-info/configs/style-blog-plus-config.php:82, includes/theme-info/configs/styleblog-config.php:97
 msgid "Video Tutorials"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:106, includes/theme-info/configs/cream-blog-lite-config.php:106, includes/theme-info/configs/cream-magazine-config.php:106, includes/theme-info/configs/fascinate-config.php:106, includes/theme-info/configs/one-hive-config.php:108, includes/theme-info/configs/one-hive-config.php:173, includes/theme-info/configs/royale-news-config.php:96, includes/theme-info/configs/royale-news-lite-config.php:96, includes/theme-info/configs/styleblog-config.php:105
+#: includes/theme-info/configs/cream-blog-config.php:106, includes/theme-info/configs/cream-blog-lite-config.php:106, includes/theme-info/configs/cream-magazine-config.php:106, includes/theme-info/configs/fascinate-config.php:106, includes/theme-info/configs/one-hive-config.php:108, includes/theme-info/configs/one-hive-config.php:173, includes/theme-info/configs/orchid-store-config.php:106, includes/theme-info/configs/royale-news-config.php:96, includes/theme-info/configs/royale-news-lite-config.php:96, includes/theme-info/configs/styleblog-config.php:105
 msgid "Pro Version"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:107, includes/theme-info/configs/cream-blog-lite-config.php:107, includes/theme-info/configs/cream-magazine-config.php:107, includes/theme-info/configs/fascinate-config.php:107, includes/theme-info/configs/one-hive-config.php:109, includes/theme-info/configs/one-hive-config.php:176, includes/theme-info/configs/royale-news-config.php:97, includes/theme-info/configs/royale-news-lite-config.php:97, includes/theme-info/configs/styleblog-config.php:106
+#: includes/theme-info/configs/cream-blog-config.php:107, includes/theme-info/configs/cream-blog-lite-config.php:107, includes/theme-info/configs/cream-magazine-config.php:107, includes/theme-info/configs/fascinate-config.php:107, includes/theme-info/configs/one-hive-config.php:109, includes/theme-info/configs/one-hive-config.php:176, includes/theme-info/configs/orchid-store-config.php:107, includes/theme-info/configs/royale-news-config.php:97, includes/theme-info/configs/royale-news-lite-config.php:97, includes/theme-info/configs/styleblog-config.php:106
 msgid "Upgrade to pro version for additional features and options."
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:108, includes/theme-info/configs/cream-blog-lite-config.php:108, includes/theme-info/configs/cream-magazine-config.php:108, includes/theme-info/configs/fascinate-config.php:108, includes/theme-info/configs/one-hive-config.php:110, includes/theme-info/configs/one-hive-config.php:177, includes/theme-info/configs/royale-news-config.php:98, includes/theme-info/configs/royale-news-lite-config.php:98, includes/theme-info/configs/styleblog-config.php:107
+#: includes/theme-info/configs/cream-blog-config.php:108, includes/theme-info/configs/cream-blog-lite-config.php:108, includes/theme-info/configs/cream-magazine-config.php:108, includes/theme-info/configs/fascinate-config.php:108, includes/theme-info/configs/one-hive-config.php:110, includes/theme-info/configs/one-hive-config.php:177, includes/theme-info/configs/orchid-store-config.php:108, includes/theme-info/configs/royale-news-config.php:98, includes/theme-info/configs/royale-news-lite-config.php:98, includes/theme-info/configs/styleblog-config.php:107
 msgid "View Pro Version"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:115, includes/theme-info/configs/cream-blog-config.php:117, includes/theme-info/configs/cream-blog-lite-config.php:115, includes/theme-info/configs/cream-blog-lite-config.php:117, includes/theme-info/configs/cream-blog-pro-config.php:90, includes/theme-info/configs/cream-blog-pro-config.php:92, includes/theme-info/configs/cream-magazine-config.php:115, includes/theme-info/configs/cream-magazine-config.php:117, includes/theme-info/configs/cream-magazine-pro-config.php:99, includes/theme-info/configs/cream-magazine-pro-config.php:101, includes/theme-info/configs/fascinate-config.php:115, includes/theme-info/configs/fascinate-config.php:117, includes/theme-info/configs/fascinate-pro-config.php:99, includes/theme-info/configs/fascinate-pro-config.php:101, includes/theme-info/configs/one-hive-config.php:117, includes/theme-info/configs/one-hive-config.php:119, includes/theme-info/configs/one-hive-config.php:155, includes/theme-info/configs/one-hive-config.php:158, includes/theme-info/configs/royale-news-config.php:105, includes/theme-info/configs/royale-news-config.php:107, includes/theme-info/configs/royale-news-lite-config.php:105, includes/theme-info/configs/royale-news-lite-config.php:107, includes/theme-info/configs/royale-news-pro-config.php:90, includes/theme-info/configs/royale-news-pro-config.php:92, includes/theme-info/configs/style-blog-fame-config.php:95, includes/theme-info/configs/style-blog-fame-config.php:97, includes/theme-info/configs/style-blog-plus-config.php:89, includes/theme-info/configs/style-blog-plus-config.php:91, includes/theme-info/configs/styleblog-config.php:114, includes/theme-info/configs/styleblog-config.php:116
+#: includes/theme-info/configs/cream-blog-config.php:115, includes/theme-info/configs/cream-blog-config.php:117, includes/theme-info/configs/cream-blog-lite-config.php:115, includes/theme-info/configs/cream-blog-lite-config.php:117, includes/theme-info/configs/cream-blog-pro-config.php:90, includes/theme-info/configs/cream-blog-pro-config.php:92, includes/theme-info/configs/cream-magazine-config.php:115, includes/theme-info/configs/cream-magazine-config.php:117, includes/theme-info/configs/cream-magazine-pro-config.php:99, includes/theme-info/configs/cream-magazine-pro-config.php:101, includes/theme-info/configs/fascinate-config.php:115, includes/theme-info/configs/fascinate-config.php:117, includes/theme-info/configs/fascinate-pro-config.php:99, includes/theme-info/configs/fascinate-pro-config.php:101, includes/theme-info/configs/one-hive-config.php:117, includes/theme-info/configs/one-hive-config.php:119, includes/theme-info/configs/one-hive-config.php:155, includes/theme-info/configs/one-hive-config.php:158, includes/theme-info/configs/orchid-store-config.php:115, includes/theme-info/configs/orchid-store-config.php:117, includes/theme-info/configs/royale-news-config.php:105, includes/theme-info/configs/royale-news-config.php:107, includes/theme-info/configs/royale-news-lite-config.php:105, includes/theme-info/configs/royale-news-lite-config.php:107, includes/theme-info/configs/royale-news-pro-config.php:90, includes/theme-info/configs/royale-news-pro-config.php:92, includes/theme-info/configs/style-blog-fame-config.php:95, includes/theme-info/configs/style-blog-fame-config.php:97, includes/theme-info/configs/style-blog-plus-config.php:89, includes/theme-info/configs/style-blog-plus-config.php:91, includes/theme-info/configs/styleblog-config.php:114, includes/theme-info/configs/styleblog-config.php:116
 msgid "Contact Support"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:116, includes/theme-info/configs/cream-blog-lite-config.php:116, includes/theme-info/configs/cream-blog-pro-config.php:91, includes/theme-info/configs/cream-magazine-config.php:116, includes/theme-info/configs/cream-magazine-pro-config.php:100, includes/theme-info/configs/fascinate-config.php:116, includes/theme-info/configs/fascinate-pro-config.php:100, includes/theme-info/configs/one-hive-config.php:118, includes/theme-info/configs/one-hive-config.php:157, includes/theme-info/configs/royale-news-config.php:106, includes/theme-info/configs/royale-news-lite-config.php:106, includes/theme-info/configs/royale-news-pro-config.php:91, includes/theme-info/configs/style-blog-fame-config.php:96, includes/theme-info/configs/style-blog-plus-config.php:90, includes/theme-info/configs/styleblog-config.php:115
+#: includes/theme-info/configs/cream-blog-config.php:116, includes/theme-info/configs/cream-blog-lite-config.php:116, includes/theme-info/configs/cream-blog-pro-config.php:91, includes/theme-info/configs/cream-magazine-config.php:116, includes/theme-info/configs/cream-magazine-pro-config.php:100, includes/theme-info/configs/fascinate-config.php:116, includes/theme-info/configs/fascinate-pro-config.php:100, includes/theme-info/configs/one-hive-config.php:118, includes/theme-info/configs/one-hive-config.php:157, includes/theme-info/configs/orchid-store-config.php:116, includes/theme-info/configs/royale-news-config.php:106, includes/theme-info/configs/royale-news-lite-config.php:106, includes/theme-info/configs/royale-news-pro-config.php:91, includes/theme-info/configs/style-blog-fame-config.php:96, includes/theme-info/configs/style-blog-plus-config.php:90, includes/theme-info/configs/styleblog-config.php:115
 msgid "If you have any problem, feel free to create ticket on our dedicated Support forum."
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:129, includes/theme-info/configs/cream-blog-lite-config.php:129, includes/theme-info/configs/cream-magazine-config.php:129, includes/theme-info/configs/cream-magazine-pro-config.php:113, includes/theme-info/configs/fascinate-config.php:129, includes/theme-info/configs/fascinate-pro-config.php:113, includes/theme-info/configs/one-hive-config.php:131
+#: includes/theme-info/configs/cream-blog-config.php:129, includes/theme-info/configs/cream-blog-lite-config.php:129, includes/theme-info/configs/cream-magazine-config.php:129, includes/theme-info/configs/cream-magazine-pro-config.php:113, includes/theme-info/configs/fascinate-config.php:129, includes/theme-info/configs/fascinate-pro-config.php:113, includes/theme-info/configs/one-hive-config.php:131, includes/theme-info/configs/orchid-store-config.php:129
 msgid "WooCommerce"
 msgstr ""
 
-#: includes/theme-info/configs/cream-blog-config.php:130, includes/theme-info/configs/cream-blog-lite-config.php:130, includes/theme-info/configs/cream-magazine-config.php:130, includes/theme-info/configs/cream-magazine-pro-config.php:114, includes/theme-info/configs/fascinate-config.php:130, includes/theme-info/configs/fascinate-pro-config.php:114
+#: includes/theme-info/configs/cream-blog-config.php:130, includes/theme-info/configs/cream-blog-lite-config.php:130, includes/theme-info/configs/cream-magazine-config.php:130, includes/theme-info/configs/cream-magazine-pro-config.php:114, includes/theme-info/configs/fascinate-config.php:130, includes/theme-info/configs/fascinate-pro-config.php:114, includes/theme-info/configs/orchid-store-config.php:130
 msgid "Installing Woocommerce plugin help you set your online shop or store."
 msgstr ""
 
@@ -719,6 +844,22 @@ msgstr ""
 
 #: includes/theme-info/configs/one-hive-config.php:204
 msgid "About child theme"
+msgstr ""
+
+#: includes/theme-info/configs/orchid-store-config.php:13, includes/theme-info/configs/orchid-store-config.php:14
+msgid "Orchid Store Info"
+msgstr ""
+
+#: includes/theme-info/configs/orchid-store-config.php:136
+msgid "YITH WooCommerce Wishlist"
+msgstr ""
+
+#: includes/theme-info/configs/orchid-store-config.php:143
+msgid "YITH WooCommerce Quick View"
+msgstr ""
+
+#: includes/theme-info/configs/orchid-store-config.php:150
+msgid "Elementor Page Builder"
 msgstr ""
 
 #: includes/theme-info/configs/royale-news-config.php:13, includes/theme-info/configs/royale-news-config.php:14
