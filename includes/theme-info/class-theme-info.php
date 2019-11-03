@@ -27,7 +27,7 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 		 *
 		 * @var string $version Version.
 		 */
-		private $version = '1.0.0';
+		private $version = '1.1.5';
 
 		/**
 		 * Page configuration.

@@ -3,7 +3,7 @@
  * Plugin Name:       Themebeez Toolkit
  * Plugin URI:        https://wordpress.org/plugins/themebeez-toolkit/
  * Description:       A small toolkit for themes made by www.themebeez.com. This plugin extends themes made by themebeez & adds functionality to import demo data in just a click.
- * Version:           1.1.4
+ * Version:           1.1.5
  * Author:            themebeez
  * Author URI:        https://themebeez.com
  * License:           GPL-2.0+

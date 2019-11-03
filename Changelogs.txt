@@ -1,6 +1,10 @@
 
 == Changelog ==
 
+= 1.1.5 - November 3, 2019 ==
+
+- Mega menu support for child themes of Orchid Store theme.
+
 = 1.1.4 - September 26, 2019 ==
 
 - Added support for Orchid Store theme.
