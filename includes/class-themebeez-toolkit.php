@@ -71,7 +71,7 @@ class Themebeez_Toolkit {
 		if ( defined( 'THEMEBEEZTOOLKIT_VERSION' ) ) {
 			$this->version = THEMEBEEZTOOLKIT_VERSION;
 		} else {
-			$this->version = '1.1.0';
+			$this->version = '1.1.5';
 		}
 		$this->plugin_name = 'themebeez-toolkit';
 

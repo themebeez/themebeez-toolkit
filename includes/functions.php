@@ -29,6 +29,21 @@ if( ! function_exists( 'themebeez_toolkit_theme_text_domain' ) ) :
     }
 endif;
 
+/**
+ * Function that gets template name of currently activated theme.
+ */
+if( ! function_exists( 'themebeez_toolkit_template_name' ) ) :
+
+    function themebeez_toolkit_template_name() {
+
+        $theme = themebeez_toolkit_theme();
+
+        $template = $theme->get( 'Template' );
+
+        return $template;
+    }
+endif;
+
 
 /**
  * Function that gets all the themes by themebeez.
@@ -167,15 +182,24 @@ if( ! function_exists( 'themebeez_toolkit_theme_info_demo_loader' ) ) {
             add_action( 'admin_init', 'themebeez_toolkit_notice_ignore' );           
         }
 
-        if( $theme_text_domain == 'orchid-store' ) {
+        if( $theme_text_domain == 'orchid-store' || themebeez_toolkit_template_name() == 'orchid-store'  ) {
 
-            require_once plugin_dir_path( __FILE__ ) . 'theme-info/configs/orchid-store-config.php'; 
+            if( $theme_text_domain == 'orchid-store' ) {
+
+                require_once plugin_dir_path( __FILE__ ) . 'theme-info/configs/orchid-store-config.php'; 
+            }
 
             require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-walker-filter.php'; 
 
             require_once plugin_dir_path( __FILE__ ) . 'simple-mega-menu/class-simple-mega-menu-nav-walker.php'; 
 
-            require_once plugin_dir_path( __FILE__ ) . 'themes/orchid-store/orchid-store-functions.php'; 
+            add_filter( 'wp_nav_menu_args', function( $args ) {
+
+                return array_merge( $args, array(
+
+                    'walker' => new Simple_Mega_Menu_Nav_Walker(),
+                ) );
+            } ); 
         }
     }
 }

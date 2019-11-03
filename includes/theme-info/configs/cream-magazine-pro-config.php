@@ -30,11 +30,11 @@ if( ! function_exists( 'themebeez_toolkit_cream_magazine_pro_config'  ) ) {
 					),
 				'theme_url' => array(
 					'text' => esc_html__( 'Theme Details','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/cream-magazine/',
+					'url'  => 'https://themebeez.com/themes/cream-magazine-pro/',
 					),
 				'demo_url' => array(
 					'text' => esc_html__( 'View Demo','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/demos/?theme=cream-magazine',
+					'url'  => 'https://themebeez.com/cream-magazine-pro-demos/',
 					),
 				'documentation_url' => array(
 					'text'   => esc_html__( 'View Documentation','themebeez-toolkit' ),
