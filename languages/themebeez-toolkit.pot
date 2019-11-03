@@ -459,17 +459,17 @@ msgid "Style Blog Demo"
 msgstr ""
 
 #. translators: %1$s: theme name, %2$s theme version
-#: includes/functions.php:210
+#: includes/functions.php:234
 msgid "Welcome to %1$s - Version %2$s"
 msgstr ""
 
 #. translators: %1$s: theme name, %2$s link
-#: includes/functions.php:217
+#: includes/functions.php:241
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
 #. translators: %s theme name
-#: includes/functions.php:225, includes/theme-info/class-theme-info.php:174
+#: includes/functions.php:249, includes/theme-info/class-theme-info.php:174
 msgid "Get started with %s"
 msgstr ""
 
