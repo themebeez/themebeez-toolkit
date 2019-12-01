@@ -438,15 +438,15 @@ msgstr ""
 msgid "Demo Eight"
 msgstr ""
 
-#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:15
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:22
 msgid "Default Demo"
 msgstr ""
 
-#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:23
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:30
 msgid "Elementor Demo"
 msgstr ""
 
-#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:31
+#: includes/demo-importer/theme-demo/class-tt-theme-demo-orchid-store.php:38
 msgid "RTL Demo"
 msgstr ""
 

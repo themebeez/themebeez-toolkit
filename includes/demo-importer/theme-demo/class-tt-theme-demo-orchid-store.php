@@ -8,36 +8,44 @@ class TT_Theme_Demo_Orchid_Store extends TT_Theme_Demo {
 
 	public static function import_files() {
 
-		$server_url = 'https://creamcodetechnology.com/demo-contents/orchid-store/';
+		if( class_exists( 'Orchid_Store_Pro_Demo_Import' ) ) {
 
-		$demo_urls  = array(
-			array(
-				'import_file_name'           => esc_html__( 'Default Demo', 'themebeez-toolkit' ),
-				'import_file_url'            => $server_url . 'demo-one/contents.xml',
-				'import_widget_file_url'     => $server_url . 'demo-one/widgets.wie',
-				'import_customizer_file_url' => $server_url . 'demo-one/customizer.dat',
-				'import_preview_image_url'   => $server_url . 'demo-one/screenshot.jpg',
-				'demo_url'                   => 'https://demo.themebeez.com/demos-2/orchid-store/',
-			),
-			array(
-				'import_file_name'           => esc_html__( 'Elementor Demo', 'themebeez-toolkit' ),
-				'import_file_url'            => $server_url . 'demo-two/contents.xml',
-				'import_widget_file_url'     => $server_url . 'demo-two/widgets.wie',
-				'import_customizer_file_url' => $server_url . 'demo-two/customizer.dat',
-				'import_preview_image_url'   => $server_url . 'demo-two/screenshot.jpg',
-				'demo_url'                   => 'https://demo.themebeez.com/demos-2/orchid-store-ii/',
-			),
-			array(
-				'import_file_name'           => esc_html__( 'RTL Demo', 'themebeez-toolkit' ),
-				'import_file_url'            => $server_url . 'demo-three/contents.xml',
-				'import_widget_file_url'     => $server_url . 'demo-three/widgets.wie',
-				'import_customizer_file_url' => $server_url . 'demo-three/customizer.dat',
-				'import_preview_image_url'   => $server_url . 'demo-three/screenshot.jpg',
-				'demo_url'                   => 'https://demo.themebeez.com/demos-2/orchid-store-iii/',
-			),
-		);
+			$demo_class = new Orchid_Store_Pro_Demo_Import();
 
-		return $demo_urls;
+			return $demo_class->demo_import();
+		} else {
+
+			$server_url = 'https://creamcodetechnology.com/demo-contents/orchid-store/';
+
+			$demo_urls  = array(
+				array(
+					'import_file_name'           => esc_html__( 'Default Demo', 'themebeez-toolkit' ),
+					'import_file_url'            => $server_url . 'demo-one/contents.xml',
+					'import_widget_file_url'     => $server_url . 'demo-one/widgets.wie',
+					'import_customizer_file_url' => $server_url . 'demo-one/customizer.dat',
+					'import_preview_image_url'   => $server_url . 'demo-one/screenshot.jpg',
+					'demo_url'                   => 'https://demo.themebeez.com/demos-2/orchid-store/',
+				),
+				array(
+					'import_file_name'           => esc_html__( 'Elementor Demo', 'themebeez-toolkit' ),
+					'import_file_url'            => $server_url . 'demo-two/contents.xml',
+					'import_widget_file_url'     => $server_url . 'demo-two/widgets.wie',
+					'import_customizer_file_url' => $server_url . 'demo-two/customizer.dat',
+					'import_preview_image_url'   => $server_url . 'demo-two/screenshot.jpg',
+					'demo_url'                   => 'https://demo.themebeez.com/demos-2/orchid-store-ii/',
+				),
+				array(
+					'import_file_name'           => esc_html__( 'RTL Demo', 'themebeez-toolkit' ),
+					'import_file_url'            => $server_url . 'demo-three/contents.xml',
+					'import_widget_file_url'     => $server_url . 'demo-three/widgets.wie',
+					'import_customizer_file_url' => $server_url . 'demo-three/customizer.dat',
+					'import_preview_image_url'   => $server_url . 'demo-three/screenshot.jpg',
+					'demo_url'                   => 'https://demo.themebeez.com/demos-2/orchid-store-iii/',
+				),
+			);
+
+			return $demo_urls;
+		}
 	}
 
 	public static function after_import( $selected_import ) {
