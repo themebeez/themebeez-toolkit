@@ -1,6 +1,10 @@
 
 == Changelog ==
 
+= 1.1.6 - December 1, 2019 ==
+
+- Demp import support for Orchid Store Pro
+
 = 1.1.5 - November 3, 2019 ==
 
 - Mega menu support for child themes of Orchid Store theme.
