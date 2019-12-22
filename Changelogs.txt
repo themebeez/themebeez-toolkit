@@ -1,6 +1,10 @@
 
 == Changelog ==
 
+= 1.1.8 - December 22, 2019 ==
+
+- Fix: Issue with mega menu columns at orchid store pro
+
 = 1.1.7 - December 3, 2019 ==
 
 - Minor update
