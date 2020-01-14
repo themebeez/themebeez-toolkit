@@ -1,6 +1,11 @@
 
 == Changelog ==
 
+= 1.1.9 - January 15, 2019 =
+
+- Removed: Orchid store mega menu js
+- Removed: Public css & js files
+
 = 1.1.8 - December 22, 2019 ==
 
 - Fix: Issue with mega menu columns at orchid store pro
