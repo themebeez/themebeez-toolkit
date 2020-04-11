@@ -1,6 +1,13 @@
 
 == Changelog ==
 
+= 1.2.0 - April 11, 2020 =
+
+- Added: Dashboard widget for displaying blog posts from https://themebeez.com/blog/
+- Added: Changelog to about page tab
+- Added: WPTRT Admin Notices library
+- Added: Cream Magazine update notice
+
 = 1.1.9 - January 15, 2019 =
 
 - Removed: Orchid store mega menu js
