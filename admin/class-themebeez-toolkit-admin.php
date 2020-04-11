@@ -50,9 +50,22 @@ class Themebeez_Toolkit_Admin {
 	public function __construct( $plugin_name, $version ) {
 
 		$this->plugin_name = $plugin_name;
+
 		$this->version = $version;
 
-	}
+		$this->admin_dependencies();
+
+		if( apply_filters( 'themebeez_toolkit_admin_dashboard_widgets', true ) ) {
+
+	        add_action( 'wp_dashboard_setup', 'Themebeez_Toolkit_Admin_Dashboard_Widget::register_dashboard_widget' );
+	    }
+	}	
+
+
+	public function admin_dependencies() {
+
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-themebeez-admin-dashboard-widget.php';
+	} 
 
 	/**
 	 * Register the stylesheets for the admin area.
@@ -74,7 +87,6 @@ class Themebeez_Toolkit_Admin {
 		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/themebeez-toolkit-admin.css', array(), $this->version, 'all' );
-
 	}
 
 	/**

@@ -46,6 +46,7 @@ if( ! function_exists( 'themebeez_toolkit_cream_magazine_pro_config'  ) ) {
 			'tabs' => array(
 				'getting_started'     => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
 				'recommended_actions' => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
+				'changelog' => esc_html__( 'Changelog', 'themebeez-toolkit' ),
 			),
 
 			// Getting started.

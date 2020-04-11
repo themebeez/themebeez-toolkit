@@ -459,11 +459,15 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 
 				if ( ! empty( $getting_started ) ) {
 
-					echo '<div class="feature-section three-col">';
+					echo '<div class="feature-section">';
+
+					echo '<div class="tt-row tt-col-3">';
 
 					foreach ( $getting_started as $getting_started_item ) {
 
-						echo '<div class="col">';
+						echo '<div class="tt-col">';
+
+						echo '<div class="tt-col-ele">';
 
 						if ( ! empty( $getting_started_item['title'] ) ) {
 							echo '<h3>' . esc_html( $getting_started_item['title'] ) . '</h3>';
@@ -502,9 +506,14 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 							echo '</p>';
 						}
 
+						echo '</div>';
+
 						echo '</div><!-- .col -->';
 					} // End foreach().
-					echo '</div><!-- .feature-section three-col -->';
+
+					echo '</div>';
+
+					echo '</div><!-- .feature-section -->';
 				} // End if().
 			} // End if().
 		}
@@ -720,6 +729,44 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 			} // End if().
 
 			echo '</div>';
+		}
+
+		/**
+		 * Render changelog tab.
+		 *
+		 * @since 1.0.0
+		 */
+		public function changelog() {
+
+			$changelog = THEMEBEEZ_TOOLKIT_THEME_PATH . '/changelog.txt';
+
+			if ( ! file_exists( $changelog ) ) {
+
+				$changelog = esc_html__( 'Changelog file not found.', 'themebeez-toolkit' );
+
+			} else if( ! is_readable( $changelog ) ) {
+
+				$changelog = esc_html__( 'Changelog file not readable.', 'themebeez-toolkit' );
+
+			} else {
+
+				global $wp_filesystem;
+
+				// Check if the the global filesystem isn't setup yet.
+				if ( is_null( $wp_filesystem ) ) {
+
+					WP_Filesystem();
+				}
+
+				$changelog = $wp_filesystem->get_contents( $changelog );
+			}
+			?>
+			<div class="changelog-section">
+				<div class="changelog-detail">					
+					<pre><?php echo esc_html( $changelog ); ?></pre>
+				</div>
+			</div>
+			<?php
 		}
 
 		/**

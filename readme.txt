@@ -4,8 +4,8 @@ Contributors: themebeez
 Tags: themebeez, demo, content, widgets, menus, import, content, demo, data, widgets, settings, themes
 Requires at least: 4.8.0
 Requires PHP: 5.6
-Tested up to: 5.3.2
-Stable tag: 1.1.9
+Tested up to: 5.4
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Themebeez Toolkit. If not, see <http://www.gnu.org/licenses/>.
 
+
+== Credits ==
+
+* Admin-Notices, https://github.com/WPTRT/admin-notices, [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
 
 
 == Installation ==

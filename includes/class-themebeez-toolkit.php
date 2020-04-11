@@ -80,6 +80,7 @@ class Themebeez_Toolkit {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+		$this->theme_notice();
 	}
 
 	/**
@@ -132,6 +133,12 @@ class Themebeez_Toolkit {
 		 * Functions necessary for loading demo content and theme info.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions.php';
+
+
+		/**
+		 * Load vendor autoloader.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'vendor/autoload.php';
 
 		$this->loader = new Themebeez_Toolkit_Loader();
 	}
@@ -188,6 +195,23 @@ class Themebeez_Toolkit {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+	}
+
+	public function theme_notice() {
+
+		if( themebeez_toolkit_theme_text_domain() == 'cream-magazine' ) {
+
+			$cream_magazine_notice = new \WPTRT\AdminNotices\Notices();
+
+			$notice_title = __( 'Cream Magazine 2.0.0 update notice', 'themebeez-toolkit' );
+
+			$notice_content = __( 'Cream Magazine is getting updated to version 2.0.0. Please visit, <a href="https://themebeez.com/blog/cream-magazine-version-2-0-0/" target="_blank">Cream Magazine 2.0.0</a>, for more detail.', 'themebeez-toolkit' );
+
+			$cream_magazine_notice->add( 'themebeez_toolkit_theme_notice', $notice_title, $notice_content );
+
+			$cream_magazine_notice->boot();
+
+		}
 	}
 
 	/**
