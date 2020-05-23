@@ -67,7 +67,7 @@ if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
 		 * @param int   $menu_item_db_id Menu item ID
 		 * @param array $menu_item_args  Menu item data
 		 */
-		public static function save_menu_fields( $menu_id, $menu_item_db_id, $menu_item_args ) {
+		public function save_menu_fields( $menu_id, $menu_item_db_id, $menu_item_args ) {
 
 			if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
 				return;
@@ -106,7 +106,7 @@ if( ! class_exists( 'Simple_Mega_Menu_Fields' ) ) {
 		 *
 		 * @return string Form fields
 		 */
-		public static function create_menu_fields( $id, $item, $depth, $args ) {
+		public function create_menu_fields( $id, $item, $depth, $args ) {
 
 			foreach ( $this->fields as $_key => $label ) :
 
