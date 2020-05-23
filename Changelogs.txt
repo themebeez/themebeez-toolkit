@@ -1,6 +1,10 @@
 
 == Changelog ==
 
+= 1.2.1 - May 23, 2020 =
+
+- Fix: Error in simple mega menu
+
 = 1.2.0 - April 13, 2020 =
 
 - Added: Dashboard widget for displaying blog posts from https://themebeez.com/blog/
