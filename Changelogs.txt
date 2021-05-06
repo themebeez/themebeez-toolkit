@@ -1,6 +1,10 @@
 
 == Changelog ==
 
+= 1.2.2 - May 06, 2021 =
+
+- Updated: Demo data base URL
+
 = 1.2.1 - May 23, 2020 =
 
 - Fix: Error in simple mega menu

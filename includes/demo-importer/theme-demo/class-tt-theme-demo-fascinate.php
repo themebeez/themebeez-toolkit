@@ -8,7 +8,7 @@ class TT_Theme_Demo_Fascinate extends TT_Theme_Demo {
 
 	public static function import_files() {
 
-		$server_url = 'https://creamcodetechnology.com/demo-contents/fascinate/';
+		$server_url = 'https://themebeez.com/demo-contents/fascinate/';
 
 		$demo_urls  = array(
 			array(

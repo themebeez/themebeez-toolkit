@@ -8,7 +8,7 @@ class TT_Theme_Demo_StyleBlog_Plus extends TT_Theme_Demo {
 
 	public static function import_files() {
 
-		$server_url = 'https://creamcodetechnology.com/demo-contents/style-blog-pro/';
+		$server_url = 'https://themebeez.com/demo-contents/style-blog-pro/';
 
 		$demo_urls  = array(
 			array(

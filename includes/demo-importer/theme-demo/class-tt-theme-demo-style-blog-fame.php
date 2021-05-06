@@ -8,7 +8,7 @@ class TT_Theme_Demo_Style_Blog_Fame extends TT_Theme_Demo {
 
 	public static function import_files() {
 
-		$server_url = 'https://creamcodetechnology.com/demo-contents/style-blog-fame/';
+		$server_url = 'https://themebeez.com/demo-contents/style-blog-fame/';
 
 		$demo_urls  = array(
 			array(

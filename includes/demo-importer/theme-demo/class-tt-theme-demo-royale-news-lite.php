@@ -8,7 +8,7 @@ class TT_Theme_Demo_Royale_News_Lite extends TT_Theme_Demo {
 
 	public static function import_files() {
 
-		$server_url = 'https://creamcodetechnology.com/demo-contents/royale-news-lite/';
+		$server_url = 'https://themebeez.com/demo-contents/royale-news-lite/';
 
 		$demo_urls  = array(
 			array(
