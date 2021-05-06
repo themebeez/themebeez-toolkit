@@ -8,7 +8,7 @@ class TT_Theme_Demo_Cream_Magazine extends TT_Theme_Demo {
 
 	public static function import_files() {
 
-		$server_url = 'https://creamcodetechnology.com/demo-contents/cream-magazine/';
+		$server_url = 'https://themebeez.com/demo-contents/cream-magazine/';
 
 		$demo_urls  = array(
 			array(

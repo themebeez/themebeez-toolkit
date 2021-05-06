@@ -15,7 +15,7 @@ class TT_Theme_Demo_Orchid_Store extends TT_Theme_Demo {
 			return $demo_class->demo_import();
 		} else {
 
-			$server_url = 'https://creamcodetechnology.com/demo-contents/orchid-store/';
+			$server_url = 'https://themebeez.com/demo-contents/orchid-store/';
 
 			$demo_urls  = array(
 				array(

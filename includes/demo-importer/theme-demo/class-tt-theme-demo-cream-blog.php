@@ -8,7 +8,7 @@ class TT_Theme_Demo_Cream_Blog extends TT_Theme_Demo {
 
 	public static function import_files() {
 
-		$server_url = 'https://creamcodetechnology.com/demo-contents/cream-blog/';
+		$server_url = 'https://themebeez.com/demo-contents/cream-blog/';
 
 		$demo_urls  = array(
 			array(
