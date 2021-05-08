@@ -5,7 +5,7 @@ Tags: themebeez, demo, content, widgets, menus, import, content, demo, data, wid
 Requires at least: 5.0.0
 Requires PHP: 7.0.0
 Tested up to: 5.7.1
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,35 +15,42 @@ A essential toolkit for [WordPress themes](https://themebeez.com/) developed by 
 
 #### ✨ WHICH THEME DEMO IMPORT IS INCLUDED:
 
-✅ Orchid Store: [Link](https://themebeez.com/themes/orchid-store/)
-✅ Orchid Store Pro: [Link](https://themebeez.com/themes/orchid-store-pro/)
-✅ Cream Magazine: [Link](https://themebeez.com/themes/cream-magazine/)
-✅ Cream Magazine Pro: [Link](https://themebeez.com/themes/cream-magazine-pro/)
-✅ Fascinate: [Link](https://themebeez.com/themes/fascinate/)
-✅ Fascinate Pro: [Link](https://themebeez.com/themes/fascinate-pro/)
-✅ Cream Blog: [Link](https://themebeez.com/themes/cream-blog/)
-✅ Cream Blog Pro: [Link](https://themebeez.com/themes/cream-blog-pro/)
-✅ Cream Blog Lite: [Link](https://themebeez.com/themes/cream-blog-lite/)
-✅ StyleBlog: [Link](https://themebeez.com/themes/style-blog/)
-✅ StyleBlog Plus: [Link](https://themebeez.com/themes/style-blog-pro/)
-✅ StyleBlog Fame:  [Link](https://themebeez.com/themes/style-blog-fame/)
-✅ Royale News: [Link](https://themebeez.com/themes/royale-news/)
-✅ Royale News Pro: [Link](https://themebeez.com/themes/royale-news-pro/)
-✅ Royale News Lite: [Link](https://themebeez.com/themes/royale-news-lite/)
-✅ One Hive: [Link](https://themebeez.com/themes/one-hive/)
-✅ One Hive Pro:  [Link](https://themebeez.com/themes/one-hive-pro/)
+✅ Orchid Store: [Link](https://themebeez.com/themes/orchid-store/) - WordPress WooCommerce theme.
+✅ Orchid Store Pro: [Link](https://themebeez.com/themes/orchid-store-pro/) - Orchid Store premium addon plugin.
+✅ Cream Magazine: [Link](https://themebeez.com/themes/cream-magazine/) - WordPress Magazine theme.
+✅ Cream Magazine Pro: [Link](https://themebeez.com/themes/cream-magazine-pro/) - Cream Magazine Pro Version.
+✅ Fascinate: [Link](https://themebeez.com/themes/fascinate/) - WordPress blog theme.
+✅ Fascinate Pro: [Link](https://themebeez.com/themes/fascinate-pro/) - Premium version of Fascinate theme.
+✅ Cream Blog: [Link](https://themebeez.com/themes/cream-blog/) - WordPress blog theme.
+✅ Cream Blog Pro: [Link](https://themebeez.com/themes/cream-blog-pro/) - Premium version of Cream Blog theme.
+✅ Cream Blog Lite: [Link](https://themebeez.com/themes/cream-blog-lite/) - Child theme of Cream Blog.
+✅ StyleBlog: [Link](https://themebeez.com/themes/style-blog/) - WordPress blog theme.
+✅ StyleBlog Plus: [Link](https://themebeez.com/themes/style-blog-pro/) - Premium version of StyleBlog theme.
+✅ StyleBlog Fame:  [Link](https://themebeez.com/themes/style-blog-fame/) - Child theme of StyleBlog.
+✅ Royale News: [Link](https://themebeez.com/themes/royale-news/) - WordPress Magazine theme.
+✅ Royale News Pro: [Link](https://themebeez.com/themes/royale-news-pro/) - Premium version of Royale News theme.
+✅ Royale News Lite: [Link](https://themebeez.com/themes/royale-news-lite/) Child theme of Royale News theme.
 
 #### ✨ HOW TO USE THEMEBEEZ TOOLKIT?
 
 ✅ While installing any free themes by themebeez do kindly install & activate prompt plugin "Themebeez Toolkit " or you can do this manually too.
+
 ✅ After activating Themebeez Toolkit plugin go to Dashboard > Apperence > Theme about page.
+
 ✅ You will see necessary actions like recommended actions.
+
 ✅ Under Recommended action please feel free to activate plugins that you will need. For exmple: install plugin called WooCommerce if you need to setup e-commerce store. 
+
 ✅ If you think you don't need any of them ignore that recommended action.
+
 ✅ If you need demo contents, then go to Dashboard > Appearance > Import Demo Content page. 
+
 ✅ Choose your demo by checking live preview.
+
 ✅ Keep Themebeez Toolkit plugin along with you till you are using themes made by us.
+
 ✅ Feel free to contact Themebeez Support team at ( https://themebeez.com/support/ ) if you need any assistance.
+
 
 #### ✨ VIDEO TUTORIAL:
 
