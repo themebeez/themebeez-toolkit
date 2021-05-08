@@ -1,6 +1,10 @@
 
 == Changelog ==
 
+= 1.2.3 - May 08, 2021 =
+
+- Updated: readme.txt file
+
 = 1.2.2 - May 06, 2021 =
 
 - Updated: Demo data base URL
