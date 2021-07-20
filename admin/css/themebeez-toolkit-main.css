@@ -109,3 +109,10 @@
 	visibility: visible;
 	margin-bottom: 6px;
 }
+
+
+
+
+.TT__multi-select-import .theme-browser .theme .theme-name {
+	height: auto;
+}

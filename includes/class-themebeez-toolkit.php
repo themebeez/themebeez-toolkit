@@ -79,7 +79,6 @@ class Themebeez_Toolkit {
 		$this->load_theme_demo_info();
 		$this->set_locale();
 		$this->define_admin_hooks();
-		$this->define_public_hooks();
 	}
 
 	/**
@@ -123,16 +122,9 @@ class Themebeez_Toolkit {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-themebeez-toolkit-admin.php';
 
 		/**
-		 * The class responsible for defining all actions that occur in the public-facing
-		 * side of the site.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-themebeez-toolkit-public.php';
-
-		/**
 		 * Functions necessary for loading demo content and theme info.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions.php';
-
 
 		/**
 		 * Load vendor autoloader.
@@ -179,21 +171,6 @@ class Themebeez_Toolkit {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-	}
-
-	/**
-	 * Register all of the hooks related to the public-facing functionality
-	 * of the plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   private
-	 */
-	private function define_public_hooks() {
-
-		$plugin_public = new Themebeez_Toolkit_Public( $this->get_plugin_name(), $this->get_version() );
-
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 	}
 
 	/**

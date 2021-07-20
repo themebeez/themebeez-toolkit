@@ -217,20 +217,25 @@ class TT_Main {
 	 */
 	public function admin_enqueue_scripts() {
 
-		wp_enqueue_script( 'themebeez-toolkit-main', TT()->plugin_url() . '/admin/js/themebeez-toolkit-main.js', array( 'jquery', 'jquery-form' ), THEMEBEEZTOOLKIT_VERSION, true );
+		global $pagenow;
 
-		wp_localize_script( 'themebeez-toolkit-main', 'tt_admin_ajax',
-			array(
-				'ajax_url'     => admin_url( 'admin-ajax.php' ),
-				'ajax_nonce'   => wp_create_nonce( 'tt-ajax-verification' ),
-				'import_files' => $this->import_files,
-				'texts'        => array(
-					'missing_preview_image' => esc_html__( 'No preview image defined for this import.', 'themebeez-toolkit' ),
-				),
-			)
-		);
+		if ( 'themes.php' == $pagenow && ( isset( $_GET['page'] ) && 'themebeez-demo-importer' == $_GET['page'] ) ) {
+			
+			wp_enqueue_script( 'themebeez-toolkit-main', TT()->plugin_url() . '/admin/js/themebeez-toolkit-main.js', array( 'jquery', 'jquery-form' ), THEMEBEEZTOOLKIT_VERSION, true );
 
-		wp_enqueue_style( 'themebeez-toolkit-main', TT()->plugin_url() . '/admin/css/themebeez-toolkit-main.css', array(), THEMEBEEZTOOLKIT_VERSION );
+			wp_localize_script( 'themebeez-toolkit-main', 'tt_admin_ajax',
+				array(
+					'ajax_url'     => admin_url( 'admin-ajax.php' ),
+					'ajax_nonce'   => wp_create_nonce( 'tt-ajax-verification' ),
+					'import_files' => $this->import_files,
+					'texts'        => array(
+						'missing_preview_image' => esc_html__( 'No preview image defined for this import.', 'themebeez-toolkit' ),
+					),
+				)
+			);
+
+			wp_enqueue_style( 'themebeez-toolkit-main', TT()->plugin_url() . '/admin/css/themebeez-toolkit-main.css', array(), THEMEBEEZTOOLKIT_VERSION );
+		}
 	}
 
 

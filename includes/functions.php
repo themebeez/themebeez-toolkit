@@ -65,7 +65,11 @@ if( ! function_exists( 'themebeez_toolkit_admin_notice' ) ) {
 
     function themebeez_toolkit_admin_notice() {
 
-        global $current_user;
+        global $current_user, $pagenow;
+
+        if ( $pagenow != 'index.php' ) {
+            return;
+        }
 
         $user_id     = $current_user->ID;
 

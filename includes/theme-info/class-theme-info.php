@@ -184,6 +184,7 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 			add_action( 'admin_menu', array( $this, 'register' ) );
 			add_action( 'load-themes.php', array( $this, 'activation_admin_notice' ) );
 			add_action( 'admin_enqueue_scripts', array( $this, 'load_assets' ) );
+			add_action( 'admin_head', array( $this, 'admin_style' ) );
 			add_action( 'wp_ajax_tt_about_action_dismiss_recommended_action', array( $this, 'dismiss_recommended_action_callback' ) );
 			add_action( 'wp_ajax_nopriv_tt_about_action_dismiss_recommended_action', array( $this, 'dismiss_recommended_action_callback' ) );
 		}
@@ -407,43 +408,53 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 		 */
 		public function load_assets( $hook ) {
 
-			$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+			global $pagenow;
 
-			$custom_css = '.badge-action-count {
-				padding: 0 6px;
-				display: inline-block;
-				background-color: #d54e21;
-				color: #fff;
-				font-size: 9px;
-				line-height: 17px;
-				font-weight: 600;
-				margin: 1px 0 0 2px;
-				vertical-align: top;
-				border-radius: 10px;
-				z-index: 26;
-				margin-top: 5px;
-				margin-left: 5px;
+			if ( 'themes.php' == $pagenow && ( isset( $_GET['page'] ) && $this->theme_textdomain .'-about' == $_GET['page'] ) ) {
+
+				$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+
+				if ( 'appearance_page_' . $this->page_slug === $hook ) {
+
+					wp_enqueue_style( 'plugin-install' );
+					wp_enqueue_script( 'plugin-install' );
+					wp_enqueue_script( 'updates' );
+
+					wp_enqueue_style( 'themebeez-toolkit-theme-info', plugin_dir_url( __FILE__ ) . 'css/theme-info.css' );
+					wp_enqueue_script( 'themebeez-toolkit-theme-info', plugin_dir_url( __FILE__ ) . 'js/theme-info.js', array( 'jquery' ), THEMEBEEZTOOLKIT_VERSION );
+
+					$js_vars = array(
+						'ajaxurl' => esc_url( admin_url( 'admin-ajax.php' ) ),
+					);
+					wp_localize_script( 'themebeez-toolkit-about', 'ttkitAboutObject', $js_vars );
+				}
 			}
-			.wp-submenu .badge-action-count {
-				margin-top: 0;
-			}';
+		}
 
-			wp_add_inline_style( 'admin-menu', $custom_css );
 
-			if ( 'appearance_page_' . $this->page_slug === $hook ) {
-
-				wp_enqueue_style( 'plugin-install' );
-				wp_enqueue_script( 'plugin-install' );
-				wp_enqueue_script( 'updates' );
-
-				wp_enqueue_style( 'themebeez-toolkit-theme-info', plugin_dir_url( __FILE__ ) . 'css/theme-info.css' );
-				wp_enqueue_script( 'themebeez-toolkit-theme-info', plugin_dir_url( __FILE__ ) . 'js/theme-info.js', array( 'jquery' ), THEMEBEEZTOOLKIT_VERSION );
-
-				$js_vars = array(
-					'ajaxurl' => esc_url( admin_url( 'admin-ajax.php' ) ),
-				);
-				wp_localize_script( 'themebeez-toolkit-about', 'ttkitAboutObject', $js_vars );
-			}
+		public function admin_style() {
+			?>
+			<style type="text/css">
+				.badge-action-count {
+					padding: 0 6px;
+					display: inline-block;
+					background-color: #d54e21;
+					color: #fff;
+					font-size: 9px;
+					line-height: 17px;
+					font-weight: 600;
+					margin: 1px 0 0 2px;
+					vertical-align: top;
+					border-radius: 10px;
+					z-index: 26;
+					margin-top: 5px;
+					margin-left: 5px;
+				}
+				.wp-submenu .badge-action-count {
+					margin-top: 0;
+				}
+			</style>
+			<?php
 		}
 
 		/**
