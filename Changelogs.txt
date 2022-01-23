@@ -1,5 +1,10 @@
 == Changelog ==
 
+= 1.2.5 - 23 January, 2022 =
+- Tested: WordPress version 5.9
+- Tested: PHP version 7.4
+
+
 = 1.2.4 - July 20, 2021 =
 - Updated: Style and enqueue for different pages.
 - Modified: Theme notice will be displayed only in the dashboard page.
