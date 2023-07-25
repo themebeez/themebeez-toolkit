@@ -18,7 +18,7 @@ class TT_Admin {
 
 			add_action( 'admin_notices', array( $this, 'admin_notices' ) );
 		} else {
-
+			
 			$this->includes();
 
 			TT_Main::getInstance();

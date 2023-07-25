@@ -1315,7 +1315,7 @@ class TT_Importer_WXR_Importer {
 			if ( $post_exists ) {
 				$existing = $this->comment_exists( $comment );
 				if ( $existing ) {
-					$this->mapping['comment'][ $original_id ] = $exists;
+					$this->mapping['comment'][ $original_id ] = $existing;
 					continue;
 				}
 			}

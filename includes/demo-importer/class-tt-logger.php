@@ -6,12 +6,12 @@
 // Include files.
 if ( ! class_exists( 'TT_Importer_Logger' ) ) {
 
-	require TT_ABSPATH. 'includes/demo-importer/importer/class-et-importer-logger.php';
+	require TT_ABSPATH. 'includes/demo-importer/importer/class-tt-importer-logger.php';
 }
 
 if ( ! class_exists( 'TT_Importer_Logger_CLI' ) ) {
 
-	require TT_ABSPATH. 'includes/demo-importer/importer/class-et-importer-logger-cli.php';
+	require TT_ABSPATH. 'includes/demo-importer/importer/class-tt-importer-logger-cli.php';
 }
 
 

@@ -10,7 +10,7 @@ class TT_Theme_Demo_Style_Blog extends TT_Theme_Demo {
 
 		$server_url = 'https://themebeez.com/demo-contents/style-blog/';
 
-		$demo_urls  = array(
+		$demo_urls = array(
 			array(
 				'import_file_name'           => esc_html__( 'Style Blog Demo', 'themebeez-toolkit' ),
 				'import_file_url'            => $server_url . 'contents.xml',
@@ -26,24 +26,24 @@ class TT_Theme_Demo_Style_Blog extends TT_Theme_Demo {
 
 	public static function after_import( $selected_import ) {
 
-		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
-		$social_menu 	= get_term_by('name', 'Social Menu', 'nav_menu');  
-	    $header_menu 	= get_term_by('name', 'Header Top', 'nav_menu');
+		update_option( 'widget_block', array() );
 
-	    $banner_cat		= get_term_by( 'slug', 'style', 'category' );
-	    $banner_cat_id	= $banner_cat->term_id;
+		$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
+		$social_menu  = get_term_by( 'name', 'Social Menu', 'nav_menu' );
+		$header_menu  = get_term_by( 'name', 'Header Top', 'nav_menu' );
 
-	    set_theme_mod(
-	     	'nav_menu_locations', 
-	     	array( 
-	     		'menu-1' => $primary_menu->term_id, 
-	     		'menu-2' => $social_menu->term_id,
-	     		'menu-3' => $header_menu->term_id,
-	     	)
-	    );
+		$banner_cat    = get_term_by( 'slug', 'style', 'category' );
+		$banner_cat_id = $banner_cat->term_id;
 
-	    set_theme_mod( 'styleblog_featured_post_cat', $banner_cat_id );
+		set_theme_mod(
+			'nav_menu_locations',
+			array(
+				'menu-1' => $primary_menu->term_id,
+				'menu-2' => $social_menu->term_id,
+				'menu-3' => $header_menu->term_id,
+			)
+		);
 
-		update_option( 'themebeez_themes', $installed_demos );
+		set_theme_mod( 'styleblog_featured_post_cat', $banner_cat_id );
 	}
 }

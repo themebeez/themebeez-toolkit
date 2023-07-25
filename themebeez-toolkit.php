@@ -3,13 +3,17 @@
  * Plugin Name:       Themebeez Toolkit
  * Plugin URI:        https://wordpress.org/plugins/themebeez-toolkit/
  * Description:       A essential toolkit for themes made by www.themebeez.com. This plugin extends themes made by themebeez & adds functionality to import demo data in just a click.
- * Version:           1.2.5
+ * Version:           1.2.6
+ * Requires at least: 5.6
+ * Requires PHP:      7.4
  * Author:            themebeez
  * Author URI:        https://themebeez.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       themebeez-toolkit
  * Domain Path:       /languages
+ *
+ * @package Themebeez_Toolkit
  */
 
 // If this file is called directly, abort.
@@ -22,7 +26,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'THEMEBEEZTOOLKIT_VERSION', '1.2.5' );
+define( 'THEMEBEEZTOOLKIT_VERSION', '1.2.6' );
 
 // Define THEMEBEEZTOOLKIT_PLUGIN_FILE.
 if ( ! defined( 'THEMEBEEZTOOLKIT_PLUGIN_FILE' ) ) {
@@ -30,7 +34,7 @@ if ( ! defined( 'THEMEBEEZTOOLKIT_PLUGIN_FILE' ) ) {
 }
 
 
-if( ! defined( 'THEMEBEEZ_TOOLKIT_THEME_PATH' ) ) {
+if ( ! defined( 'THEMEBEEZ_TOOLKIT_THEME_PATH' ) ) {
 	define( 'THEMEBEEZ_TOOLKIT_THEME_PATH', get_parent_theme_file_path() );
 }
 
@@ -91,8 +95,8 @@ if ( ! class_exists( 'Themebeez_Demo_Importer' ) ) {
  * @since 1.0.0
  * @return Themebeez_Demo_Importer
  */
-function TT() {
-	
+function themebeez_demo_importer_init() {
+
 	return Themebeez_Demo_Importer::instance();
 }
 
@@ -100,8 +104,8 @@ $theme = themebeez_toolkit_theme();
 
 $themes = themebeez_toolkit_theme_array();
 
-if( $theme->get('Author') === 'themebeez' && in_array( $theme->get('TextDomain'), $themes ) ) {
+if ( $theme->get( 'Author' ) === 'themebeez' && in_array( $theme->get( 'TextDomain' ), $themes, true ) ) {
 
 	// Global for backwards compatibility.
-	$GLOBALS['themebeez-demo-importer'] = TT();
+	$GLOBALS['themebeez-demo-importer'] = themebeez_demo_importer_init();
 }

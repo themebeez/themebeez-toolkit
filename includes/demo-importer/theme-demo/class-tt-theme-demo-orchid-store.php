@@ -8,7 +8,7 @@ class TT_Theme_Demo_Orchid_Store extends TT_Theme_Demo {
 
 	public static function import_files() {
 
-		if( class_exists( 'Orchid_Store_Pro_Demo_Import' ) ) {
+		if ( class_exists( 'Orchid_Store_Pro_Demo_Import' ) ) {
 
 			$demo_class = new Orchid_Store_Pro_Demo_Import();
 
@@ -17,7 +17,7 @@ class TT_Theme_Demo_Orchid_Store extends TT_Theme_Demo {
 
 			$server_url = 'https://themebeez.com/demo-contents/orchid-store/';
 
-			$demo_urls  = array(
+			$demo_urls = array(
 				array(
 					'import_file_name'           => esc_html__( 'Default Demo', 'themebeez-toolkit' ),
 					'import_file_url'            => $server_url . 'demo-one/contents.xml',
@@ -50,25 +50,51 @@ class TT_Theme_Demo_Orchid_Store extends TT_Theme_Demo {
 
 	public static function after_import( $selected_import ) {
 
-		$primary_menu 	= get_term_by('name', 'Primary menu', 'nav_menu'); 
-		$secondary_menu 	= get_term_by('name', 'Secondary menu', 'nav_menu'); 
+		update_option( 'widget_block', array() );
 
-	    set_theme_mod(
-	     	'nav_menu_locations', 
-	     	array( 
-	     		'menu-1' => $primary_menu->term_id,
-	     		'menu-2' => $secondary_menu->term_id,
-	     	)
-	    );
+		$primary_menu   = get_term_by( 'name', 'Primary menu', 'nav_menu' );
+		$secondary_menu = get_term_by( 'name', 'Secondary menu', 'nav_menu' );
 
-	    // Assign front page and posts page (blog page).
-		$front_page_id = get_page_by_title( 'Homepage' );
-		$blog_page_id  = get_page_by_title( 'Blog' );
+		set_theme_mod(
+			'nav_menu_locations',
+			array(
+				'menu-1' => $primary_menu->term_id,
+				'menu-2' => $secondary_menu->term_id,
+			)
+		);
+
+		$import_file_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
+
+		$front_page_query_arg = array();
+
+		if ( ! empty( $import_file_name ) ) {
+			if ( 'Elementor Demo' === $import_file_name || 'RTL Demo' === $import_file_name ) {
+				$front_page_query_arg['pagename'] = 'elementor-front-page';
+			} else {
+				$front_page_query_arg['pagename'] = 'homepage';
+			}
+		}
+
+		$front_page = new WP_Query( $front_page_query_arg );
+
+		if ( $front_page->have_posts() ) {
+			while ( $front_page->have_posts() ) {
+				$front_page->the_post();
+				update_option( 'page_on_front', get_the_ID() );
+			}
+			wp_reset_postdata();
+		}
+
+		$blog_page = new WP_Query( array( 'pagename' => 'blog' ) );
+
+		if ( $blog_page->have_posts() ) {
+			while ( $blog_page->have_posts() ) {
+				$blog_page->the_post();
+				update_option( 'page_for_posts', get_the_ID() );
+			}
+			wp_reset_postdata();
+		}
 
 		update_option( 'show_on_front', 'page' );
-		update_option( 'page_on_front', $front_page_id->ID );
-		update_option( 'page_for_posts', $blog_page_id->ID );
-
-		update_option( 'themebeez_themes', $installed_demos );
 	}
 }

@@ -41,7 +41,7 @@ class TT_Main {
 		add_action( 'admin_menu', array( $this, 'create_plugin_page' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
 		add_action( 'wp_ajax_TT_import_demo_data', array( $this, 'import_demo_data_ajax_callback' ) );
-		add_action( 'after_setup_theme', array( $this, 'setup_plugin_with_filter_data' ) );
+		add_action( 'plugins_loaded', array( $this, 'setup_plugin_with_filter_data' ) );
 	}
 
 
@@ -221,7 +221,7 @@ class TT_Main {
 
 		if ( 'themes.php' == $pagenow && ( isset( $_GET['page'] ) && 'themebeez-demo-importer' == $_GET['page'] ) ) {
 			
-			wp_enqueue_script( 'themebeez-toolkit-main', TT()->plugin_url() . '/admin/js/themebeez-toolkit-main.js', array( 'jquery', 'jquery-form' ), THEMEBEEZTOOLKIT_VERSION, true );
+			wp_enqueue_script( 'themebeez-toolkit-main', themebeez_demo_importer_init()->plugin_url() . '/admin/js/themebeez-toolkit-main.js', array( 'jquery', 'jquery-form' ), THEMEBEEZTOOLKIT_VERSION, true );
 
 			wp_localize_script( 'themebeez-toolkit-main', 'tt_admin_ajax',
 				array(
@@ -234,7 +234,7 @@ class TT_Main {
 				)
 			);
 
-			wp_enqueue_style( 'themebeez-toolkit-main', TT()->plugin_url() . '/admin/css/themebeez-toolkit-main.css', array(), THEMEBEEZTOOLKIT_VERSION );
+			wp_enqueue_style( 'themebeez-toolkit-main', themebeez_demo_importer_init()->plugin_url() . '/admin/css/themebeez-toolkit-main.css', array(), THEMEBEEZTOOLKIT_VERSION );
 		}
 	}
 
@@ -287,7 +287,7 @@ class TT_Main {
 
 				// Set the name of the import files, because we used the uploaded files.
 				$this->import_files[ $this->selected_index ]['import_file_name'] = esc_html__( 'Manually uploaded files', 'themebeez-toolkit' );
-			} else if ( ! empty( $this->import_files[ $this->selected_index ] ) ) { // Use predefined import files from wp filter: et-demo-content-import.
+			} elseif ( ! empty( $this->import_files[ $this->selected_index ] ) ) { // Use predefined import files from wp filter: et-demo-content-import.
 
 				// Download the import files (content and widgets files) and save it to variable for later use.
 				$this->selected_import_files = TT_Helpers::download_import_files(
@@ -327,7 +327,6 @@ class TT_Main {
 		 * Returns any errors greater then the "error" logger level, that will be displayed on front page.
 		 */
 		$this->frontend_error_messages .= $this->import_content( $this->selected_import_files['content'] );
-		
 
 		/**
 		 * 5. Import customize options.
@@ -598,7 +597,9 @@ class TT_Main {
 	 */
 	private function get_importer_data() {
 
-		if ( $data = get_transient( 'TT_importer_data' ) ) {
+		$data = get_transient( 'TT_importer_data' );
+
+		if ( $data ) {
 			$this->frontend_error_messages = empty( $data['frontend_error_messages'] ) ? '' : $data['frontend_error_messages'];
 			$this->ajax_call_number        = empty( $data['ajax_call_number'] ) ? 1 : $data['ajax_call_number'];
 			$this->log_file_path           = empty( $data['log_file_path'] ) ? '' : $data['log_file_path'];
@@ -618,24 +619,29 @@ class TT_Main {
 	 */
 	public function setup_plugin_with_filter_data() {
 
-		// Get info of import data files and filter it.
-		$this->import_files = TT_Helpers::validate_import_file_info( apply_filters( 'et-demo-content-import', array() ) );
+		global $pagenow;
 
-		// Importer options array.
-		$importer_options = apply_filters( 'themebeez-demo-importer/importer_options', array(
-			'fetch_attachments' => true,
-		) );
+		if ( $pagenow === 'admin-ajax.php' || ( $pagenow === 'themes.php' && ( isset( $_GET['page'] ) && 'themebeez-demo-importer' === $_GET['page'] ) ) ) {
 
-		// Logger options for the logger used in the importer.
-		$logger_options = apply_filters( 'themebeez-demo-importer/logger_options', array(
-			'logger_min_level' => 'warning',
-		) );
+			// Get info of import data files and filter it.
+			$this->import_files = TT_Helpers::validate_import_file_info( apply_filters( 'et-demo-content-import', array() ) );
 
-		// Configure logger instance and set it to the importer.
-		$this->logger            = new TT_Logger();
-		$this->logger->min_level = $logger_options['logger_min_level'];
+			// Importer options array.
+			$importer_options = apply_filters( 'themebeez-demo-importer/importer_options', array(
+				'fetch_attachments' => true,
+			) );
 
-		//// Create importer instance with proper parameters.
-		$this->importer = new TT_Importer_Main( $importer_options, $this->logger );
+			// Logger options for the logger used in the importer.
+			$logger_options = apply_filters( 'themebeez-demo-importer/logger_options', array(
+				'logger_min_level' => 'warning',
+			) );
+
+			// Configure logger instance and set it to the importer.
+			$this->logger            = new TT_Logger();
+			$this->logger->min_level = $logger_options['logger_min_level'];
+
+			// Create importer instance with proper parameters.
+			$this->importer = new TT_Importer_Main( $importer_options, $this->logger );
+		}
 	}
 }
