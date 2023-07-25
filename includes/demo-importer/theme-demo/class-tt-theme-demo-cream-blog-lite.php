@@ -10,7 +10,7 @@ class TT_Theme_Demo_Cream_Blog_Lite extends TT_Theme_Demo {
 
 		$server_url = 'https://themebeez.com/demo-contents/cream-blog-lite/';
 
-		$demo_urls  = array(
+		$demo_urls = array(
 			array(
 				'import_file_name'           => esc_html__( 'Demo One', 'themebeez-toolkit' ),
 				'import_file_url'            => $server_url . 'contents.xml',
@@ -26,21 +26,21 @@ class TT_Theme_Demo_Cream_Blog_Lite extends TT_Theme_Demo {
 
 	public static function after_import( $selected_import ) {
 
-		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
+		update_option( 'widget_block', array() );
 
-	    set_theme_mod(
-	     	'nav_menu_locations', 
-	     	array( 
-	     		'menu-1' => $primary_menu->term_id,
-	     	)
-	    );
+		$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
 
-	    $travel_category		= get_term_by( 'slug', 'travel', 'category' );
+		set_theme_mod(
+			'nav_menu_locations',
+			array(
+				'menu-1' => $primary_menu->term_id,
+			)
+		);
 
-	   	$banner_cats = array( $travel_category->term_id );
+		$travel_category = get_term_by( 'slug', 'travel', 'category' );
 
-	   	set_theme_mod( 'cream_blog_banner_categories', $banner_cats );
+		$banner_cats = array( $travel_category->term_id );
 
-		update_option( 'themebeez_themes', $installed_demos );
+		set_theme_mod( 'cream_blog_banner_categories', $banner_cats );
 	}
 }

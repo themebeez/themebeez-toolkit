@@ -10,7 +10,7 @@ class TT_Theme_Demo_Cream_Blog_Pro extends TT_Theme_Demo {
 
 		$server_url = 'https://themebeez.com/demo-contents/cream-blog-pro/';
 
-		$demo_urls  = array(
+		$demo_urls = array(
 			array(
 				'import_file_name'           => esc_html__( 'Demo One', 'themebeez-toolkit' ),
 				'import_file_url'            => $server_url . 'demo-one/contents.xml',
@@ -82,106 +82,110 @@ class TT_Theme_Demo_Cream_Blog_Pro extends TT_Theme_Demo {
 
 	public static function after_import( $selected_import ) {
 
-	    $import_file_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
+		update_option( 'widget_block', array() );
 
-	    if( !empty( $import_file_name ) ) {
+		$import_file_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
 
-	    	if( $import_file_name == 'Demo One' || $import_file_name == 'Demo Two' || $import_file_name == 'Demo Three' ) {
+		if ( ! empty( $import_file_name ) ) {
 
-	    		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
+			if (
+				'Demo One' === $import_file_name ||
+				'Demo Two' === $import_file_name ||
+				'Demo Three' === $import_file_name
+			) {
 
-			    set_theme_mod(
-			     	'nav_menu_locations', 
-			     	array( 
-			     		'menu-1' => $primary_menu->term_id, 
-			     	)
-			    );
-	    	} else if( $import_file_name == 'Demo Four' ) {
+				$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
 
-	    		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
+				set_theme_mod(
+					'nav_menu_locations',
+					array(
+						'menu-1' => $primary_menu->term_id,
+					)
+				);
+			} elseif ( 'Demo Four' === $import_file_name ) {
 
-			    set_theme_mod(
-			     	'nav_menu_locations', 
-			     	array( 
-			     		'menu-1' => $primary_menu->term_id, 
-			     	)
-			    );
+				$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
 
-	    		$american_cuisine_category	= get_term_by( 'slug', 'american-cuisine', 'category' );
-			    $breakfast_category	= get_term_by( 'slug', 'breakfast', 'category' );
+				set_theme_mod(
+					'nav_menu_locations',
+					array(
+						'menu-1' => $primary_menu->term_id,
+					)
+				);
 
-			   	$banner_cats = array( $american_cuisine_category->term_id, $breakfast_category->term_id );
+				$american_cuisine_category = get_term_by( 'slug', 'american-cuisine', 'category' );
+				$breakfast_category        = get_term_by( 'slug', 'breakfast', 'category' );
 
-			   	set_theme_mod( 'cream_blog_pro_banner_categories', $banner_cats );
-	    	} else if( $import_file_name == 'Demo Five' ) {
+				$banner_cats = array( $american_cuisine_category->term_id, $breakfast_category->term_id );
 
-	    		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
-	    		$header_menu 	= get_term_by('name', 'Top Menu', 'nav_menu');
+				set_theme_mod( 'cream_blog_pro_banner_categories', $banner_cats );
+			} elseif ( 'Demo Five' === $import_file_name ) {
 
-			    set_theme_mod(
-			     	'nav_menu_locations', 
-			     	array( 
-			     		'menu-1' => $primary_menu->term_id, 
-			     		'menu-2' => $header_menu->term_id,
-			     	)
-			    );
+				$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
+				$header_menu  = get_term_by( 'name', 'Top Menu', 'nav_menu' );
 
-	    		$diy_category	= get_term_by( 'slug', 'diy', 'category' );
-			    $fashion_category	= get_term_by( 'slug', 'fashion', 'category' );
+				set_theme_mod(
+					'nav_menu_locations',
+					array(
+						'menu-1' => $primary_menu->term_id,
+						'menu-2' => $header_menu->term_id,
+					)
+				);
 
-			   	$banner_cats = array( $diy_category->term_id, $fashion_category->term_id );
+				$diy_category     = get_term_by( 'slug', 'diy', 'category' );
+				$fashion_category = get_term_by( 'slug', 'fashion', 'category' );
 
-			   	set_theme_mod( 'cream_blog_pro_banner_categories', $banner_cats );
-	    	} else if( $import_file_name == 'Demo Six' ) {
+				$banner_cats = array( $diy_category->term_id, $fashion_category->term_id );
 
-	    		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
-	    		$header_menu 	= get_term_by('name', 'Top Menu', 'nav_menu');
+				set_theme_mod( 'cream_blog_pro_banner_categories', $banner_cats );
+			} elseif ( 'Demo Six' === $import_file_name ) {
 
-			    set_theme_mod(
-			     	'nav_menu_locations', 
-			     	array( 
-			     		'menu-1' => $primary_menu->term_id, 
-			     		'menu-2' => $header_menu->term_id,
-			     	)
-			    );
+				$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
+				$header_menu  = get_term_by( 'name', 'Top Menu', 'nav_menu' );
 
-	    		$basketball_category	= get_term_by( 'slug', 'basketball', 'category' );
-			    $football_category	= get_term_by( 'slug', 'football', 'category' );
-			    $golf_category	= get_term_by( 'slug', 'golf', 'category' );
+				set_theme_mod(
+					'nav_menu_locations',
+					array(
+						'menu-1' => $primary_menu->term_id,
+						'menu-2' => $header_menu->term_id,
+					)
+				);
 
-			   	$banner_cats = array( $basketball_category->term_id, $football_category->term_id, $golf_category->term_id );
+				$basketball_category = get_term_by( 'slug', 'basketball', 'category' );
+				$football_category   = get_term_by( 'slug', 'football', 'category' );
+				$golf_category       = get_term_by( 'slug', 'golf', 'category' );
 
-			   	set_theme_mod( 'cream_blog_pro_banner_categories', $banner_cats );
-	    	} else if( $import_file_name == 'Demo Seven' ) {
+				$banner_cats = array( $basketball_category->term_id, $football_category->term_id, $golf_category->term_id );
 
-	    		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
+				set_theme_mod( 'cream_blog_pro_banner_categories', $banner_cats );
+			} elseif ( 'Demo Seven' === $import_file_name ) {
 
-			    set_theme_mod(
-			     	'nav_menu_locations', 
-			     	array( 
-			     		'menu-1' => $primary_menu->term_id, 
-			     	)
-			    );
+				$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
 
-	    		$diy_category	= get_term_by( 'slug', 'diy', 'category' );
-			    $photography_category	= get_term_by( 'slug', 'photography', 'category' );
+				set_theme_mod(
+					'nav_menu_locations',
+					array(
+						'menu-1' => $primary_menu->term_id,
+					)
+				);
 
-			   	$banner_cats = array( $diy_category->term_id, $photography_category->term_id );
+				$diy_category         = get_term_by( 'slug', 'diy', 'category' );
+				$photography_category = get_term_by( 'slug', 'photography', 'category' );
 
-			   	set_theme_mod( 'cream_blog_pro_banner_categories', $banner_cats );
-	    	} else {
+				$banner_cats = array( $diy_category->term_id, $photography_category->term_id );
 
-	    		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
+				set_theme_mod( 'cream_blog_pro_banner_categories', $banner_cats );
+			} else {
 
-			    set_theme_mod(
-			     	'nav_menu_locations', 
-			     	array( 
-			     		'menu-1' => $primary_menu->term_id, 
-			     	)
-			    );
-	    	}
-	    }    
+				$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
 
-		update_option( 'themebeez_themes', $installed_demos );
+				set_theme_mod(
+					'nav_menu_locations',
+					array(
+						'menu-1' => $primary_menu->term_id,
+					)
+				);
+			}
+		}
 	}
 }

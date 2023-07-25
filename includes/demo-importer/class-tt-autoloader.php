@@ -78,11 +78,10 @@ class TT_Autoloader {
 		if ( 0 === strpos( $class, 'tt_theme_demo' ) ) {
 
 			$path = $this->include_path . 'theme-demo/';
-		} else if ( 0 === strpos( $class, 'tt_admin' ) ) {
+		} elseif ( 0 === strpos( $class, 'tt_admin' ) ) {
 
 			$path = $this->include_path . 'admin/';
-		} else if ( 0 === strpos( $class, 'tt_importer' ) ) {
-
+		} elseif ( 0 === strpos( $class, 'tt_importer' ) ) {
 			$path = $this->include_path . 'importer/';
 		} else {
 
@@ -95,5 +94,6 @@ class TT_Autoloader {
 		}
 	}
 }
+
 
 new TT_Autoloader();

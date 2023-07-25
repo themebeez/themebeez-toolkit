@@ -10,7 +10,7 @@ class TT_Theme_Demo_StyleBlog_Plus extends TT_Theme_Demo {
 
 		$server_url = 'https://themebeez.com/demo-contents/style-blog-pro/';
 
-		$demo_urls  = array(
+		$demo_urls = array(
 			array(
 				'import_file_name'           => esc_html__( 'Demo One', 'themebeez-toolkit' ),
 				'import_file_url'            => $server_url . 'demo-one/contents.xml',
@@ -34,7 +34,7 @@ class TT_Theme_Demo_StyleBlog_Plus extends TT_Theme_Demo {
 				'import_customizer_file_url' => $server_url . 'demo-three/customizer.dat',
 				'import_preview_image_url'   => $server_url . 'demo-three/screenshot.png',
 				'demo_url'                   => 'https://themebeez.com/demos/?theme=style-blog-pro-iii',
-			)
+			),
 		);
 
 		return $demo_urls;
@@ -42,53 +42,52 @@ class TT_Theme_Demo_StyleBlog_Plus extends TT_Theme_Demo {
 
 	public static function after_import( $selected_import ) {
 
-		$primary_menu 	= get_term_by('name', 'Main Menu', 'nav_menu'); 
-		$social_menu 	= get_term_by('name', 'Social Menu', 'nav_menu');  
-	    $header_menu 	= get_term_by('name', 'Header Top', 'nav_menu');
-	    $footer_menu 	= get_term_by('name', 'Footer Bottom', 'nav_menu');
+		update_option( 'widget_block', array() );
 
-	    set_theme_mod(
-	     	'nav_menu_locations', 
-	     	array( 
-	     		'menu-1' => $primary_menu->term_id, 
-	     		'menu-2' => $social_menu->term_id,
-	     		'menu-3' => $header_menu->term_id,
-	     		'menu-4' => $footer_menu->term_id
-	     	)
-	    );
+		$primary_menu = get_term_by( 'name', 'Main Menu', 'nav_menu' );
+		$social_menu  = get_term_by( 'name', 'Social Menu', 'nav_menu' );
+		$header_menu  = get_term_by( 'name', 'Header Top', 'nav_menu' );
+		$footer_menu  = get_term_by( 'name', 'Footer Bottom', 'nav_menu' );
 
-	    $import_file_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
+		set_theme_mod(
+			'nav_menu_locations',
+			array(
+				'menu-1' => $primary_menu->term_id,
+				'menu-2' => $social_menu->term_id,
+				'menu-3' => $header_menu->term_id,
+				'menu-4' => $footer_menu->term_id,
+			)
+		);
 
-	    if( !empty( $import_file_name ) ) {
+		$import_file_name = isset( $selected_import['import_file_name'] ) ? $selected_import['import_file_name'] : '';
 
-	    	if( $import_file_name == 'Demo One' ) {
+		if ( ! empty( $import_file_name ) ) {
 
-	    		$fashion_category		= get_term_by( 'slug', 'fashion', 'category' );
-	    		$fashion_category_id	= $fashion_category->term_id;
+			if ( 'Demo One' === $import_file_name ) {
 
-			   	set_theme_mod( 'styleblog_plus_featured_post_cat', $fashion_category_id );
+				$fashion_category    = get_term_by( 'slug', 'fashion', 'category' );
+				$fashion_category_id = $fashion_category->term_id;
 
-	    	} else if( $import_file_name == 'Demo Two' ) {
+				set_theme_mod( 'styleblog_plus_featured_post_cat', $fashion_category_id );
+			} elseif ( 'Demo Two' === $import_file_name ) {
 
-	    		$blog_category		= get_term_by( 'slug', 'blog', 'category' );
-	    		$blog_category_id		= $blog_category->term_id;
+				$blog_category    = get_term_by( 'slug', 'blog', 'category' );
+				$blog_category_id = $blog_category->term_id;
 
-	    		$glamour_category		= get_term_by( 'slug', 'glamour', 'category' );
-	    		$glamour_category_id		= $glamour_category->term_id;
+				$glamour_category    = get_term_by( 'slug', 'glamour', 'category' );
+				$glamour_category_id = $glamour_category->term_id;
 
-	    		$style_category		= get_term_by( 'slug', 'style', 'category' );
-	    		$style_category_id		= $style_category->term_id;
+				$style_category    = get_term_by( 'slug', 'style', 'category' );
+				$style_category_id = $style_category->term_id;
 
-			   	set_theme_mod( 'styleblog_plus_featured_post_cat', array( $blog_category_id, $glamour_category_id, $style_category_id ) );
-	    	} else {
+				set_theme_mod( 'styleblog_plus_featured_post_cat', array( $blog_category_id, $glamour_category_id, $style_category_id ) );
+			} else {
 
-	    		$general_category		= get_term_by( 'slug', 'general', 'category' );
-	    		$general_category_id	= $general_category->term_id;
+				$general_category    = get_term_by( 'slug', 'general', 'category' );
+				$general_category_id = $general_category->term_id;
 
-			   	set_theme_mod( 'styleblog_plus_featured_post_cat', $general_category_id );
-	    	}
-	    }
-
-		update_option( 'themebeez_themes', $installed_demos );
+				set_theme_mod( 'styleblog_plus_featured_post_cat', $general_category_id );
+			}
+		}
 	}
 }

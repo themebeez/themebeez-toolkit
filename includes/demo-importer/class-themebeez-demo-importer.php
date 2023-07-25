@@ -167,6 +167,9 @@ if( ! class_exists( 'Themebeez_Demo_Importer' ) ) {
 		 * Include required core files used in admin and on the frontend.
 		 */
 		public function includes() {
+
+			global $pagenow;
+
 			/**
 			 * Class autoloader.
 			 */
@@ -252,7 +255,7 @@ if( ! class_exists( 'Themebeez_Demo_Importer' ) ) {
 		 * @return string
 		 */
 		public function ajax_url() {
-			
+
 			return admin_url( 'admin-ajax.php', 'relative' );
 		}
 	}
