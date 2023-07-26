@@ -69,7 +69,11 @@ class TT_Theme_Demo_Orchid_Store extends TT_Theme_Demo {
 
 		if ( ! empty( $import_file_name ) ) {
 			if ( 'Elementor Demo' === $import_file_name || 'RTL Demo' === $import_file_name ) {
-				$front_page_query_arg['pagename'] = 'elementor-front-page';
+				if ( 'Elementor Demo' === $import_file_name && class_exists( 'Orchid_Store_Pro' ) ) {
+					$front_page_query_arg['pagename'] = 'homepage';
+				} else {
+					$front_page_query_arg['pagename'] = 'elementor-front-page';
+				}
 			} else {
 				$front_page_query_arg['pagename'] = 'homepage';
 			}
