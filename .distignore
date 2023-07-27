@@ -5,9 +5,6 @@
 /.git
 /.github
 /node_modules
-/admin/src/
-/admin/assets/scss/
-/public/assets/src/
 
 .distignore
 .gitignore
