@@ -1,16 +1,33 @@
 <?php
+/**
+ * Definition of demo content for Royale News Lite theme.
+ *
+ * @since 1.0.0
+ *
+ * @package Themebeez_Toolkit
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+/**
+ * Class - TT_Theme_Demo_Royale_News_Lite.
+ *
+ * @since 1.0.0
+ */
 class TT_Theme_Demo_Royale_News_Lite extends TT_Theme_Demo {
 
+	/**
+	 * Defines demo content files sources.
+	 *
+	 * @since 1.0.0
+	 */
 	public static function import_files() {
 
 		$server_url = 'https://themebeez.com/demo-contents/royale-news-lite/';
 
-		$demo_urls  = array(
+		$demo_urls = array(
 			array(
 				'import_file_name'           => __( 'Demo One', 'themebeez-toolkit' ),
 				'import_file_url'            => $server_url . 'contents.xml',
@@ -24,6 +41,13 @@ class TT_Theme_Demo_Royale_News_Lite extends TT_Theme_Demo {
 		return $demo_urls;
 	}
 
+	/**
+	 * Action to perfom after demo content import.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param string $selected_import Selected import.
+	 */
 	public static function after_import( $selected_import ) {
 
 		update_option( 'widget_block', array() );
@@ -82,7 +106,7 @@ class TT_Theme_Demo_Royale_News_Lite extends TT_Theme_Demo {
 
 		$third_widget = get_option( 'widget_royale-news-bottom-news-widget-one' );
 
-		$third_widget[1]['cat'] = array( absint( $lifestyle_category_id ) ); 
+		$third_widget[1]['cat'] = array( absint( $lifestyle_category_id ) );
 
 		update_option( 'widget_royale-news-bottom-news-widget-one', $third_widget );
 

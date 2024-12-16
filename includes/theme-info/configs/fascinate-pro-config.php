@@ -1,54 +1,49 @@
 <?php
 /**
- * Fascinate Pro Theme Info Configurations
+ * Theme Info Configurations - Fascinate Pro.
+ *
+ * @since 1.0.0
  *
  * @package Themebeez_Toolkit
  */
 
-if( ! function_exists( 'themebeez_toolkit_fascinate_pro_config'  ) ) {
-
+if ( ! function_exists( 'themebeez_toolkit_fascinate_pro_config' ) ) {
+	/**
+	 * Configuration of theme page - Fascinate Pro.
+	 *
+	 * @since 1.0.0
+	 */
 	function themebeez_toolkit_fascinate_pro_config() {
 
 		$config = array(
-			'menu_name' => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
-			'page_name' => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
-
-			/* translators: theme version */
-			'welcome_title' => sprintf( esc_html__( 'Welcome to %s - ', 'themebeez-toolkit' ), 'Fascinate Pro' ),
-
-			'notification' => '',
-
-			/* translators: 1: theme name */
-			'welcome_content' => sprintf( esc_html__( 'We hope this page will help you to setup %1$s with few clicks. We believe you will find it easy to use and perfect for your website development.', 'themebeez-toolkit' ), 'themebeez-toolkit' ),
-
+			'menu_name'           => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
+			'page_name'           => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
 			// Quick links.
-			'quick_links' => array(
-				'demo_import_url' => array(
-					'text' => esc_html__( 'Import Demo','themebeez-toolkit' ),
-					'url'  => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+			'quick_links'         => array(
+				'demo_import_url'   => array(
+					'text'   => esc_html__( 'Import Demo', 'themebeez-toolkit' ),
+					'url'    => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
 					'button' => 'primary',
-					),
-				'theme_url' => array(
-					'text' => esc_html__( 'Theme Details','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/fascinate-pro/',
-					),
-				'demo_url' => array(
-					'text' => esc_html__( 'View Demo','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/demos/?theme=fascinate-pro',
-					),
-				'documentation_url' => array(
-					'text'   => esc_html__( 'View Documentation','themebeez-toolkit' ),
-					'url'    => 'https://themebeez.com/docs/fascinate-pro-theme-documentation/',
-					),
 				),
-
-			// Tabs.
-			'tabs' => array(
-				'getting_started'     => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
+				'theme_url'         => array(
+					'text' => esc_html__( 'Theme Details', 'themebeez-toolkit' ),
+					'url'  => 'https://themebeez.com/themes/fascinate-pro/',
+				),
+				'demo_url'          => array(
+					'text' => esc_html__( 'View Demo', 'themebeez-toolkit' ),
+					'url'  => 'https://themebeez.com/demos/?theme=fascinate-pro',
+				),
+				'documentation_url' => array(
+					'text' => esc_html__( 'View Documentation', 'themebeez-toolkit' ),
+					'url'  => 'https://themebeez.com/docs/fascinate-pro-theme-documentation/',
+				),
 			),
-
+			// Tabs.
+			'tabs'                => array(
+				'getting_started' => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
+			),
 			// Getting started.
-			'getting_started' => array(
+			'getting_started'     => array(
 				array(
 					'title'               => esc_html__( 'Import Demo Content', 'themebeez-toolkit' ),
 					'text'                => esc_html__( 'Setup theme easily by importing demo contents.', 'themebeez-toolkit' ),
@@ -87,43 +82,42 @@ if( ! function_exists( 'themebeez_toolkit_fascinate_pro_config'  ) ) {
 				),
 
 				array(
-					'title'        			=> esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
-					'text'         			=> esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
-					'button_label' 			=> esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
-					'is_button'    			=> true,
-					'recommended_actions' 	=> false,
-					'is_new_tab'   			=> true,
+					'title'               => esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
+					'text'                => esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
+					'button_label'        => esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
+					'button_link'         => 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
+					'is_button'           => true,
+					'recommended_actions' => false,
+					'is_new_tab'          => true,
 				),
 				array(
-					'title'        			=> esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-					'text'         			=> esc_html__( 'If you have any problem, feel free to create ticket on our dedicated Support forum.', 'themebeez-toolkit' ),
-					'button_label' 			=> esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/support-forum/',
-					'is_button'    			=> true,
-					'recommended_actions' 	=> false,
-					'is_new_tab'   			=> true,
+					'title'               => esc_html__( 'Contact Support', 'themebeez-toolkit' ),
+					'text'                => esc_html__( 'If you have any problem, feel free to create ticket on our dedicated Support forum.', 'themebeez-toolkit' ),
+					'button_label'        => esc_html__( 'Contact Support', 'themebeez-toolkit' ),
+					'button_link'         => 'https://themebeez.com/support-forum/',
+					'is_button'           => true,
+					'recommended_actions' => false,
+					'is_new_tab'          => true,
 				),
 			),
-
 			// Recommended actions.
 			'recommended_actions' => array(
 				'content' => array(
-					'woocommerce' => array(
+					'woocommerce'           => array(
 						'title'       => esc_html__( 'WooCommerce', 'themebeez-toolkit' ),
 						'description' => esc_html__( 'Installing Woocommerce plugin help you set your online shop or store.', 'themebeez-toolkit' ),
 						'check'       => class_exists( 'WooCommerce' ),
 						'plugin_slug' => 'woocommerce',
 						'id'          => 'woocommerce',
 					),
-					'mailchimp-for-wp' => array(
+					'mailchimp-for-wp'      => array(
 						'title'       => esc_html__( 'MailChimp for WordPress', 'themebeez-toolkit' ),
 						'description' => esc_html__( 'Installing MailChimp for WordPress plugin help you create newsletter subscription.', 'themebeez-toolkit' ),
 						'check'       => class_exists( 'MC4WP_MailChimp' ),
 						'plugin_slug' => 'mailchimp-for-wp',
 						'id'          => 'mailchimp-for-wp',
 					),
-					'contact-from-7' => array(
+					'contact-from-7'        => array(
 						'title'       => esc_html__( 'Contact Form 7', 'themebeez-toolkit' ),
 						'description' => esc_html__( 'Installing Contact Form 7 plugin lets you create contact forms.', 'themebeez-toolkit' ),
 						'check'       => class_exists( 'WPCF7' ),

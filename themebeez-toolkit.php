@@ -84,7 +84,7 @@ run_themebeez_toolkit();
 
 // Include the main Demo Importer class.
 if ( ! class_exists( 'Themebeez_Demo_Importer' ) ) {
-	include_once dirname( __FILE__ ) . '/includes/demo-importer/class-themebeez-demo-importer.php';
+	include_once __DIR__ . '/includes/demo-importer/class-themebeez-demo-importer.php';
 }
 
 /**

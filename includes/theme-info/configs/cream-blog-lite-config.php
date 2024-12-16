@@ -1,60 +1,55 @@
 <?php
 /**
- * Cream Blog Lite Theme Info Configurations
+ * Theme Info Configurations - Cream Blog
+ *
+ * @since 1.0.0
  *
  * @package Themebeez_Toolkit
  */
 
-if( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config'  ) ) {
-
+if ( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config' ) ) {
+	/**
+	 * Configuration of theme page - Cream Blog.
+	 *
+	 * @since 1.0.0
+	 */
 	function themebeez_toolkit_cream_blog_lite_config() {
 
 		$config = array(
-			'menu_name' => esc_html__( 'Cream Blog Lite Info', 'themebeez-toolkit' ),
-			'page_name' => esc_html__( 'Cream Blog Lite Info', 'themebeez-toolkit' ),
-
-			/* translators: theme version */
-			'welcome_title' => sprintf( esc_html__( 'Welcome to %s - ', 'themebeez-toolkit' ), 'Cream Blog Lite' ),
-
-			'notification' => '',
-
-			/* translators: 1: theme name */
-			'welcome_content' => sprintf( esc_html__( 'We hope this page will help you to setup %1$s with few clicks. We believe you will find it easy to use and perfect for your website development.', 'themebeez-toolkit' ), 'themebeez-toolkit' ),
-
+			'menu_name'           => esc_html__( 'Cream Blog Lite Info', 'themebeez-toolkit' ),
+			'page_name'           => esc_html__( 'Cream Blog Lite Info', 'themebeez-toolkit' ),
 			// Quick links.
-			'quick_links' => array(
-				'demo_import_url' => array(
-					'text' => esc_html__( 'Import Demo','themebeez-toolkit' ),
-					'url'  => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+			'quick_links'         => array(
+				'demo_import_url'   => array(
+					'text'   => esc_html__( 'Import Demo', 'themebeez-toolkit' ),
+					'url'    => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
 					'button' => 'primary',
-					),
-				'theme_url' => array(
-					'text' => esc_html__( 'Theme Details','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/cream-blog-lite/',
-					),
-				'demo_url' => array(
-					'text' => esc_html__( 'View Demo','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/demos/?theme=cream-blog-lite',
-					),
-				'documentation_url' => array(
-					'text'   => esc_html__( 'View Documentation','themebeez-toolkit' ),
-					'url'    => 'https://themebeez.com/docs/cream-blog-theme-documentation/',
-					),
-				'pro_url' => array(
-					'text' => esc_html__( 'Upgrade To Pro Theme','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/cream-blog-pro/',
-					'button' => 'primary',
-					),
 				),
-
+				'theme_url'         => array(
+					'text' => esc_html__( 'Theme Details', 'themebeez-toolkit' ),
+					'url'  => 'https://themebeez.com/themes/cream-blog-lite/',
+				),
+				'demo_url'          => array(
+					'text' => esc_html__( 'View Demo', 'themebeez-toolkit' ),
+					'url'  => 'https://themebeez.com/demos/?theme=cream-blog-lite',
+				),
+				'documentation_url' => array(
+					'text' => esc_html__( 'View Documentation', 'themebeez-toolkit' ),
+					'url'  => 'https://themebeez.com/docs/cream-blog-theme-documentation/',
+				),
+				'pro_url'           => array(
+					'text'   => esc_html__( 'Upgrade To Pro Theme', 'themebeez-toolkit' ),
+					'url'    => 'https://themebeez.com/themes/cream-blog-pro/',
+					'button' => 'primary',
+				),
+			),
 			// Tabs.
-			'tabs' => array(
+			'tabs'                => array(
 				'getting_started'     => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
 				'recommended_actions' => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
 			),
-
 			// Getting started.
-			'getting_started' => array(
+			'getting_started'     => array(
 				array(
 					'title'               => esc_html__( 'Import Demo Content', 'themebeez-toolkit' ),
 					'text'                => esc_html__( 'Setup theme easily by importing demo contents.', 'themebeez-toolkit' ),
@@ -72,7 +67,7 @@ if( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config'  ) ) {
 					'is_button'           => true,
 					'recommended_actions' => false,
 					'is_new_tab'          => true,
-				),				
+				),
 				array(
 					'title'               => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
 					'text'                => esc_html__( 'We recommend few steps to take so that you can get complete site like shown in demo.', 'themebeez-toolkit' ),
@@ -93,39 +88,38 @@ if( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config'  ) ) {
 				),
 
 				array(
-					'title'        			=> esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
-					'text'         			=> esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
-					'button_label' 			=> esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
-					'is_button'    			=> true,
-					'recommended_actions' 	=> false,
-					'is_new_tab'   			=> true,
+					'title'               => esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
+					'text'                => esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
+					'button_label'        => esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
+					'button_link'         => 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
+					'is_button'           => true,
+					'recommended_actions' => false,
+					'is_new_tab'          => true,
 				),
 
 				array(
-					'title'        			=> esc_html__( 'Pro Version', 'themebeez-toolkit' ),
-					'text'         			=> esc_html__( 'Upgrade to pro version for additional features and options.', 'themebeez-toolkit' ),
-					'button_label' 			=> esc_html__( 'View Pro Version', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/themes/cream-blog-pro/',
-					'is_button'    			=> true,
-					'recommended_actions' 	=> false,
-					'is_new_tab'   			=> true,
+					'title'               => esc_html__( 'Pro Version', 'themebeez-toolkit' ),
+					'text'                => esc_html__( 'Upgrade to pro version for additional features and options.', 'themebeez-toolkit' ),
+					'button_label'        => esc_html__( 'View Pro Version', 'themebeez-toolkit' ),
+					'button_link'         => 'https://themebeez.com/themes/cream-blog-pro/',
+					'is_button'           => true,
+					'recommended_actions' => false,
+					'is_new_tab'          => true,
 				),
 				array(
-					'title'        			=> esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-					'text'         			=> esc_html__( 'If you have any problem, feel free to create ticket on our dedicated Support forum.', 'themebeez-toolkit' ),
-					'button_label' 			=> esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/support-forum/',
-					'is_button'    			=> true,
-					'recommended_actions' 	=> false,
-					'is_new_tab'   			=> true,
+					'title'               => esc_html__( 'Contact Support', 'themebeez-toolkit' ),
+					'text'                => esc_html__( 'If you have any problem, feel free to create ticket on our dedicated Support forum.', 'themebeez-toolkit' ),
+					'button_label'        => esc_html__( 'Contact Support', 'themebeez-toolkit' ),
+					'button_link'         => 'https://themebeez.com/support-forum/',
+					'is_button'           => true,
+					'recommended_actions' => false,
+					'is_new_tab'          => true,
 				),
 			),
-
 			// Recommended actions.
 			'recommended_actions' => array(
 				'content' => array(
-					'woocommerce' => array(
+					'woocommerce'      => array(
 						'title'       => esc_html__( 'WooCommerce', 'themebeez-toolkit' ),
 						'description' => esc_html__( 'Installing Woocommerce plugin help you set your online shop or store.', 'themebeez-toolkit' ),
 						'check'       => class_exists( 'WooCommerce' ),
@@ -139,7 +133,7 @@ if( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config'  ) ) {
 						'plugin_slug' => 'mailchimp-for-wp',
 						'id'          => 'mailchimp-for-wp',
 					),
-					'contact-from-7' => array(
+					'contact-from-7'   => array(
 						'title'       => esc_html__( 'Contact Form 7', 'themebeez-toolkit' ),
 						'description' => esc_html__( 'Installing Contact Form 7 plugin lets you create contact forms.', 'themebeez-toolkit' ),
 						'check'       => class_exists( 'WPCF7' ),
@@ -155,4 +149,3 @@ if( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config'  ) ) {
 }
 
 add_action( 'after_setup_theme', 'themebeez_toolkit_cream_blog_lite_config' );
-
