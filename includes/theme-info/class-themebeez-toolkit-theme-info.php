@@ -632,7 +632,7 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 						<div class="tt-features-section-inner">
 							<div class="tt-features-heading">
 								<h3><?php echo esc_html( $title ); ?></h3>
-								<a href="<?php esc_url( $link_url ); ?>"><?php echo esc_html( $link_title ); ?></a>
+								<a href="<?php echo esc_url( $link_url ); ?>"><?php echo esc_html( $link_title ); ?></a>
 							</div>
 							<div class="tt-features-wrapper">
 								<?php

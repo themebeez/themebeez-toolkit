@@ -15,13 +15,15 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 	 */
 	function themebeez_toolkit_fascinate_config() {
 
+		$pro_url = 'https://themebeez.com/themes/fascinate-pro/';
+
 		$config = array(
 			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Fascinate Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Fascinate Info', 'themebeez-toolkit' ),
 			'pro_version'     => array(
 				'name' => 'Fascinate Pro',
-				'url'  => 'https://themebeez.com/themes/fascinate-pro/',
+				'url'  => $pro_url,
 			),
 			'changelog_url'   => '',
 			'theme_url'       => 'https://themebeez.com',
@@ -34,15 +36,15 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 			),
 			// Quick links.
 			'quick_links'     => array(
-				'pro_url'           => array(
+				'pro_url'             => array(
 					'title'      => esc_html__( 'Upgrade to Pro', 'themebeez-toolkit' ),
 					'desc'       => esc_html__( 'Get advance customization and premium support from our team of WordPress experts via email.', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-superhero',
 					'link_title' => esc_html__( 'Get it today', 'themebeez-toolkit' ),
-					'link_url'   => 'https://themebeez.com/themes/fascinate-pro/',
+					'link_url'   => $pro_url,
 					'link_class' => 'button tt-button button-primary',
 				),
-				'demo_import_url'   => array(
+				'documentation_url'   => array(
 					'title'      => esc_html__( 'Documentation', 'themebeez-toolkit' ),
 					'desc'       => esc_html__( 'Stuck due to an issue? Our detailed documentation will surely clear up any confusions you have!', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-media-document',
@@ -50,7 +52,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 					'link_url'   => 'https://themebeez.com/docs/fascinate-theme-documentation/',
 					'link_class' => 'button tt-button button-secondary',
 				),
-				'theme_url'         => array(
+				'theme_support_url'   => array(
 					'title'      => esc_html__( 'Support', 'themebeez-toolkit' ),
 					'desc'       => esc_html__( 'Get in touch with our support team. You can always submit a support ticket for help.', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-megaphone',
@@ -58,7 +60,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 					'link_url'   => 'https://themebeez.com/support-forum/',
 					'link_class' => 'button tt-button button-secondary',
 				),
-				'demo_url'          => array(
+				'feature_request_url' => array(
 					'title'      => esc_html__( 'Feature Request', 'themebeez-toolkit' ),
 					'desc'       => esc_html__( 'Please take a moment to suggest any features that could enhance our product.', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-marker',
@@ -66,7 +68,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 					'link_url'   => 'https://github.com/themebeez/fascinate/issues',
 					'link_class' => 'button tt-button button-secondary',
 				),
-				'documentation_url' => array(
+				'rate_review_url'     => array(
 					'title'      => esc_html__( 'Leave us a review', 'themebeez-toolkit' ),
 					'desc'       => esc_html__( 'What do you think of our theme? Was it a good experience and did it match your expectations? Let us know so we can improve!', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-star-empty',
@@ -82,7 +84,16 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 						'title'               => esc_html__( 'Site Identity', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_section_site_logo' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Site Layout', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_section_site_layout' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
@@ -91,7 +102,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 						'title'               => esc_html__( 'Header Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=fascinate_panel_site_header' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
@@ -100,7 +111,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 						'title'               => esc_html__( 'Footer Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_section_site_footer' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
@@ -109,7 +120,43 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 						'title'               => esc_html__( 'Carousel Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_section_site_carousel' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Preloader Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_section_site_preloader' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Sidebar Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_section_site_sidebar' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Pages Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=fascinate_panel_site_pages' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Breadcrumbs Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_section_site_breadcrumb' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
@@ -117,37 +164,37 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_config' ) ) {
 				),
 				'pro'  => array(
 					array(
-						'title'               => esc_html__( 'Site Identity', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'AJAX Posts Loading', 'themebeez-toolkit' ),
 						'text'                => '',
-						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Header Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Advance Color Options', 'themebeez-toolkit' ),
 						'text'                => '',
-						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Footer Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Advance Typography Options', 'themebeez-toolkit' ),
 						'text'                => '',
-						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Carousel Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Header Layouts', 'themebeez-toolkit' ),
 						'text'                => '',
-						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
