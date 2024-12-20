@@ -1,23 +1,23 @@
 <?php
 /**
- * Theme Info Configurations - Royale News Pro.
+ * Theme Info Configurations - Style Blog Plus.
  *
  * @since 1.0.0
  *
  * @package Themebeez_Toolkit
  */
 
-if ( ! function_exists( 'themebeez_toolkit_royale_news_pro_config' ) ) {
+if ( ! function_exists( 'themebeez_toolkit_styleblog_plus_config' ) ) {
 	/**
 	 * Configuration of theme page - Royale News Pro.
 	 *
 	 * @since 1.0.0
 	 */
-	function themebeez_toolkit_royale_news_pro_config() {
+	function themebeez_toolkit_styleblog_plus_config() {
 
 		$config = array(
-			'menu_name'       => esc_html__( 'Royale News Pro Info', 'themebeez-toolkit' ),
-			'page_name'       => esc_html__( 'Royale News Pro Info', 'themebeez-toolkit' ),
+			'menu_name'       => esc_html__( 'StyleBlog Plus Info', 'themebeez-toolkit' ),
+			'page_name'       => esc_html__( 'StyleBlog Plus Info', 'themebeez-toolkit' ),
 			// Quick links.
 			'quick_links'     => array(
 				'documentation_url'   => array(
@@ -25,7 +25,7 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_pro_config' ) ) {
 					'desc'       => esc_html__( 'Stuck due to an issue? Our detailed documentation will surely clear up any confusions you have!', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-media-document',
 					'link_title' => esc_html__( 'Read Now', 'themebeez-toolkit' ),
-					'link_url'   => 'https://themebeez.com/docs/royale-news-pro-documentation/',
+					'link_url'   => 'https://themebeez.com/docs/style-blog-documentation/',
 					'link_class' => 'button tt-button button-secondary',
 				),
 				'theme_support_url'   => array(
@@ -33,7 +33,7 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_pro_config' ) ) {
 					'desc'       => esc_html__( 'Get in touch with our support team. You can always submit a support ticket for help.', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-megaphone',
 					'link_title' => esc_html__( 'Create Post', 'themebeez-toolkit' ),
-					'link_url'   => 'https://themebeez.com/support-forum/royale-news-pro-theme-supports/',
+					'link_url'   => 'https://themebeez.com/support-forum/style-blog-pro-theme-support/',
 					'link_class' => 'button tt-button button-secondary',
 				),
 				'feature_request_url' => array(
@@ -41,15 +41,7 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_pro_config' ) ) {
 					'desc'       => esc_html__( 'Please take a moment to suggest any features that could enhance our product.', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-marker',
 					'link_title' => esc_html__( 'Make a request', 'themebeez-toolkit' ),
-					'link_url'   => 'https://github.com/themebeez/royale-news-pro/issues',
-					'link_class' => 'button tt-button button-secondary',
-				),
-				'rate_review_url'     => array(
-					'title'      => esc_html__( 'Leave us a review', 'themebeez-toolkit' ),
-					'desc'       => esc_html__( 'What do you think of our theme? Was it a good experience and did it match your expectations? Let us know so we can improve!', 'themebeez-toolkit' ),
-					'icon'       => 'dashicons-star-empty',
-					'link_title' => esc_html__( 'Submit a review', 'themebeez-toolkit' ),
-					'link_url'   => 'https://wordpress.org/support/theme/fascinate/reviews/#new-post',
+					'link_url'   => 'https://github.com/themebeez/styleblog-plus/issues',
 					'link_class' => 'button tt-button button-secondary',
 				),
 			),
@@ -76,31 +68,40 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_pro_config' ) ) {
 						'title'               => esc_html__( 'Theme Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=royale_news_options' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=styleblog_theme_options' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Color Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Home Page Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=royale_news_pro_font_color_options' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=styleblog_plus_home_options' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Typography Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Color Customization', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=royale_news_pro_typo_panel' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=colors' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Background Image Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Header Image', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=header_image' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Background Image', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
 						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=background_image' ) ),
@@ -118,7 +119,7 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_pro_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Widget Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Widgets', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
 						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=widgets' ) ),
@@ -144,15 +145,6 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_pro_config' ) ) {
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
 					),
-					array(
-						'title'               => esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
-						'button_link'         => 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => true,
-					),
 				),
 			),
 		);
@@ -161,4 +153,4 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_pro_config' ) ) {
 	}
 }
 
-add_action( 'after_setup_theme', 'themebeez_toolkit_royale_news_pro_config' );
+add_action( 'after_setup_theme', 'themebeez_toolkit_styleblog_plus_config' );
