@@ -56,3 +56,21 @@
 	list-style: disc;
 	margin: 1em 1em 1em 3em;
 }
+
+#tt_themebeez_blog_posts_dashboard_widget.postbox .inside {
+	padding: 0;
+}
+
+.tt-rss-feed {
+	padding: 0 12px;
+}
+
+.tt-rss-feed ul li:not(:last-child) {
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.tt-rss-feed ul li .rss-date {
+	font-size: 12px;
+}

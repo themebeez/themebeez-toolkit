@@ -1,150 +1,276 @@
 <?php
 /**
- * Cream Blog Lite Theme Info Configurations
+ * Theme Info Configurations - Cream Blog
+ *
+ * @since 1.0.0
  *
  * @package Themebeez_Toolkit
  */
 
-if( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config'  ) ) {
-
+if ( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config' ) ) {
+	/**
+	 * Configuration of theme page - Cream Blog.
+	 *
+	 * @since 1.0.0
+	 */
 	function themebeez_toolkit_cream_blog_lite_config() {
 
+		$pro_url = 'https://themebeez.com/themes/cream-blog-pro/';
+
 		$config = array(
-			'menu_name' => esc_html__( 'Cream Blog Lite Info', 'themebeez-toolkit' ),
-			'page_name' => esc_html__( 'Cream Blog Lite Info', 'themebeez-toolkit' ),
-
-			/* translators: theme version */
-			'welcome_title' => sprintf( esc_html__( 'Welcome to %s - ', 'themebeez-toolkit' ), 'Cream Blog Lite' ),
-
-			'notification' => '',
-
-			/* translators: 1: theme name */
-			'welcome_content' => sprintf( esc_html__( 'We hope this page will help you to setup %1$s with few clicks. We believe you will find it easy to use and perfect for your website development.', 'themebeez-toolkit' ), 'themebeez-toolkit' ),
-
+			'menu_name'           => esc_html__( 'Cream Blog Lite Info', 'themebeez-toolkit' ),
+			'page_name'           => esc_html__( 'Cream Blog Lite Info', 'themebeez-toolkit' ),
 			// Quick links.
-			'quick_links' => array(
-				'demo_import_url' => array(
-					'text' => esc_html__( 'Import Demo','themebeez-toolkit' ),
-					'url'  => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
-					'button' => 'primary',
-					),
-				'theme_url' => array(
-					'text' => esc_html__( 'Theme Details','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/cream-blog-lite/',
-					),
-				'demo_url' => array(
-					'text' => esc_html__( 'View Demo','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/demos/?theme=cream-blog-lite',
-					),
-				'documentation_url' => array(
-					'text'   => esc_html__( 'View Documentation','themebeez-toolkit' ),
-					'url'    => 'https://themebeez.com/docs/cream-blog-theme-documentation/',
-					),
-				'pro_url' => array(
-					'text' => esc_html__( 'Upgrade To Pro Theme','themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/cream-blog-pro/',
-					'button' => 'primary',
-					),
+			'quick_links'     => array(
+				'pro_url'             => array(
+					'title'      => esc_html__( 'Upgrade to Pro', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Get advance customization and premium support from our team of WordPress experts via email.', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-superhero',
+					'link_title' => esc_html__( 'Get it today', 'themebeez-toolkit' ),
+					'link_url'   => $pro_url,
+					'link_class' => 'button tt-button button-primary',
 				),
-
-			// Tabs.
-			'tabs' => array(
-				'getting_started'     => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
-				'recommended_actions' => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
+				'documentation_url'   => array(
+					'title'      => esc_html__( 'Documentation', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Stuck due to an issue? Our detailed documentation will surely clear up any confusions you have!', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-media-document',
+					'link_title' => esc_html__( 'Read Now', 'themebeez-toolkit' ),
+					'link_url'   => 'https://themebeez.com/docs/cream-blog-theme-documentation/',
+					'link_class' => 'button tt-button button-secondary',
+				),
+				'theme_support_url'   => array(
+					'title'      => esc_html__( 'Support', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Get in touch with our support team. You can always submit a support ticket for help.', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-megaphone',
+					'link_title' => esc_html__( 'Create Post', 'themebeez-toolkit' ),
+					'link_url'   => 'https://themebeez.com/support-forum/cream-blog-free-theme-support/',
+					'link_class' => 'button tt-button button-secondary',
+				),
+				'feature_request_url' => array(
+					'title'      => esc_html__( 'Feature Request', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Please take a moment to suggest any features that could enhance our product.', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-marker',
+					'link_title' => esc_html__( 'Make a request', 'themebeez-toolkit' ),
+					'link_url'   => 'https://github.com/themebeez/cream-blog-lite/issues',
+					'link_class' => 'button tt-button button-secondary',
+				),
+				'rate_review_url'     => array(
+					'title'      => esc_html__( 'Leave us a review', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'What do you think of our theme? Was it a good experience and did it match your expectations? Let us know so we can improve!', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-star-empty',
+					'link_title' => esc_html__( 'Submit a review', 'themebeez-toolkit' ),
+					'link_url'   => 'https://wordpress.org/support/theme/cream-blog-lite/reviews/#new-post',
+					'link_class' => 'button tt-button button-secondary',
+				),
 			),
-
+			'tabs'            => array(
+				'getting_started'   => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
+				'starter_templates' => esc_html__( 'Starter Templates', 'themebeez-toolkit' ),
+				'plugins'           => esc_html__( 'Plugins', 'themebeez-toolkit' ),
+				'changelog'         => esc_html__( 'Changelog', 'themebeez-toolkit' ),
+			),
 			// Getting started.
-			'getting_started' => array(
-				array(
-					'title'               => esc_html__( 'Import Demo Content', 'themebeez-toolkit' ),
-					'text'                => esc_html__( 'Setup theme easily by importing demo contents.', 'themebeez-toolkit' ),
-					'button_label'        => esc_html__( 'Import Demo', 'themebeez-toolkit' ),
-					'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
-					'is_button'           => true,
-					'recommended_actions' => false,
-					'is_new_tab'          => false,
-				),
-				array(
-					'title'               => esc_html__( 'Theme Documentation', 'themebeez-toolkit' ),
-					'text'                => esc_html__( 'Find step by step instructions with video documentation to setup theme easily.', 'themebeez-toolkit' ),
-					'button_label'        => esc_html__( 'View documentation', 'themebeez-toolkit' ),
-					'button_link'         => 'https://themebeez.com/docs/cream-blog-theme-documentation/',
-					'is_button'           => true,
-					'recommended_actions' => false,
-					'is_new_tab'          => true,
-				),				
-				array(
-					'title'               => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
-					'text'                => esc_html__( 'We recommend few steps to take so that you can get complete site like shown in demo.', 'themebeez-toolkit' ),
-					'button_label'        => esc_html__( 'Check recommended actions', 'themebeez-toolkit' ),
-					'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-toolkit-about&tab=recommended_actions' ) ),
-					'is_button'           => true,
-					'recommended_actions' => false,
-					'is_new_tab'          => false,
-				),
-				array(
-					'title'               => esc_html__( 'Customize Everything', 'themebeez-toolkit' ),
-					'text'                => esc_html__( 'Start customizing every aspect of the website with customizer.', 'themebeez-toolkit' ),
-					'button_label'        => esc_html__( 'Go to Customizer', 'themebeez-toolkit' ),
-					'button_link'         => esc_url( wp_customize_url() ),
-					'is_button'           => true,
-					'recommended_actions' => false,
-					'is_new_tab'          => false,
-				),
-
-				array(
-					'title'        			=> esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
-					'text'         			=> esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
-					'button_label' 			=> esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
-					'is_button'    			=> true,
-					'recommended_actions' 	=> false,
-					'is_new_tab'   			=> true,
-				),
-
-				array(
-					'title'        			=> esc_html__( 'Pro Version', 'themebeez-toolkit' ),
-					'text'         			=> esc_html__( 'Upgrade to pro version for additional features and options.', 'themebeez-toolkit' ),
-					'button_label' 			=> esc_html__( 'View Pro Version', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/themes/cream-blog-pro/',
-					'is_button'    			=> true,
-					'recommended_actions' 	=> false,
-					'is_new_tab'   			=> true,
-				),
-				array(
-					'title'        			=> esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-					'text'         			=> esc_html__( 'If you have any problem, feel free to create ticket on our dedicated Support forum.', 'themebeez-toolkit' ),
-					'button_label' 			=> esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-					'button_link'  			=> 'https://themebeez.com/support-forum/',
-					'is_button'    			=> true,
-					'recommended_actions' 	=> false,
-					'is_new_tab'   			=> true,
-				),
-			),
-
-			// Recommended actions.
-			'recommended_actions' => array(
-				'content' => array(
-					'woocommerce' => array(
-						'title'       => esc_html__( 'WooCommerce', 'themebeez-toolkit' ),
-						'description' => esc_html__( 'Installing Woocommerce plugin help you set your online shop or store.', 'themebeez-toolkit' ),
-						'check'       => class_exists( 'WooCommerce' ),
-						'plugin_slug' => 'woocommerce',
-						'id'          => 'woocommerce',
+			'getting_started'     => array(
+				'free' => array(
+					array(
+						'title'               => esc_html__( 'Site Identity', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=title_tagline' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
 					),
-					'mailchimp-for-wp' => array(
-						'title'       => esc_html__( 'MailChimp for WordPress', 'themebeez-toolkit' ),
-						'description' => esc_html__( 'Installing MailChimp for WordPress plugin help you create newsletter subscription.', 'themebeez-toolkit' ),
-						'check'       => class_exists( 'MC4WP_MailChimp' ),
-						'plugin_slug' => 'mailchimp-for-wp',
-						'id'          => 'mailchimp-for-wp',
+					array(
+						'title'               => esc_html__( 'Color Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=colors' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
 					),
-					'contact-from-7' => array(
-						'title'       => esc_html__( 'Contact Form 7', 'themebeez-toolkit' ),
-						'description' => esc_html__( 'Installing Contact Form 7 plugin lets you create contact forms.', 'themebeez-toolkit' ),
-						'check'       => class_exists( 'WPCF7' ),
-						'plugin_slug' => 'contact-form-7',
-						'id'          => 'contact-form-7',
+					array(
+						'title'               => esc_html__( 'Homepage Customization', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=cream_blog_homepage_customization' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Basic Customization', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=cream_blog_basic_customization' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Advance Customization', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=cream_blog_advance_customization' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Menu Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=nav_menus' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Widget Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=widgets' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
+						'text'                => esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
+						'button_label'        => esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
+						'button_link'         => 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
+						'is_button'           => true,
+						'recommended_actions' => false,
+						'is_new_tab'          => true,
+					),
+				),
+				'pro'  => array(
+					array(
+						'title'               => esc_html__( 'Header Layout Variations', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Banner Layout Variations', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Post Listing - Grid Layout', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Post Listing - Large Layout', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Video Post - Custom Post Type', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Woocommerce Ready', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Mailchimp Ready', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Instagram Feeds Widgets', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Category Post Widget', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Social Widget', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Advance Typography Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Breadcrumb Layout Variations', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Pagination Layout Variations', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Regular Updates', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
 					),
 				),
 			),
@@ -155,4 +281,3 @@ if( ! function_exists( 'themebeez_toolkit_cream_blog_lite_config'  ) ) {
 }
 
 add_action( 'after_setup_theme', 'themebeez_toolkit_cream_blog_lite_config' );
-

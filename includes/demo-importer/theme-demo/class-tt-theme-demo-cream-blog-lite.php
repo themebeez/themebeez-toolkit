@@ -1,11 +1,28 @@
 <?php
+/**
+ * Definition of demo content for Cream Blog Lite theme.
+ *
+ * @since 1.0.0
+ *
+ * @package Themebeez_Toolkit
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+/**
+ * Class - TT_Theme_Demo_Cream_Blog_Lite.
+ *
+ * @since 1.0.0
+ */
 class TT_Theme_Demo_Cream_Blog_Lite extends TT_Theme_Demo {
 
+	/**
+	 * Defines demo content files sources.
+	 *
+	 * @since 1.0.0
+	 */
 	public static function import_files() {
 
 		$server_url = 'https://themebeez.com/demo-contents/cream-blog-lite/';
@@ -24,6 +41,13 @@ class TT_Theme_Demo_Cream_Blog_Lite extends TT_Theme_Demo {
 		return $demo_urls;
 	}
 
+	/**
+	 * Action to perfom after demo content import.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param string $selected_import Selected import.
+	 */
 	public static function after_import( $selected_import ) {
 
 		update_option( 'widget_block', array() );
