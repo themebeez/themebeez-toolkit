@@ -15,34 +15,52 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 	 */
 	function themebeez_toolkit_orchid_store_config() {
 
-		$pro_url = 'https://themebeez.com/themes/royale-news-pro/';
+		$pro_url = 'https://themebeez.com/themes/orchid-store-pro/';
 
 		$config = array(
-			'menu_name'           => esc_html__( 'Orchid Store Info', 'themebeez-toolkit' ),
-			'page_name'           => esc_html__( 'Orchid Store Info', 'themebeez-toolkit' ),
+			'menu_name'       => esc_html__( 'Orchid Store Info', 'themebeez-toolkit' ),
+			'page_name'       => esc_html__( 'Orchid Store Info', 'themebeez-toolkit' ),
 			// Quick links.
-			'quick_links'         => array(
-				'demo_import_url'   => array(
-					'text'   => esc_html__( 'Import Demo', 'themebeez-toolkit' ),
-					'url'    => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
-					'button' => 'primary',
+			'quick_links'     => array(
+				'pro_url'             => array(
+					'title'      => esc_html__( 'Upgrade to Pro', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Get advance customization and premium support from our team of WordPress experts via email.', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-superhero',
+					'link_title' => esc_html__( 'Get it today', 'themebeez-toolkit' ),
+					'link_url'   => $pro_url,
+					'link_class' => 'button tt-button button-primary',
 				),
-				'theme_url'         => array(
-					'text' => esc_html__( 'Theme Details', 'themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/orchid-store/',
+				'documentation_url'   => array(
+					'title'      => esc_html__( 'Documentation', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Stuck due to an issue? Our detailed documentation will surely clear up any confusions you have!', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-media-document',
+					'link_title' => esc_html__( 'Read Now', 'themebeez-toolkit' ),
+					'link_url'   => 'https://themebeez.com/docs/orchid-store-pro-documentation/',
+					'link_class' => 'button tt-button button-secondary',
 				),
-				'demo_url'          => array(
-					'text' => esc_html__( 'View Demo', 'themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/orchid-store-demos/',
+				'theme_support_url'   => array(
+					'title'      => esc_html__( 'Support', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Get in touch with our support team. You can always submit a support ticket for help.', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-megaphone',
+					'link_title' => esc_html__( 'Create Post', 'themebeez-toolkit' ),
+					'link_url'   => 'https://themebeez.com/support-forum/orchid-store-pro-support/',
+					'link_class' => 'button tt-button button-secondary',
 				),
-				'documentation_url' => array(
-					'text' => esc_html__( 'View Documentation', 'themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/docs/orchid-store-theme-documentation/',
+				'feature_request_url' => array(
+					'title'      => esc_html__( 'Feature Request', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Please take a moment to suggest any features that could enhance our product.', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-marker',
+					'link_title' => esc_html__( 'Make a request', 'themebeez-toolkit' ),
+					'link_url'   => 'https://github.com/themebeez/orchid-store-pro/issues',
+					'link_class' => 'button tt-button button-secondary',
 				),
-				'pro_url'           => array(
-					'text'   => esc_html__( 'Upgrade To Pro Theme', 'themebeez-toolkit' ),
-					'url'    => 'https://themebeez.com/themes/orchid-store-pro/',
-					'button' => 'primary',
+				'rate_review_url'     => array(
+					'title'      => esc_html__( 'Leave us a review', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'What do you think of our theme? Was it a good experience and did it match your expectations? Let us know so we can improve!', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-star-empty',
+					'link_title' => esc_html__( 'Submit a review', 'themebeez-toolkit' ),
+					'link_url'   => 'https://wordpress.org/support/theme/orchid-store/reviews/#new-post',
+					'link_class' => 'button tt-button button-secondary',
 				),
 			),
 			// Tabs.
@@ -101,10 +119,19 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Pages Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Page Header Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=orchid_store_panel_site_pages' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=orchid_store_section_page_header' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Blog Page Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=orchid_store_section_blog_page' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
@@ -202,7 +229,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 				),
 				'pro'  => array(
 					array(
-						'title'               => esc_html__( 'Advance Color Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Advanced Color Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -211,7 +238,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Advance Typography Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Advanced Typography Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -220,7 +247,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Multiple Header layout Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Multiple Header layouts', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -229,7 +256,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Multiple Banner layout Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Multiple Banner layouts', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -238,7 +265,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Three Columns Product Widget', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Product Widget', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -281,89 +308,6 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
-					),
-					array(
-						'title'               => esc_html__( 'Regular Update', 'themebeez-toolkit' ),
-						'text'                => '',
-						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
-						'button_link'         => $pro_url,
-						'is_button'           => false,
-						'recommended_actions' => false,
-						'is_new_tab'          => false,
-					),
-					array(
-						'title'               => esc_html__( 'Premium Support', 'themebeez-toolkit' ),
-						'text'                => '',
-						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
-						'button_link'         => $pro_url,
-						'is_button'           => false,
-						'recommended_actions' => false,
-						'is_new_tab'          => false,
-					),
-					array(
-						'title'               => esc_html__( 'Import Demo Content', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Setup theme easily by importing demo contents.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Import Demo', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => false,
-					),
-					array(
-						'title'               => esc_html__( 'Theme Documentation', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Find step by step instructions with video documentation to setup theme easily.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'View documentation', 'themebeez-toolkit' ),
-						'button_link'         => 'https://themebeez.com/docs/orchid-store-theme-documentation/',
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => true,
-					),
-					array(
-						'title'               => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'We recommend few steps to take so that you can get complete site like shown in demo.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Check recommended actions', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-toolkit-about&tab=recommended_actions' ) ),
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => false,
-					),
-					array(
-						'title'               => esc_html__( 'Customize Everything', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Start customizing every aspect of the website with customizer.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Go to Customizer', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( wp_customize_url() ),
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => false,
-					),
-
-					array(
-						'title'               => esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
-						'button_link'         => 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => true,
-					),
-
-					array(
-						'title'               => esc_html__( 'Pro Version', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Upgrade to pro version for additional features and options.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'View Pro Version', 'themebeez-toolkit' ),
-						'button_link'         => 'https://themebeez.com/themes/orchid-store-pro/',
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => true,
-					),
-					array(
-						'title'               => esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'If you have any problem, feel free to create ticket on our dedicated Support forum.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-						'button_link'         => 'https://themebeez.com/support-forum/',
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => true,
 					),
 				),
 			),
