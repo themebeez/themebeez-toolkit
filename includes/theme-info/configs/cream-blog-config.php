@@ -101,7 +101,7 @@ if ( ! function_exists( 'themebeez_toolkit_cream_blog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Post Listing Layout', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Post Listing Layouts', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
 						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=cream_blog_homepage_blog_posts_options' ) ),
