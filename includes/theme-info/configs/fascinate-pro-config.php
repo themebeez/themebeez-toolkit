@@ -119,7 +119,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_pro_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Breaddcrumb Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Breadcrumb Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
 						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_pro_section_site_breadcrumb' ) ),
