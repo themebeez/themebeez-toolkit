@@ -70,7 +70,7 @@ if ( ! function_exists( 'themebeez_toolkit_theme_array' ) ) {
 	 */
 	function themebeez_toolkit_theme_array() {
 
-		return array( 'royale-news', 'cream-blog', 'styleblog', 'style-blog-fame', 'royale-news-pro', 'cream-blog-pro', 'styleblog-plus', 'cream-magazine', 'cream-magazine-pro', 'royale-news-lite', 'cream-blog-lite', 'fascinate', 'fascinate-pro', 'orchid-store' );
+		return array( 'royale-news', 'cream-blog', 'styleblog', 'style-blog-fame', 'royale-news-pro', 'cream-blog-pro', 'styleblog-plus', 'cream-magazine', 'cream-magazine-pro', 'royale-news-lite', 'fascinate', 'fascinate-pro', 'orchid-store' );
 	}
 }
 

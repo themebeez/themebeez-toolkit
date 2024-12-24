@@ -18,6 +18,7 @@ if ( ! function_exists( 'themebeez_toolkit_styleblog_config' ) ) {
 		$pro_url = 'https://themebeez.com/themes/style-blog-pro/';
 
 		$config = array(
+			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'StyleBlog Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'StyleBlog Info', 'themebeez-toolkit' ),
 			// Quick links.
@@ -83,16 +84,43 @@ if ( ! function_exists( 'themebeez_toolkit_styleblog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Theme Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Header Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[panel]=styleblog_theme_options' ) ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=styleblog_header_option' ) ),
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Color Customization', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Breadcrumb Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=styleblog_breadcrumb_option' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Footer Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=styleblog_footer_options' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Excerpt/Sidebar Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
+						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=styleblog_other_options' ) ),
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Color Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
 						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=colors' ) ),
@@ -175,7 +203,7 @@ if ( ! function_exists( 'themebeez_toolkit_styleblog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Header Layout Variations', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Header Layouts', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -184,7 +212,7 @@ if ( ! function_exists( 'themebeez_toolkit_styleblog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Banner Layout Variations', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Banner Layouts', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -211,7 +239,7 @@ if ( ! function_exists( 'themebeez_toolkit_styleblog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Related Posts Layout Variations', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Related Posts Layouts', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -229,7 +257,7 @@ if ( ! function_exists( 'themebeez_toolkit_styleblog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Custom Widgets', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Custom Widget', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -238,7 +266,7 @@ if ( ! function_exists( 'themebeez_toolkit_styleblog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Video Post - Custom Post Type', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Video Post Type', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -256,7 +284,7 @@ if ( ! function_exists( 'themebeez_toolkit_styleblog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Instagram Feeds Option', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Instagram Feed Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,

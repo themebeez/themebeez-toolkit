@@ -18,6 +18,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 		$pro_url = 'https://themebeez.com/themes/orchid-store-pro/';
 
 		$config = array(
+			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Orchid Store Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Orchid Store Info', 'themebeez-toolkit' ),
 			// Quick links.
@@ -229,7 +230,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 				),
 				'pro'  => array(
 					array(
-						'title'               => esc_html__( 'Advanced Color Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Advance Color Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -238,7 +239,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Advanced Typography Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Advance Typography Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -247,7 +248,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Multiple Header layouts', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Header layouts', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -256,7 +257,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Multiple Banner layouts', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Banner layouts', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -292,7 +293,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Featured Brands Widget', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Featured Brand Widget', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
