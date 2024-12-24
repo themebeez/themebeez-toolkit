@@ -16,26 +16,33 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_pro_config' ) ) {
 	function themebeez_toolkit_fascinate_pro_config() {
 
 		$config = array(
-			'menu_name'           => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
-			'page_name'           => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
+			'menu_name'       => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
+			'page_name'       => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
 			// Quick links.
-			'quick_links'         => array(
-				'demo_import_url'   => array(
-					'text'   => esc_html__( 'Import Demo', 'themebeez-toolkit' ),
-					'url'    => esc_url( admin_url( 'themes.php?page=themebeez-demo-importer' ) ),
-					'button' => 'primary',
+			'quick_links'     => array(
+				'documentation_url'   => array(
+					'title'      => esc_html__( 'Documentation', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Stuck due to an issue? Our detailed documentation will surely clear up any confusions you have!', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-media-document',
+					'link_title' => esc_html__( 'Read Now', 'themebeez-toolkit' ),
+					'link_url'   => 'https://themebeez.com/docs/fascinate-pro-theme-documentation/',
+					'link_class' => 'button tt-button button-secondary',
 				),
-				'theme_url'         => array(
-					'text' => esc_html__( 'Theme Details', 'themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/themes/fascinate-pro/',
+				'theme_support_url'   => array(
+					'title'      => esc_html__( 'Support', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Get in touch with our support team. You can always submit a support ticket for help.', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-megaphone',
+					'link_title' => esc_html__( 'Create Post', 'themebeez-toolkit' ),
+					'link_url'   => 'https://themebeez.com/support-forum/fascinate-pro-theme-support/',
+					'link_class' => 'button tt-button button-secondary',
 				),
-				'demo_url'          => array(
-					'text' => esc_html__( 'View Demo', 'themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/demos/?theme=fascinate-pro',
-				),
-				'documentation_url' => array(
-					'text' => esc_html__( 'View Documentation', 'themebeez-toolkit' ),
-					'url'  => 'https://themebeez.com/docs/fascinate-pro-theme-documentation/',
+				'feature_request_url' => array(
+					'title'      => esc_html__( 'Feature Request', 'themebeez-toolkit' ),
+					'desc'       => esc_html__( 'Please take a moment to suggest any features that could enhance our product.', 'themebeez-toolkit' ),
+					'icon'       => 'dashicons-marker',
+					'link_title' => esc_html__( 'Make a request', 'themebeez-toolkit' ),
+					'link_url'   => 'https://github.com/themebeez/fascinate-pro/issues',
+					'link_class' => 'button tt-button button-secondary',
 				),
 			),
 			// Tabs.
@@ -112,7 +119,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_pro_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Breaddcrumb Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Breadcrumb Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Customize', 'themebeez-toolkit' ),
 						'button_link'         => esc_url( admin_url( 'customize.php?autofocus[section]=fascinate_pro_section_site_breadcrumb' ) ),
@@ -236,54 +243,6 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_pro_config' ) ) {
 						'is_button'           => false,
 						'recommended_actions' => false,
 						'is_new_tab'          => false,
-					),
-				),
-				'pro'  => array(
-					array(
-						'title'               => esc_html__( 'Theme Documentation', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Find step by step instructions with video documentation to setup theme easily.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'View documentation', 'themebeez-toolkit' ),
-						'button_link'         => 'https://themebeez.com/docs/fscinate-pro-theme-documentation/',
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => true,
-					),
-					array(
-						'title'               => esc_html__( 'Recommended Actions', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'We recommend few steps to take so that you can get complete site like shown in demo.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Check recommended actions', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( admin_url( 'themes.php?page=themebeez-toolkit-about&tab=recommended_actions' ) ),
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => false,
-					),
-					array(
-						'title'               => esc_html__( 'Customize Everything', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Start customizing every aspect of the website with customizer.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Go to Customizer', 'themebeez-toolkit' ),
-						'button_link'         => esc_url( wp_customize_url() ),
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => false,
-					),
-
-					array(
-						'title'               => esc_html__( 'Youtube Video Tutorials', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'Please check our youtube channel for video instructions of themebeez-toolkit setup and customization.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Video Tutorials', 'themebeez-toolkit' ),
-						'button_link'         => 'https://www.youtube.com/channel/UC3oIQqb6U-uQlxs2MDnP6yg',
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => true,
-					),
-					array(
-						'title'               => esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-						'text'                => esc_html__( 'If you have any problem, feel free to create ticket on our dedicated Support forum.', 'themebeez-toolkit' ),
-						'button_label'        => esc_html__( 'Contact Support', 'themebeez-toolkit' ),
-						'button_link'         => 'https://themebeez.com/support-forum/',
-						'is_button'           => true,
-						'recommended_actions' => false,
-						'is_new_tab'          => true,
 					),
 				),
 			),
