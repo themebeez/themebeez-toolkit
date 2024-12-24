@@ -21,6 +21,12 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_config' ) ) {
 			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Royale News Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Royale News Info', 'themebeez-toolkit' ),
+			'pro_version'     => array(
+				'name' => 'Royale News Pro',
+				'url'  => $pro_url,
+			),
+			'changelog_url'   => '',
+			'theme_url'       => 'https://themebeez.com',
 			// Quick links.
 			'quick_links'     => array(
 				'pro_url'             => array(

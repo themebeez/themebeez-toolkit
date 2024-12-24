@@ -21,7 +21,12 @@ if ( ! function_exists( 'themebeez_toolkit_cream_magazine_config' ) ) {
 			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Cream Magazine Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Cream Magazine Info', 'themebeez-toolkit' ),
-
+			'pro_version'     => array(
+				'name' => 'Cream Magazine Pro',
+				'url'  => $pro_url,
+			),
+			'changelog_url'   => '',
+			'theme_url'       => 'https://themebeez.com',
 			'quick_links'     => array(
 				'pro_url'             => array(
 					'title'      => esc_html__( 'Upgrade to Pro', 'themebeez-toolkit' ),
@@ -72,7 +77,7 @@ if ( ! function_exists( 'themebeez_toolkit_cream_magazine_config' ) ) {
 				'changelog'         => esc_html__( 'Changelog', 'themebeez-toolkit' ),
 			),
 			// Getting started.
-			'getting_started'     => array(
+			'getting_started' => array(
 				'free' => array(
 					array(
 						'title'               => esc_html__( 'Site Identity', 'themebeez-toolkit' ),

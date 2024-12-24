@@ -21,6 +21,12 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Orchid Store Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Orchid Store Info', 'themebeez-toolkit' ),
+			'pro_version'     => array(
+				'name' => 'Orchid Store Pro',
+				'url'  => $pro_url,
+			),
+			'changelog_url'   => '',
+			'theme_url'       => 'https://themebeez.com',
 			// Quick links.
 			'quick_links'     => array(
 				'pro_url'             => array(
@@ -65,7 +71,7 @@ if ( ! function_exists( 'themebeez_toolkit_orchid_store_config' ) ) {
 				),
 			),
 			// Tabs.
-			'tabs'                => array(
+			'tabs'            => array(
 				'getting_started'   => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
 				'starter_templates' => esc_html__( 'Starter Templates', 'themebeez-toolkit' ),
 				'plugins'           => esc_html__( 'Plugins', 'themebeez-toolkit' ),

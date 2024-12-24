@@ -138,7 +138,7 @@ class TT_Main {
 				);
 			}
 
-			if ( 0 < count( $this->import_files ) ) :
+			if ( is_array( $this->import_files ) && 0 < count( $this->import_files ) ) :
 				?>
 				<div class="TT__multi-select-import">
 					<div class="theme-browser rendered">

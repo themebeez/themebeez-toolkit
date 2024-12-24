@@ -16,7 +16,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_pro_config' ) ) {
 	function themebeez_toolkit_fascinate_pro_config() {
 
 		$config = array(
-			'sale_plan'       => 'Premium',
+			'sale_plan'       => 'Pro',
 			'menu_name'       => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
 			// Quick links.
@@ -42,19 +42,19 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_pro_config' ) ) {
 					'desc'       => esc_html__( 'Please take a moment to suggest any features that could enhance our product.', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-marker',
 					'link_title' => esc_html__( 'Make a request', 'themebeez-toolkit' ),
-					'link_url'   => 'https://github.com/themebeez/fascinate-pro/issues',
+					'link_url'   => 'https://themebeez.com/support-forum/fascinate-pro-theme-support/',
 					'link_class' => 'button tt-button button-secondary',
 				),
 			),
 			// Tabs.
-			'tabs'                => array(
+			'tabs'            => array(
 				'getting_started'   => esc_html__( 'Getting Started', 'themebeez-toolkit' ),
 				'starter_templates' => esc_html__( 'Starter Templates', 'themebeez-toolkit' ),
 				'plugins'           => esc_html__( 'Plugins', 'themebeez-toolkit' ),
 				'changelog'         => esc_html__( 'Changelog', 'themebeez-toolkit' ),
 			),
 			// Getting started.
-			'getting_started'     => array(
+			'getting_started' => array(
 				'free' => array(
 					array(
 						'title'               => esc_html__( 'Site Identity', 'themebeez-toolkit' ),
