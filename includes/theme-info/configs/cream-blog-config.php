@@ -21,6 +21,12 @@ if ( ! function_exists( 'themebeez_toolkit_cream_blog_config' ) ) {
 			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Cream Blog Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Cream Blog Info', 'themebeez-toolkit' ),
+			'pro_version'     => array(
+				'name' => 'Cream Blog Pro',
+				'url'  => $pro_url,
+			),
+			'changelog_url'   => '',
+			'theme_url'       => 'https://themebeez.com',
 			// Quick links.
 			'quick_links'     => array(
 				'pro_url'             => array(
@@ -72,7 +78,7 @@ if ( ! function_exists( 'themebeez_toolkit_cream_blog_config' ) ) {
 				'changelog'         => esc_html__( 'Changelog', 'themebeez-toolkit' ),
 			),
 			// Getting started.
-			'getting_started'     => array(
+			'getting_started' => array(
 				'free' => array(
 					array(
 						'title'               => esc_html__( 'Site Identity', 'themebeez-toolkit' ),

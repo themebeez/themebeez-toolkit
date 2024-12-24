@@ -16,7 +16,7 @@ if ( ! function_exists( 'themebeez_toolkit_cream_magazine_pro_config' ) ) {
 	function themebeez_toolkit_cream_magazine_pro_config() {
 
 		$config = array(
-			'sale_plan'       => 'Premium',
+			'sale_plan'       => 'Pro',
 			'menu_name'       => esc_html__( 'Cream Magazine Pro Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Cream Magazine Pro Info', 'themebeez-toolkit' ),
 			// Quick links.
@@ -42,7 +42,7 @@ if ( ! function_exists( 'themebeez_toolkit_cream_magazine_pro_config' ) ) {
 					'desc'       => esc_html__( 'Please take a moment to suggest any features that could enhance our product.', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-marker',
 					'link_title' => esc_html__( 'Make a request', 'themebeez-toolkit' ),
-					'link_url'   => 'https://github.com/themebeez/cream-magazine-pro/issues',
+					'link_url'   => 'https://themebeez.com/support-forum/cream-magazine-pro-theme-support/',
 					'link_class' => 'button tt-button button-secondary',
 				),
 			),

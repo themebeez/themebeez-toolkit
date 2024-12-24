@@ -87,15 +87,12 @@ class TT_Autoloader {
 		$path = '';
 
 		if ( 0 === strpos( $classname, 'tt_theme_demo' ) ) {
-
 			$path = $this->include_path . 'theme-demo/';
 		} elseif ( 0 === strpos( $classname, 'tt_admin' ) ) {
-
 			$path = $this->include_path . 'admin/';
 		} elseif ( 0 === strpos( $classname, 'tt_importer' ) ) {
 			$path = $this->include_path . 'importer/';
 		} else {
-
 			$path = $this->include_path;
 		}
 
