@@ -18,6 +18,7 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_config' ) ) {
 		$pro_url = 'https://themebeez.com/themes/royale-news-pro/';
 
 		$config = array(
+			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Royale News Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Royale News Info', 'themebeez-toolkit' ),
 			// Quick links.
@@ -51,7 +52,7 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_config' ) ) {
 					'desc'       => esc_html__( 'Please take a moment to suggest any features that could enhance our product.', 'themebeez-toolkit' ),
 					'icon'       => 'dashicons-marker',
 					'link_title' => esc_html__( 'Make a request', 'themebeez-toolkit' ),
-					'link_url'   => 'https://github.com/themebeez/royalenews/issues',
+					'link_url'   => 'https://github.com/themebeez/royale-news/issues',
 					'link_class' => 'button tt-button button-secondary',
 				),
 				'rate_review_url'     => array(
@@ -229,6 +230,15 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
+						'title'               => esc_html__( 'Post Listing Layouts', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
 						'title'               => esc_html__( 'Built-In Social Share', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
@@ -256,6 +266,15 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
+						'title'               => esc_html__( 'Custom Widgets', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
 						'title'               => esc_html__( 'Fallback Image Option', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
@@ -265,7 +284,7 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Advanced Color Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Advance Color Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -274,7 +293,7 @@ if ( ! function_exists( 'themebeez_toolkit_royale_news_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Advanced Typo Options', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Advance Typo Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,

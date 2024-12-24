@@ -18,6 +18,7 @@ if ( ! function_exists( 'themebeez_toolkit_cream_blog_config' ) ) {
 		$pro_url = 'https://themebeez.com/themes/cream-blog-pro/';
 
 		$config = array(
+			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Cream Blog Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Cream Blog Info', 'themebeez-toolkit' ),
 			// Quick links.
@@ -247,7 +248,7 @@ if ( ! function_exists( 'themebeez_toolkit_cream_blog_config' ) ) {
 						'is_new_tab'          => false,
 					),
 					array(
-						'title'               => esc_html__( 'Category Widgets', 'themebeez-toolkit' ),
+						'title'               => esc_html__( 'Category Widget', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,
@@ -266,6 +267,15 @@ if ( ! function_exists( 'themebeez_toolkit_cream_blog_config' ) ) {
 					),
 					array(
 						'title'               => esc_html__( 'Advance Typography Options', 'themebeez-toolkit' ),
+						'text'                => '',
+						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
+						'button_link'         => $pro_url,
+						'is_button'           => false,
+						'recommended_actions' => false,
+						'is_new_tab'          => false,
+					),
+					array(
+						'title'               => esc_html__( 'Advance Color Options', 'themebeez-toolkit' ),
 						'text'                => '',
 						'button_label'        => esc_html__( 'Learn More', 'themebeez-toolkit' ),
 						'button_link'         => $pro_url,

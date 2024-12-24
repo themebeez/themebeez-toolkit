@@ -18,6 +18,7 @@ if ( ! function_exists( 'themebeez_toolkit_cream_magazine_config' ) ) {
 		$pro_url = 'https://themebeez.com/themes/cream-magazine-pro/';
 
 		$config = array(
+			'sale_plan'       => 'Free',
 			'menu_name'       => esc_html__( 'Cream Magazine Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Cream Magazine Info', 'themebeez-toolkit' ),
 

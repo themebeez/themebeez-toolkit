@@ -16,6 +16,7 @@ if ( ! function_exists( 'themebeez_toolkit_fascinate_pro_config' ) ) {
 	function themebeez_toolkit_fascinate_pro_config() {
 
 		$config = array(
+			'sale_plan'       => 'Premium',
 			'menu_name'       => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
 			'page_name'       => esc_html__( 'Fascinate Pro Info', 'themebeez-toolkit' ),
 			// Quick links.
