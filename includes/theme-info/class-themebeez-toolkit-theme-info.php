@@ -978,7 +978,9 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 		 */
 		public function changelog() {
 
-			$changelog = THEMEBEEZ_TOOLKIT_THEME_PATH . '/changelog.txt';
+			$changelog_txt = '';
+
+			$changelog = THEMEBEEZ_TOOLKIT_THEME_PATH . '/readme.txt';
 
 			if ( ! file_exists( $changelog ) ) {
 				$changelog = esc_html__( 'Changelog file not found.', 'themebeez-toolkit' );
@@ -995,11 +997,18 @@ if ( ! class_exists( 'Themebeez_Toolkit_Theme_Info' ) ) {
 				}
 
 				$changelog = $wp_filesystem->get_contents( $changelog );
+
+				// Match changelog header.
+				$changelog = explode( '== Changelog ==', $changelog );
+
+				if ( is_array( $changelog ) && isset( $changelog[1] ) ) {
+					$changelog_txt = $changelog[1];
+				}
 			}
 			?>
 			<div class="changelog-section">
 				<div class="changelog-detail">					
-					<pre><?php echo esc_html( $changelog ); ?></pre>
+					<pre><?php echo esc_html( $changelog_txt ); ?></pre>
 				</div>
 			</div>
 			<?php

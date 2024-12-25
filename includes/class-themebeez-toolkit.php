@@ -124,6 +124,10 @@ class Themebeez_Toolkit {
 		 * Functions necessary for loading demo content and theme info.
 		 */
 		require_once plugin_dir_path( __DIR__ ) . 'includes/functions.php';
+		/**
+		 * Initialize udp-aget..
+		 */
+		require_once plugin_dir_path( __DIR__ ) . 'includes/udp/init.php';
 
 		$this->loader = new Themebeez_Toolkit_Loader();
 	}
