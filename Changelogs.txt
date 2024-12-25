@@ -1,6 +1,6 @@
 == Changelog ==
 
-= 1.3 - ? December, 2024 =
+= 1.3 - 25 December, 2024 =
 - Fixed:   PHP errors and warnings.
 - Updated: Theme dashboard page.
 - Removed: Theme dashboard and demo content configurations for deprecated themes. 

@@ -85,6 +85,13 @@ class TT_Main {
 	 */
 	private $ajax_call_number;
 
+	/**
+	 * Active theme.
+	 *
+	 * @var $active_theme
+	 */
+	private $active_theme;
+
 
 	/**
 	 * Returns the *Singleton* instance of this class.
@@ -137,9 +144,13 @@ class TT_Main {
 					'</p></div>'
 				);
 			}
+			?>
 
+			<?php
 			if ( is_array( $this->import_files ) && 0 < count( $this->import_files ) ) :
 				?>
+				
+
 				<div class="TT__multi-select-import">
 					<div class="theme-browser rendered">
 						<div class="themes wp-clearfix">
@@ -231,6 +242,49 @@ class TT_Main {
 						<?php
 					endif;
 					?>
+				</div>
+
+				<div class="tt-demo-importer-notice tt-demo-importer-note">
+					<h2 class="tt-demo-importer-notice-heading">
+						<span class="dashicons dashicons-bell tt-demo-importer-notice-icon"></span>
+						<?php echo esc_html__( 'Note', 'themebeez-toolkit' ); ?>
+					</h2>
+					<p><?php echo esc_html__( 'Please follow the instructions carefully to import demo content for your site.', 'themebeez-toolkit' ); ?></p>
+					<ul>
+						<li><strong><?php echo esc_html__( 'Theme installed with correct theme folder name:', 'themebeez-toolkit' ); ?></strong> <?php echo esc_html__( 'Make sure theme is installed with correct theme folder name inside', 'themebeez-toolkit' ); ?> <code>/wp-content/themes/</code> <?php echo esc_html__( 'folder.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'Your current site data will not be overwritten:', 'themebeez-toolkit' ); ?></strong> <?php echo esc_html__( 'Importing demo content will not replace existing data with demo content. Take a backup of your site if necessary.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'Your server meets the requirements:', 'themebeez-toolkit' ); ?></strong> <?php echo esc_html__( 'Check server settings like PHP version, memory limit, and execution time to avoid interruptions during the import process.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'You have sufficient resources:', 'themebeez-toolkit' ); ?></strong> <?php echo esc_html__( 'Demo content may include large files, so ensure adequate disk space and bandwidth.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'All required plugins are installed and activated:', 'themebeez-toolkit' ); ?></strong> <?php echo esc_html__( 'The demo may depend on certain plugins for functionality.', 'themebeez-toolkit' ); ?></li>
+					</ul>
+				</div>
+				
+				<div class="tt-demo-importer-notice tt-demo-importer-issues-troubleshooting">
+
+					<h3 class="tt-demo-importer-notice-heading">
+						<span class="dashicons dashicons-flag tt-demo-importer-notice-icon"></span>
+						<?php echo esc_html__( 'Probable Issues and Troubleshooting', 'themebeez-toolkit' ); ?>
+					</h3>
+					<ul>
+						<li><strong><?php echo esc_html__( 'Incomplete Import:', 'themebeez-toolkit' ); ?></strong> <em><?php echo esc_html__( 'Limited memory or execution time on the server.', 'themebeez-toolkit' ); ?></em> 
+							<br><?php echo esc_html__( 'Fix: Increase PHP memory limit and max execution time in the server configuration.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'Missing Images or Media Files:', 'themebeez-toolkit' ); ?></strong> <em><?php echo esc_html__( 'Demo content relies on remote servers for media; server timeouts can occur.', 'themebeez-toolkit' ); ?></em> 
+							<br><?php echo esc_html__( 'Fix: Retry the import or manually upload missing media files.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'Page Layout Issues:', 'themebeez-toolkit' ); ?></strong> <em><?php echo esc_html__( 'Missing or deactivated plugins or mismatched theme versions.', 'themebeez-toolkit' ); ?></em> 
+							<br><?php echo esc_html__( 'Fix: Verify all required plugins are active, and you&rsquo;re using the correct theme version.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'Broken Links or Missing Menus:', 'themebeez-toolkit' ); ?></strong> <em><?php echo esc_html__( 'URL mismatches or incorrect menu assignment during import.', 'themebeez-toolkit' ); ?></em> 
+							<br><?php echo esc_html__( 'Fix: Manually assign menus and update URLs in the settings or database.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'Timeout Errors:', 'themebeez-toolkit' ); ?></strong> <em><?php echo esc_html__( 'Large import files exceeding server limits.', 'themebeez-toolkit' ); ?></em> 
+							<br><?php echo esc_html__( 'Fix: Import demo content in smaller parts, or increase server limits.', 'themebeez-toolkit' ); ?></li>
+						<li><strong><?php echo esc_html__( 'Duplicate Content:', 'themebeez-toolkit' ); ?></strong> <em><?php echo esc_html__( 'Repeated demo imports.', 'themebeez-toolkit' ); ?></em> 
+							<br><?php echo esc_html__( 'Fix: Remove existing demo content before re-importing.', 'themebeez-toolkit' ); ?></li>
+					</ul>
+
+					<h3 class="tt-demo-importer-notice-heading">
+						<span class="dashicons dashicons-megaphone tt-demo-importer-notice-icon"></span>
+						<?php echo esc_html__( 'Support', 'themebeez-toolkit' ); ?>
+					</h3>
+					<p><?php echo esc_html__( 'If you encounter any issues not listed above, please reach out to our support team for assistance.', 'themebeez-toolkit' ); ?></p>
 				</div>
 				<?php
 			endif;
