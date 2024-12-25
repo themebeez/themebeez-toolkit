@@ -49,8 +49,7 @@ class Themebeez_Toolkit_Admin {
 	public function __construct( $plugin_name, $version ) {
 
 		$this->plugin_name = $plugin_name;
-
-		$this->version = $version;
+		$this->version     = $version;
 	}
 
 	/**
@@ -176,13 +175,5 @@ class Themebeez_Toolkit_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
-		wp_enqueue_script(
-			$this->plugin_name,
-			plugin_dir_url( __FILE__ ) . 'js/themebeez-toolkit-admin.js',
-			array( 'jquery' ),
-			$this->version,
-			false
-		);
 	}
 }
