@@ -96,8 +96,6 @@ Follow the instruction below to install this plugin:
 = 1.3.1 - 27 December, 2024 =
 - Updated: Quick links on theme dashboard page.
 
-== Changelog ==
-
 = 1.3 - 25 December, 2024 =
 - Fixed:   PHP errors and warnings.
 - Updated: Theme dashboard page.
