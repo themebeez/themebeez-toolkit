@@ -23,24 +23,18 @@ A essential toolkit for [WordPress themes](https://themebeez.com/) developed by 
 ✅ Fascinate Pro: [Link](https://themebeez.com/themes/fascinate-pro/)
 ✅ Cream Blog: [Link](https://themebeez.com/themes/cream-blog/)
 ✅ Cream Blog Pro: [Link](https://themebeez.com/themes/cream-blog-pro/)
-✅ Cream Blog Lite: [Link](https://themebeez.com/themes/cream-blog-lite/)
-✅ StyleBlog: [Link](https://themebeez.com/themes/style-blog/)
 ✅ StyleBlog Plus: [Link](https://themebeez.com/themes/style-blog-pro/)
-✅ StyleBlog Fame:  [Link](https://themebeez.com/themes/style-blog-fame/)
 ✅ Royale News: [Link](https://themebeez.com/themes/royale-news/)
 ✅ Royale News Pro: [Link](https://themebeez.com/themes/royale-news-pro/)
-✅ Royale News Lite: [Link](https://themebeez.com/themes/royale-news-lite/)
-✅ One Hive: [Link](https://themebeez.com/themes/one-hive/)
-✅ One Hive Pro:  [Link](https://themebeez.com/themes/one-hive-pro/)
 
 #### ✨ HOW TO USE THEMEBEEZ TOOLKIT?
 
 ✅ While installing any free themes by themebeez do kindly install & activate prompt plugin "Themebeez Toolkit " or you can do this manually too.
-✅ After activating Themebeez Toolkit plugin go to Dashboard > Apperence > Theme about page.
+✅ After activating Themebeez Toolkit plugin go to Dashboard > Theme Name > Starter Templates.
 ✅ You will see necessary actions like recommended actions.
 ✅ Under Recommended action please feel free to activate plugins that you will need. For exmple: install plugin called WooCommerce if you need to setup e-commerce store. 
 ✅ If you think you don't need any of them ignore that recommended action.
-✅ If you need demo contents, then go to Dashboard > Appearance > Import Demo Content page. 
+✅ If you need demo contents, then go to Dashboard > Theme Name > Starter Templates to Import Demo Content page. 
 ✅ Choose your demo by checking live preview.
 ✅ Keep Themebeez Toolkit plugin along with you till you are using themes made by us.
 ✅ Feel free to contact Themebeez Support team at ( https://themebeez.com/support/ ) if you need any assistance.
@@ -74,7 +68,7 @@ Theme about page is located at Apperence > theme about page
 
 = Where is demo content import located ? =
 
-Demo import page is located at Dashboard > Apperence > import demo content
+Demo import page is located at Dashboard > Theme Name > Starter Templates and import demo content
 
 = How can I get assists if I need any help ? =
 
