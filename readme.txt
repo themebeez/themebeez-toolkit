@@ -64,10 +64,6 @@ Themebeez Toolkit is free software, feel free to redistribute it or modify it un
 
 Themebeez toolkit extends theme functionality & helps users to import demo contents. It also add necessary support & documention information under Apperence > theme about page
 
-= Where is theme about page located ? =
-
-Theme about page is located at Apperence > theme about page
-
 = Where is demo content import located ? =
 
 Demo import page is located at Dashboard > Theme Name > Starter Templates and import demo content
