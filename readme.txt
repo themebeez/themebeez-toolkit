@@ -27,14 +27,16 @@ A essential toolkit for [WordPress themes](https://themebeez.com/) developed by 
 ✅ Royale News: [Link](https://themebeez.com/themes/royale-news/)
 ✅ Royale News Pro: [Link](https://themebeez.com/themes/royale-news-pro/)
 
+#### ✨ WHY TO USE THEMEBEEZ TOOLKIT?
+
+✅ To import one click demo content for your website.
+✅It also adds extra functionality to Orchid store theme as we have extended simple mega menu functionality in Orchid Store theme via this plugin.
+
 #### ✨ HOW TO USE THEMEBEEZ TOOLKIT?
 
 ✅ While installing any free themes by themebeez do kindly install & activate prompt plugin "Themebeez Toolkit " or you can do this manually too.
-✅ After activating Themebeez Toolkit plugin go to Dashboard > Theme Name > Starter Templates.
-✅ You will see necessary actions like recommended actions.
-✅ Under Recommended action please feel free to activate plugins that you will need. For exmple: install plugin called WooCommerce if you need to setup e-commerce store. 
-✅ If you think you don't need any of them ignore that recommended action.
-✅ If you need demo contents, then go to Dashboard > Theme Name > Starter Templates to Import Demo Content page. 
+✅ After activating the Themebeez Toolkit plugin, if you are using a theme provided by Themebeez, go to Dashboard > Theme Name > Starter Templates.
+✅ Under Starter Templates, you can choose which demo content to import for your website. 
 ✅ Choose your demo by checking live preview.
 ✅ Keep Themebeez Toolkit plugin along with you till you are using themes made by us.
 ✅ Feel free to contact Themebeez Support team at ( https://themebeez.com/support/ ) if you need any assistance.
