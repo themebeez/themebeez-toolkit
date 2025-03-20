@@ -4,8 +4,8 @@ Contributors: themebeez
 Tags: themebeez, demo, content, widgets, menus, import, content, demo, data, widgets, settings, themes
 Requires at least: 5.6
 Requires PHP: 7.4
-Tested up to: 6.7.1
-Stable tag: 1.3.2
+Tested up to: 6.8
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,10 @@ Follow the instruction below to install this plugin:
 
 
 == Changelog ==
+
+= 1.3.3 - 25 March, 2025 =
+- Tested: WordPress version 6.8
+- Tested: PHP version 8.3.11
 
 = 1.3.2 - 30 December, 2024 =
 - Added:   Note when no starter templates are displayed.
